@@ -5,5 +5,7 @@ theme:
   logo: img/logo.png
 nav:
   - Home: index.md
-  - Mathematics:
-    - Pre-Algebra: maths/pre-algebra.md
+  - Maths:
+    - Pre-Algebra:
+      - Whole Numbers: maths/pre-algebra/whole-numbers.md
+      - Integers: maths/pre-algebra/integers.md

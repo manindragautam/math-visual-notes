@@ -1,107 +1,20 @@
-# **Pre-Algebra Fundamentals: A Concise Guide to Essential Concepts**
+# **Integers**
 
-## Chapter 1: Introduction to Pre-Algebra
+## Chapter 18: Diving into Integers
 
-Pre-algebra serves as a critical stepping stone in the journey of mathematical learning. It encompasses a range of fundamental concepts that build upon basic arithmetic and pave the way for more advanced topics in algebra and beyond. This guide aims to present these essential pre-algebra lessons in a clear, concise, and easily understandable manner, making it an invaluable resource for students embarking on this mathematical adventure. The topics covered in pre-algebra are not merely isolated rules and procedures; they form an interconnected framework that enhances logical thinking and problem-solving skills. A solid grasp of these foundational ideas is crucial for future success in mathematics, as it provides the necessary tools and understanding to tackle more complex equations and theories. Furthermore, the ability to think algebraically and reason quantitatively extends beyond the classroom, finding applications in various real-world scenarios. The confidence gained through mastering pre-algebra can significantly impact a student's attitude towards mathematics in the long run, fostering a more positive and engaged approach to learning.
+![Integers](img/integers.svg)
 
-## Chapter 2: Place Value: Understanding the Value of Digits
+## Chapter 19: Understanding Absolute Value
 
-![PlaceValue](img/place-value.svg)
+![Absolute Value](img/absolute-value.svg)
 
-## Chapter 3: Expanded Form: Breaking Down Numbers
+## Chapter 20: Adding Integers Made Easy
 
-![Expanded Form](img/expanded-form.svg)
+![Adding Integers](img/adding-integers.svg)
 
-## Chapter 4: Inequalities and the Number Line: Comparing Numbers Visually
+## Chapter 21: Subtracting Integers: The Opposite of Addition
 
-![Inequalities](img/inequalities.svg)
-
-## Chapter 5: Rounding Whole Numbers: Estimating Values
-
-![Rounding Whole Numbers](img/rounding-whole-numbers.svg)
-
-## Chapter 6: Properties of Addition: Making Addition Easier
-
-![Properties of Addition](img/properties-of-addition.svg)
-
-## Chapter 7: Adding on a Number Line: A Visual Approach to Addition
-
-![Adding on Number Line](img/adding-on-number-line.svg)
-
-## Chapter 8: Vertical Addition: Adding Numbers Column by Column
-
-![Vertical Addition](img/vertical-addition.svg)
-
-## Chapter 9: Subtracting on a Number Line: Visualizing Subtraction
-
-![Subtracting on a Number Line](img/subtracting-on-a-number-line.svg)
-
-## Chapter 10: Vertical Subtraction: Subtracting Column by Column
-
-![Vertical Subtraction](img/vertical-subtraction.svg)
-
-## Chapter 11: Properties of Multiplication: Simplifying Multiplication
-
-![Properties of Multiplication](img/properties-of-multiplication.svg)
-
-## Chapter 12: Vertical Multiplication: Multiplying Numbers Column by Column
-
-![Vertical Multiplication](img/vertical-multiplication.svg)
-
-
-## Chapter 13: Multiplication with Powers of 10: A Quick Way to Multiply
-
-![Multiplication with Powers of 10](img/multiplication-with-power-of-ten.svg)
-
-## Chapter 14: Properties of Division: Understanding Division Rules
-
-![Properties of Division](img/properties-of-division.svg)
-
-## Chapter 15: Long Division: Step-by-Step Division
-
-![Long Division](img/long-division.svg)
-
-## Chapter 16: Introduction to Exponents: Understanding Powers
-
-![Exponents](img/exponents.svg)
-
-## Chapter 17: The Order of Operations: Solving Math Problems Correctly
-
-![Order of Operations](img/order-of-operations.svg)
-
-**Chapter 18: Diving into Integers**
-
-At its core, the set of integers encompasses all the whole numbers and their negative counterparts 1. Whole numbers are the numbers we use for counting, starting from zero and going upwards: 0, 1, 2, 3, 4, and this pattern continues indefinitely 1. To get the negative counterparts of the positive whole numbers, we simply add a negative sign in front of them. So, the negative counterparts of 1, 2, 3, and so on, are \-1, \-2, \-3, and so forth 1. Putting it all together, the set of integers includes all these numbers: …, \-3, \-2, \-1, 0, 1, 2, 3, … 1.
-
-It's important to recognize that zero is also an integer. It sits right in the middle, acting as the dividing line between the positive and negative integers. Zero is neither positive nor negative; it represents a neutral quantity. The use of an ellipsis (...) in the set notation is significant. It indicates that the integers continue infinitely in both the positive direction (getting larger and larger) and the negative direction (getting smaller and smaller). There is no largest positive integer and no smallest negative integer.
-
-Integers are not just abstract mathematical concepts; they are used in many real-world situations. For instance, temperature is often measured using integers. A temperature of 25 degrees Celsius is a positive integer, while a temperature of \-5 degrees Celsius is a negative integer. Your bank balance can also be represented using integers. If you have $100 in your account, that's a positive integer. If you owe the bank $50, that can be represented as \-50. Elevation is another example. Sea level is often considered to be at an elevation of 0\. Places above sea level have positive elevations, while places below sea level have negative elevations. Understanding integers allows us to quantify and work with these real-world scenarios effectively.
-
-**Chapter 19: Understanding Absolute Value**
-
-The absolute value of a number tells us how far that number is from zero on the number line 2. Think of it as the distance a number has traveled from the starting point of zero, regardless of the direction. Because distance is always a non-negative quantity, meaning it's either zero or a positive number, the absolute value of any number will always be 0 or greater 2. We use a special notation to represent the absolute value of a number: we enclose the number within two vertical bars, like this: |number| 2.
-
-Let's look at some examples to make this clearer. Consider the number 5\. On the number line, it is located 5 units away from zero. Therefore, the absolute value of 5 is 5, written as |5| \= 5 2. Now, consider the number \-5. Although it's on the opposite side of zero compared to 5, it is also located 5 units away from zero. Hence, the absolute value of \-5 is also 5, written as |-5| \= 5 2. This shows that the absolute value focuses solely on the magnitude or size of the number, not its direction from zero.
-
-Here are a few more simplified examples: The absolute value of 7 is 7, so |7| \= 7\. For a positive number, its absolute value is simply the number itself 2. If we take a negative number like \-21, its distance from zero is 21 units, so |-21| \= 21 2. Similarly, |14| \= 14 and |-35| \= 35 2. In essence, the absolute value operation "strips away" the negative sign from a negative number, leaving only its positive magnitude. For zero itself, the absolute value is 0, as it is 0 units away from zero on the number line (|0| \= 0). Understanding absolute value is a fundamental step, especially when we move on to performing operations like addition and subtraction with integers that have different signs. It helps us determine which number has a greater magnitude, which is crucial for applying the rules of these operations.
-
-**Chapter 20: Adding Integers Made Easy**
-
-Adding integers involves combining their values, and the rules we follow depend on whether the integers have the same sign or different signs 3.
-
-**Adding Integers with the Same Sign:**
-
-When you are adding two integers that both have the same sign (both positive or both negative), the process is straightforward 3. First, you add their absolute values together. Remember, the absolute value is the distance from zero, so we are essentially adding the magnitudes of the numbers. Second, after you find the sum of the absolute values, you simply attach the common sign that the original two integers shared to this sum 3.
-
-Let's look at some examples. If you want to add \+4 and \+9, both are positive. The absolute value of \+4 is 4, and the absolute value of \+9 is 9\. Adding these gives us 4 \+ 9 \= 13\. Since both original numbers were positive, the sum is also positive: (+4) \+ (+9) \= \+13 3. Now, consider adding \-4 and \-9. Both are negative. The absolute value of \-4 is 4, and the absolute value of \-9 is 9\. Their sum is 4 \+ 9 \= 13\. Since both original numbers were negative, the sum is also negative: (-4) \+ (-9) \= \-13 3. You can think of this on a number line. Adding two positive numbers means moving further to the right from zero, while adding two negative numbers means moving further to the left from zero.
-
-**Adding Integers with Different Signs:**
-
-When you are adding two integers that have different signs (one positive and one negative), the process is slightly different 3. First, you need to find the absolute value of each integer. Then, you subtract the smaller absolute value from the larger absolute value 3. The result of this subtraction gives you the magnitude of the final sum. Second, you need to determine the sign of the final sum. The rule is that the sum will have the same sign as the integer that had the larger absolute value 3.
-
-Let's look at some examples. Suppose you want to add \-6 and \+13. The absolute value of \-6 is 6, and the absolute value of \+13 is 13\. The larger absolute value is 13, and the smaller is 6\. Subtracting the smaller from the larger gives us 13 \- 6 \= 7\. Now, we look at the signs. The number with the larger absolute value was \+13, which is positive. Therefore, the sum is also positive: (-6) \+ 13 \= \+7 3. Consider another example: \+34 and \-51. The absolute value of \+34 is 34, and the absolute value of \-51 is 51\. The larger absolute value is 51, and the smaller is 34\. Subtracting gives us 51 \- 34 \= 17\. The number with the larger absolute value was \-51, which is negative. So, the sum is negative: 34 \+ (-51) \= \-17 3. On the number line, adding a positive number moves you to the right, and adding a negative number moves you to the left. When the signs are different, the direction of the larger "movement" determines the sign of the result.
-
-**Chapter 21: Subtracting Integers: The Opposite of Addition**
+![Subtracting Integers](img/subtracting-integers.svg)
 
 Subtracting integers might seem like a new operation, but there's a clever trick that allows us to think of it in terms of addition, which we've already learned 4. The key idea is to convert every subtraction problem into an addition problem by "adding the opposite" 4. This means that when you see a subtraction, you keep the first number the same, change the subtraction sign to an addition sign, and then change the sign of the second number to its opposite 4. Once you've done this conversion, you can simply follow the rules for adding integers that we discussed in the previous chapter.
 
