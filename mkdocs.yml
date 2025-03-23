@@ -3,6 +3,25 @@ theme:
   name: "material"
   favicon: img/favicon.ico
   logo: img/logo.png
+  font:
+    text: Source Sans 3
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+  - stylesheets/custom.css
 nav:
   - Home: index.md
   - Maths:
@@ -15,3 +34,8 @@ nav:
       - Decimals: maths/pre-algebra/decimals.md
       - Percentages & Basic Statistics: maths/pre-algebra/percentages-and-basic-statistics.md
       - Measurement: maths/pre-algebra/measurement.md
+    - Algebra 1:
+      - Linear Equations: maths/algebra1/linear-equations.md
+      - Linear Inequalities: maths/algebra1/linear-inequalities.md
+      - Graphing: maths/algebra1/graphing.md
+      - Functions: maths/algebra1/functions.md
