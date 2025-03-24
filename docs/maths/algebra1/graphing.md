@@ -360,6 +360,7 @@ $y - y_1 = m(x - x_1)$
 ### Definitions
 
 -   **Slope (\( m \))**: A measure of the steepness and direction of a line. It is calculated as the ratio of the vertical change (rise) to the horizontal change (run) between two points on the line:
+
     \[
     m = \frac{y_2 - y_1}{x_2 - x_1}
     \]
