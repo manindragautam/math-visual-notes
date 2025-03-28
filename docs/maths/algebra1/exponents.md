@@ -1,509 +1,146 @@
 # **Exponents**
 
--   **\#26: Exponents: Product & Power Rules**
-    Exponents provide a concise way to represent repeated multiplication of the same number. For example, (2 \\times 2 \\times 2 \\times 2\) can be written as (2^4), where 2 is the base and 4 is the exponent (or power). The exponent indicates how many times the base is multiplied by itself. Understanding the rules of exponents is fundamental for simplifying algebraic expressions and working with numbers in various mathematical contexts.
-    Two of the basic rules of exponents are the product rule and the power rule.
-    The **product rule** states that when you multiply two powers that have the same base, you can add their exponents. Mathematically, this is expressed as:
-    \[a^m \\times a^n \= a^{m+n}\]
-    This rule works because (a^m) means (a) multiplied by itself (m) times, and (a^n) means (a) multiplied by itself (n) times. When you multiply these two together, you are essentially multiplying (a) by itself a total of (m \+ n) times. For example, (x^3 \\times x^5 \= x^{3+5} \= x^8). Similarly, (2^2 \\times 2^3 \= 4 \\times 8 \= 32), and (2^{2+3} \= 2^5 \= 32).
-    The **power rule** states that when you raise a power to another power, you can multiply the exponents. Mathematically, this is expressed as:
-    \[(a^m)^n \= a^{m \\times n}\]
-    This rule works because ((a^m)^n) means (a^m) multiplied by itself (n) times. Each (a^m) has (m) factors of (a), so in total there are (m \\times n) factors of (a). For example, ((y^4)^2 \= y^{4 \\times 2} \= y^8). Similarly, ((3^2)^3 \= 9^3 \= 729), and (3^{2 \\times 3} \= 3^6 \= 729).
-    These two rules are essential for simplifying expressions involving exponents. For instance, we might have an expression like ((x^2 y^3)^4 \\times x^5 y). Using the power rule, we get (x^{2 \\times 4} y^{3 \\times 4} \\times x^5 y \= x^8 y^{12} \\times x^5 y^1). Then, using the product rule for the (x) terms and the (y) terms, we get (x^{8+5} y^{12+1} \= x^{13} y^{13}). Understanding and applying these rules correctly is crucial for algebraic manipulation.
-
-| Rule Name         | Formula                         | Explanation                                                                                                  |
-| :---------------- | :------------------------------ | :----------------------------------------------------------------------------------------------------------- |
-| Product Rule      | (a^m \\times a^n \= a^{m+n})    | When multiplying powers with the same base, add the exponents.                                               |
-| Power Rule        | ((a^m)^n \= a^{m \\times n})    | When raising a power to another power, multiply the exponents.                                               |
-| Quotient Rule     | (\\frac{a^m}{a^n} \= a^{m-n})   | When dividing powers with the same base, subtract the exponents.                                             |
-| Zero Exponent     | (a^0 \= 1\) (where (a \\neq 0)) | Any non-zero number raised to the power of zero is 1\.                                                       |
-| Negative Exponent | (a^{-n} \= \\frac{1}{a^n})      | A number raised to a negative exponent is equal to 1 divided by that number raised to the positive exponent. |
-
-This table summarizes some of the fundamental rules of exponents, including the product and power rules discussed in this chapter, as well as rules that will likely be covered in the next chapter. Having these rules readily available can be very helpful when working with exponents.
-
--   **\#27: Negative Exponents & the Quotient Rule**
-    Building on the foundation of exponents, this chapter likely covers two more important rules: negative exponents and the quotient rule. These rules extend the concept of exponents beyond positive integers and provide tools for working with division of powers.
-    A **negative exponent** indicates a reciprocal. Specifically, for any non-zero number (a) and any integer (n), we have:
-    \[a^{-n} \= \\frac{1}{a^n}\]
-    This means that a term with a negative exponent in the numerator can be moved to the denominator with a positive exponent, and vice versa. For example, (x^{-3} \= \\frac{1}{x^3}) and (\\frac{1}{y^{-2}} \= y^2). Negative exponents are very useful for expressing small numbers and for simplifying expressions involving powers in the denominator. For instance, (\\frac{5}{z^4}) can also be written as (5z^{-4}).
-    The **quotient rule** for exponents states that when you divide two powers that have the same base, you can subtract the exponent in the denominator from the exponent in the numerator. Mathematically, this is expressed as:
-    \[\\frac{a^m}{a^n} \= a^{m-n}\]
-    This rule is derived from the fact that division is the inverse of multiplication. When we have (\\frac{a^m}{a^n}), it's like having (m) factors of (a) in the numerator and (n) factors of (a) in the denominator. We can cancel out (n) of these factors, leaving (m \- n) factors of (a) if (m \> n), or (\\frac{1}{a^{n-m}}) if (n \> m), which is equivalent to (a^{m-n}) using negative exponents. For example, (\\frac{x^7}{x^3} \= x^{7-3} \= x^4), and (\\frac{y^2}{y^5} \= y^{2-5} \= y^{-3} \= \\frac{1}{y^3}).
-    These rules, along with the product and power rules, form the basic algebra of exponents and are essential for simplifying more complex expressions and solving equations involving powers. Remember that these rules apply only when the bases are the same.
--   **\#28: Scientific Notation**
-    Scientific notation is a way of expressing very large or very small numbers in a compact and convenient form. It is widely used in science, engineering, and other fields where numbers can span many orders of magnitude. A number in scientific notation is written as the product of two factors: a number (a) such that (1 \\leq |a| \< 10), and an integer power of 10, (10^n). So, the general form is (a \\times 10^n).
-    The exponent (n) indicates the number of places the decimal point in (a) needs to be moved to obtain the standard form of the number. If (n) is positive, the decimal point is moved (n) places to the right, resulting in a large number. For example, the speed of light is approximately (300,000,000) meters per second, which can be written in scientific notation as (3 \\times 10^8) m/s. Here, the decimal point in 3.0 has been moved 8 places to the right.
-    If (n) is negative, the decimal point in (a) is moved (|n|) places to the left, resulting in a small number (between 0 and 1). For example, the size of a bacterium might be around (0.0000015) meters, which in scientific notation is (1.5 \\times 10^{-6}) m. Here, the decimal point in 1.5 has been moved 6 places to the left.
-    Scientific notation makes it easier to work with and compare very large or very small numbers. It also simplifies calculations involving these numbers, especially when using the rules of exponents. For example, to multiply two numbers in scientific notation, say ((a \\times 10^m) \\times (b \\times 10^n)), we can rearrange the terms as ((a \\times b) \\times (10^m \\times 10^n) \= (a \\times b) \\times 10^{m+n}). Similarly, for division, (\\frac{a \\times 10^m}{b \\times 10^n} \= \\frac{a}{b} \\times 10^{m-n}). Scientific notation is a valuable tool for anyone dealing with numbers that are far from the scale of everyday experience.
-
-**Section 7: Polynomials**
-
--   **\#29: Adding & Subtracting Polynomials**
-    A polynomial is an algebraic expression that consists of one or more terms, where each term is a constant multiplied by one or more variables raised to non-negative integer powers. Examples of polynomials include (3x^2 \- 2x \+ 5), (4y^3 \+ 7), and (-8z). The terms in a polynomial are separated by addition or subtraction. Polynomials are fundamental in algebra and are used in many mathematical models.
-    To add or subtract polynomials, we combine like terms. Like terms are terms that have the same variable(s) raised to the same power(s). For example, (3x^2) and (-5x^2) are like terms because they both have the variable (x) raised to the power of 2\. However, (3x^2) and (3x) are not like terms because the powers of (x) are different. Similarly, (2xy) and (-7xy) are like terms, but (2xy) and (2x^2y) are not.
-    When adding polynomials, we simply identify the like terms in both polynomials and add their coefficients (the numerical part of the term). For example, to add ((3x^2 \- 2x \+ 5)) and ((x^2 \+ 4x \- 3)), we combine the (x^2) terms ((3x^2 \+ x^2 \= 4x^2)), the (x) terms ((-2x \+ 4x \= 2x)), and the constant terms ((5 \+ (-3) \= 2)). So, the sum is (4x^2 \+ 2x \+ 2).
-    When subtracting polynomials, we need to be careful with the signs. Subtracting a polynomial is equivalent to adding its additive inverse (i.e., multiplying every term in the polynomial being subtracted by \-1). For example, to subtract ((x^2 \+ 4x \- 3)) from ((3x^2 \- 2x \+ 5)), we first change the signs of the terms in the second polynomial to get (-x^2 \- 4x \+ 3). Then we add this to the first polynomial: ((3x^2 \- 2x \+ 5\) \+ (-x^2 \- 4x \+ 3)). Combining like terms gives ((3x^2 \- x^2) \+ (-2x \- 4x) \+ (5 \+ 3\) \= 2x^2 \- 6x \+ 8). Remember to distribute the negative sign to all terms in the polynomial being subtracted.
--   **\#30: Multiplying Polynomials**
-    Multiplying polynomials involves using the distributive property repeatedly to ensure that every term in one polynomial is multiplied by every term in the other polynomial. The distributive property states that (a(b \+ c) \= ab \+ ac). We extend this to polynomials with more than two terms.
-    When multiplying a monomial (a polynomial with one term) by a polynomial, we simply distribute the monomial to each term of the polynomial. For example, to multiply (3x) by ((2x^2 \- 5x \+ 4)), we would do: (3x \\times 2x^2 \- 3x \\times 5x \+ 3x \\times 4 \= 6x^3 \- 15x^2 \+ 12x). Remember to use the rules of exponents when multiplying the variable parts.
-    When multiplying two binomials (polynomials with two terms), a helpful mnemonic called FOIL can be used. FOIL stands for First, Outer, Inner, Last, and it describes the order in which you should multiply the terms of the two binomials:
-
-    -   **First:** Multiply the first terms of each binomial.
-    -   **Outer:** Multiply the outer terms of the binomials.
-    -   **Inner:** Multiply the inner terms of the binomials.
-    -   **Last:** Multiply the last terms of each binomial.
-
-    For example, to multiply ((x \+ 2)) by ((3x \- 1)):
-
-    -   First: (x \\times 3x \= 3x^2)
-    -   Outer: (x \\times (-1) \= \-x)
-    -   Inner: (2 \\times 3x \= 6x)
-    -   Last: (2 \\times (-1) \= \-2)
-
-Then, you add these products together and combine any like terms: (3x^2 \- x \+ 6x \- 2 \= 3x^2 \+ 5x \- 2).For multiplying polynomials with more than two terms, you can use a similar approach by ensuring that each term in the first polynomial is multiplied by every term in the second polynomial. This can be done by distributing each term of the first polynomial across the terms of the second polynomial. For example, to multiply ((x \+ 2)) by ((x^2 \- 3x \+ 4)), we would do:(x(x^2 \- 3x \+ 4\) \+ 2(x^2 \- 3x \+ 4\) \= x^3 \- 3x^2 \+ 4x \+ 2x^2 \- 6x \+ 8)Then, combine like terms: (x^3 \+ (-3x^2 \+ 2x^2) \+ (4x \- 6x) \+ 8 \= x^3 \- x^2 \- 2x \+ 8).
-
--   **\#31: FOIL**
-    As introduced in the previous chapter, FOIL is a specific method used for multiplying two binomials. It's a systematic way to apply the distributive property in this common case. If we have two binomials in the form ((ax \+ b)(cx \+ d)), the FOIL method tells us to multiply the:
-    -   **F**irst terms: (ax \\times cx \= acx^2)
-    -   **O**uter terms: (ax \\times d \= adx)
-    -   **I**nner terms: (b \\times cx \= bcx)
-    -   **L**ast terms: (b \\times d \= bd)
-
-Then, we add these four products together: (acx^2 \+ adx \+ bcx \+ bd). Finally, we should combine any like terms, which are usually the outer and inner products (the terms with (x)). So the result is (acx^2 \+ (ad \+ bc)x \+ bd).It's important to understand that FOIL is just a shortcut for the distributive property. When we multiply ((ax \+ b)(cx \+ d)), we are essentially distributing each term of the first binomial to each term of the second binomial: (ax(cx \+ d) \+ b(cx \+ d) \= (ax)(cx) \+ (ax)(d) \+ (b)(cx) \+ (b)(d)), which is exactly what FOIL describes. Understanding this connection helps to see why FOIL works and makes it easier to remember.After applying FOIL, the result is often a trinomial (a polynomial with three terms), but it could also have two terms if the middle terms cancel out, or even one term if all but one product is zero. Remember to always check for like terms after using FOIL and combine them to get the final simplified product.
-
--   **\#32: Special Polynomial Products**
-    There are certain pairs of binomials that, when multiplied, result in patterns that occur frequently in algebra. Recognizing these special product patterns can save time and simplify algebraic manipulations. The three main special products to be aware of are the square of a binomial (both sum and difference) and the difference of squares.
-
-    1. Square of a Binomial (Sum): When you square a binomial of the form ((a \+ b)), the result is:
-       \[(a \+ b)^2 \= (a \+ b)(a \+ b) \= a^2 \+ ab \+ ba \+ b^2 \= a^2 \+ 2ab \+ b^2\]
-       The pattern is: the square of the first term, plus twice the product of the two terms, plus the square of the last term.
-    2. Square of a Binomial (Difference): When you square a binomial of the form ((a \- b)), the result is:
-       \[(a \- b)^2 \= (a \- b)(a \- b) \= a^2 \- ab \- ba \+ b^2 \= a^2 \- 2ab \+ b^2\]
-       The pattern is: the square of the first term, minus twice the product of the two terms, plus the square of the last term.
-
-    Notice that the middle term in both cases ((\\pm 2ab)) arises from adding the Outer and Inner products when using FOIL. For ((a \+ b)^2), the Outer product is (ab) and the Inner product is (ba) (which is the same as (ab)), so their sum is (2ab). A similar logic applies to ((a \- b)^2).
-
-    3. **Difference of Squares:** When you multiply two binomials that are the sum and difference of the same two terms, the result is: \[(a \+ b)(a \- b) \= a^2 \- ab \+ ba \- b^2 \= a^2 \- b^2\] The pattern is: the square of the first term minus the square of the second term. The middle terms ((-ab) and (+ba)) cancel each other out.
-
-Recognizing these patterns can significantly speed up the process of multiplying these types of binomials. For example, knowing the difference of squares pattern, you can immediately say that ((x \+ 3)(x \- 3\) \= x^2 \- 9), without needing to go through the full FOIL process. These special product formulas are also very useful when we learn about factoring polynomials, as they provide patterns that we can look for to factor certain types of expressions.
-
-| Special Product       | Formula                           |
-| :-------------------- | :-------------------------------- |
-| Square of a Binomial  | ((a \+ b)^2 \= a^2 \+ 2ab \+ b^2) |
-| Square of a Binomial  | ((a \- b)^2 \= a^2 \- 2ab \+ b^2) |
-| Difference of Squares | ((a \+ b)(a \- b) \= a^2 \- b^2)  |
-
-This table summarizes the important special product formulas. Learning these patterns is a valuable shortcut in algebra.
-
--   **\#33: Dividing Polynomials by Monomials**
-    Dividing a polynomial by a monomial (a polynomial with only one term) is a straightforward process that involves dividing each term of the polynomial by the monomial. This is based on the property of fractions that (\\frac{a \+ b}{c} \= \\frac{a}{c} \+ \\frac{b}{c}). We can extend this to polynomials with more terms.
-    For example, if we want to divide the polynomial (6x^3 \- 15x^2 \+ 12x) by the monomial (3x), we would divide each term of the polynomial by (3x):
-    \[\\frac{6x^3 \- 15x^2 \+ 12x}{3x} \= \\frac{6x^3}{3x} \- \\frac{15x^2}{3x} \+ \\frac{12x}{3x}\]
-    Now, we simplify each fraction. Remember to use the quotient rule for exponents ((\\frac{a^m}{a^n} \= a^{m-n})) when dividing the variable parts, and simply divide the coefficients:
-    \[\\frac{6}{3}x^{3-1} \- \\frac{15}{3}x^{2-1} \+ \\frac{12}{3}x^{1-1} \= 2x^2 \- 5x^1 \+ 4x^0\]
-    Since (x^1 \= x) and (x^0 \= 1\) (for (x \\neq 0)), the result is:
-    \[2x^2 \- 5x \+ 4\]
-    We need to be mindful of the case where the variable in the monomial divisor could be zero, as division by zero is undefined. In the above example, we assume (x \\neq 0).
-    In general, to divide a polynomial by a monomial, you divide the coefficient of each term in the polynomial by the coefficient of the monomial, and you subtract the exponent of the variable in the monomial from the exponent of the corresponding variable in each term of the polynomial. If a term in the polynomial does not have a particular variable that is present in the monomial, that part of the term remains unchanged in the division. For instance, (\\frac{9a^2b \- 6ab^3}{3ab} \= \\frac{9a^2b}{3ab} \- \\frac{6ab^3}{3ab} \= 3a^{2-1}b^{1-1} \- 2a^{1-1}b^{3-1} \= 3a^1b^0 \- 2a^0b^2 \= 3a \- 2b^2).
--   **\#34: Dividing Polynomials**
-    Dividing a polynomial by another polynomial with two or more terms is a more complex process, often done using a method similar to long division with numbers. This process is called polynomial long division.
-    Let's consider an example: divide (x^2 \+ 5x \+ 6\) by (x \+ 2). We set up the division like this:
-    \_\_\_\_\_\_\_\_
-    x \+ 2 | x^2 \+ 5x \+ 6
-
-    1.  Divide the first term of the dividend ((x^2)) by the first term of the divisor ((x)), which gives (x). Write this as the first term of the quotient above the (x) term in the dividend.
+## Chapter 26: Exponents - Product & Power Rules
 
-             x\_\_\_\_\_\_\_
+### Definitions
 
-        x \+ 2 | x^2 \+ 5x \+ 6
+-   **Exponent**: Indicates how many times a base is multiplied by itself (e.g., in 5³, 3 is the exponent)
+-   **Base**: The number being multiplied (5 in 5³)
+-   **Power**: Another term for an exponentiated expression
 
-    2.  Multiply the divisor ((x \+ 2)) by the first term of the quotient ((x)), which gives (x(x \+ 2\) \= x^2 \+ 2x). Write this result below the corresponding terms in the dividend.
+### Core Rules Table
 
-             x\_\_\_\_\_\_\_
+| Rule Name     | Formula        | Example      |
+| ------------- | -------------- | ------------ |
+| Product Rule  | aᵐ × aⁿ = aᵐ⁺ⁿ | x² × x⁵ = x⁷ |
+| Power Rule    | (aᵐ)ⁿ = aᵐⁿ    | (y³)⁴ = y¹²  |
+| Zero Exponent | a⁰ = 1         | 7⁰ = 1       |
+| Identity Rule | a¹ = a         | 9¹ = 9       |
 
-        x \+ 2 | x^2 \+ 5x \+ 6
-        x^2 \+ 2x
-        \--------
+### Examples
 
-    3.  Subtract the result from the dividend. Remember to change the signs of the terms being subtracted: ((x^2 \+ 5x \+ 6\) \- (x^2 \+ 2x) \= x^2 \+ 5x \+ 6 \- x^2 \- 2x \= 3x \+ 6). Bring down the next term if there were any (in this case, we have already used all terms of the dividend in the first step or the remainder).
+1. **Applying Product Rule**
 
-             x\_\_\_\_\_\_\_
+    - Problem: Simplify 2⁴ × 2⁵
+    - Solution:
+        ```
+        2⁴ × 2⁵ = 2⁴⁺⁵ = 2⁹ = 512
+        ```
 
-        x \+ 2 | x^2 \+ 5x \+ 6
-        \-(x^2 \+ 2x)
-        \----------
-        3x \+ 6
+2. **Power Rule Application**
 
-    4.  Repeat the process with the new polynomial (3x \+ 6). Divide the first term ((3x)) by the first term of the divisor ((x)), which gives 3\. Write this as the next term of the quotient.
+    - Problem: Simplify (3x²y³)³
+    - Solution:
+        ```
+        (3x²y³)³ = 3³ × x²ˣ³ × y³ˣ³ = 27x⁶y⁹
+        ```
 
-             x \+ 3\_\_\_
-
-        x \+ 2 | x^2 \+ 5x \+ 6
-        \-(x^2 \+ 2x)
-        \----------
-        3x \+ 6
+3. **Combined Operations**
+    - Problem: Simplify (a⁵ × a⁻²)⁴
+    - Solution:
+        ```
+        (a⁵ × a⁻²)⁴ = (a⁵⁻²)⁴ = (a³)⁴ = a¹²
+        ```
 
-    5.  Multiply the divisor ((x \+ 2)) by the new term of the quotient (3), which gives (3(x \+ 2\) \= 3x \+ 6). Write this below (3x \+ 6).
+### Key Takeaways
 
-             x \+ 3\_\_\_
+> -   Product Rule: Add exponents when multiplying same bases
+> -   Power Rule: Multiply exponents when raising powers to powers
+> -   Any base (except 0) to the 0 power equals 1
+> -   Essential for simplifying algebraic expressions
 
-        x \+ 2 | x^2 \+ 5x \+ 6
-        \-(x^2 \+ 2x)
-        \----------
-        3x \+ 6
-        3x \+ 6
-        \------
-
-    6.  Subtract this result: ((3x \+ 6\) \- (3x \+ 6\) \= 0). Since the remainder is 0, the division is complete.
+## Chapter 27: Negative Exponents & Quotient Rule
 
-The quotient is (x \+ 3), and the remainder is 0\. So, (\\frac{x^2 \+ 5x \+ 6}{x \+ 2} \= x \+ 3).The process continues until the degree of the remainder is less than the degree of the divisor. The result is expressed as a quotient plus a remainder over the divisor, similar to numerical division.
-
--   **\#35: Dividing Polynomials with Missing Terms**
-    When performing polynomial long division, it's important to handle cases where the dividend (the polynomial being divided) has missing terms. A missing term is a term with a particular power of the variable that has a coefficient of zero. For example, in the polynomial (x^3 \- 8), the terms with (x^2) and (x^1) are missing (their coefficients are 0).
-    When setting up the long division, it's crucial to include placeholders (terms with a coefficient of zero) for these missing powers of the variable in the dividend. This helps to keep the columns aligned correctly during the subtraction steps. If we don't include these placeholders, we can easily make mistakes in aligning like terms, which will lead to an incorrect result.
-    Let's consider an example: divide (x^3 \- 8\) by (x \- 2). The dividend (x^3 \- 8\) has a missing (x^2) term and a missing (x) term. We should write it as (x^3 \+ 0x^2 \+ 0x \- 8\) when performing the long division:
-    x^2 \+ 2x \+ 4
-    x \- 2 | x^3 \+ 0x^2 \+ 0x \- 8
-    \-(x^3 \- 2x^2)
-    \------------
-    2x^2 \+ 0x
-    \-(2x^2 \- 4x)
-    \------------
-    4x \- 8
-    \-(4x \- 8\)
-    \----------
-    0
-
-    1. (x^3 \\div x \= x^2). Multiply (x^2(x \- 2\) \= x^3 \- 2x^2). Subtract.
-    2. Bring down (0x). (2x^2 \\div x \= 2x). Multiply (2x(x \- 2\) \= 2x^2 \- 4x). Subtract.
-    3. Bring down (-8). (4x \\div x \= 4). Multiply (4(x \- 2\) \= 4x \- 8). Subtract.
-
-The quotient is (x^2 \+ 2x \+ 4\) with a remainder of 0.As you can see, including the (0x^2) and (0x) terms as placeholders ensured that we lined up the terms with the same powers of (x) correctly during each step of the subtraction. Failing to do so could lead to errors. Therefore, whenever you are dividing polynomials and notice missing terms in the dividend, make sure to include them with a coefficient of zero as placeholders to maintain the proper alignment and obtain the correct quotient and remainder.
-
-**Section 8: Factoring**
-
--   **\#36: GCF of Monomials**
-    Factoring is the process of breaking down a polynomial into a product of simpler polynomials or monomials. It's the reverse of multiplication. One of the first steps in factoring a polynomial is to find the Greatest Common Factor (GCF) of its terms. For monomials (terms with a single variable part), the GCF is the largest factor that divides all the monomials.
-    To find the GCF of two or more monomials, we need to consider both the coefficients (the numerical parts) and the variable parts.
-
-    1. **GCF of the Coefficients:** Find the greatest common factor of the numerical coefficients of the monomials. This is the largest number that divides all the coefficients evenly. For example, the GCF of 6, 12, and 18 is 6\.
-    2. **GCF of the Variable Parts:** For each variable that is common to all the monomials, take the lowest power of that variable that appears in any of the monomials. If a variable is not present in all the monomials, it is not part of the GCF. For example, if we have (x^3), (x^5), and (x^2), the lowest power of (x) is (x^2). If we have (x^3y^2) and (x^2y^4), the lowest power of (x) is (x^2) and the lowest power of (y) is (y^2), so the GCF of the variable parts is (x^2y^2).
-
-    The GCF of the monomials is then the product of the GCF of the coefficients and the GCF of the variable parts.Let's find the GCF of (12x^3y^2), (18x^2y^4), and (30x^5y^3).
-
-    -   The coefficients are 12, 18, and 30\. The GCF of these numbers is 6\.
-    -   The common variables are (x) and (y). The lowest power of (x) is (x^2) (from (18x^2y^4)). The lowest power of (y) is (y^2) (from (12x^3y^2)).
-    -   Therefore, the GCF of the three monomials is (6x^2y^2).
-
-The GCF is the largest monomial that can be factored out from all the given monomials. This concept forms the basis for the next factoring technique.
-
--   **\#37: Factoring out the GCF**
-    Once we have found the Greatest Common Factor (GCF) of the terms of a polynomial, we can factor it out from the polynomial. This is done by dividing each term of the polynomial by the GCF and writing the result as the GCF multiplied by the resulting polynomial in parentheses. Factoring out the GCF is essentially the reverse of the distributive property. If we have a polynomial like (AB \+ AC), where (A) is the GCF, we can factor it as (A(B \+ C)). When we multiply (A) back into ((B \+ C)), we get (AB \+ AC), which is the original polynomial. This provides a way to check if the factoring has been done correctly.
-    Let's factor out the GCF from the polynomial (8x^3 \- 12x^2 \+ 20x).
-    1. First, find the GCF of the terms (8x^3), (-12x^2), and (20x).
-        - GCF of the coefficients 8, \-12, and 20 is 4\.
-        - GCF of the variable parts (x^3), (x^2), and (x) is (x) (since the lowest power of (x) is (x^1)).
-        - So, the GCF of the polynomial is (4x).
-    2. Now, divide each term of the polynomial by the GCF:
-        - (\\frac{8x^3}{4x} \= 2x^2)
-        - (\\frac{-12x^2}{4x} \= \-3x)
-        - (\\frac{20x}{4x} \= 5\)
-    3. Finally, write the factored form as the GCF multiplied by the results in parentheses:
-       \[8x^3 \- 12x^2 \+ 20x \= 4x(2x^2 \- 3x \+ 5)\]
-
-Always look for a GCF as the first step when factoring any polynomial. It can often simplify the problem significantly by reducing the degree or complexity of the remaining polynomial, making it easier to factor further using other techniques. For example, if we had to factor (6x^2 \+ 9x), the GCF is (3x), and factoring it out gives (3x(2x \+ 3)), which is fully factored.
-
--   **\#38: Factoring by Grouping**
-    Factoring by grouping is a technique used to factor polynomials with four or more terms that do not have a common GCF for all terms. The idea is to group the terms in such a way that each group has a common factor, and then, if we are lucky, the resulting factors from each group will themselves have a common factor that we can then factor out.
-    The general steps for factoring by grouping are:
-
-    1. Arrange the terms of the polynomial. Sometimes, you might need to rearrange the terms to find a suitable grouping.
-    2. Group the terms into pairs (usually the first two and the last two).
-    3. Factor out the GCF from each pair of terms.
-    4. If the binomial factor that remains after factoring out the GCF from each pair is the same, then you can factor out this common binomial factor from the entire expression.
-
-    Let's try to factor the polynomial (x^3 \- 2x^2 \+ 5x \- 10\) by grouping.
-
-    1. The polynomial already has four terms, so we can group the first two and the last two: ((x^3 \- 2x^2) \+ (5x \- 10)).
-    2. Factor out the GCF from each group:
-        - From (x^3 \- 2x^2), the GCF is (x^2), so we get (x^2(x \- 2)).
-        - From (5x \- 10), the GCF is 5, so we get (5(x \- 2)).
-    3. Now we have (x^2(x \- 2\) \+ 5(x \- 2)). Notice that both terms have a common binomial factor of ((x \- 2)).
-    4. We can factor out this common binomial factor: ((x \- 2)(x^2 \+ 5)).
-
-So, (x^3 \- 2x^2 \+ 5x \- 10\) factored by grouping is ((x \- 2)(x^2 \+ 5)).Sometimes, you might need to rearrange the terms of the polynomial before you can factor by grouping. For example, if you had (ac \+ ad \+ bc \+ bd), grouping as ((ac \+ ad) \+ (bc \+ bd)) leads to (a(c \+ d) \+ b(c \+ d) \= (c \+ d)(a \+ b)). But if you grouped as ((ac \+ bc) \+ (ad \+ bd)), you would get (c(a \+ b) \+ d(a \+ b) \= (a \+ b)(c \+ d)), which is the same result. The key is to find a grouping that results in a common binomial factor in step 4\.
-
--   **\#39: Factoring Trinomials: a \= 1**
-    A trinomial is a polynomial with three terms. Factoring trinomials, especially quadratic trinomials of the form (ax^2 \+ bx \+ c), is a common task in algebra. This chapter focuses on the case where the leading coefficient (a) is 1, so we are trying to factor trinomials of the form (x^2 \+ bx \+ c).
-    When we multiply two binomials of the form ((x \+ p)(x \+ q)) using FOIL, we get (x^2 \+ qx \+ px \+ pq \= x^2 \+ (p \+ q)x \+ pq). Notice that the coefficient of the (x) term in the resulting trinomial is the sum of (p) and (q), and the constant term is the product of (p) and (q). This gives us a strategy for factoring a trinomial (x^2 \+ bx \+ c): we need to find two numbers, (p) and (q), such that their product is equal to (c) (the constant term) and their sum is equal to (b) (the coefficient of the (x) term). If we can find such numbers, then the trinomial factors as ((x \+ p)(x \+ q)).
-    The signs of (b) and (c) can help us determine the signs of (p) and (q).
-    -   If (c) is positive, then (p) and (q) must have the same sign (both positive or both negative). If (b) is also positive, then both (p) and (q) must be positive. If (b) is negative, then both (p) and (q) must be negative.
-    -   If (c) is negative, then (p) and (q) must have opposite signs (one positive and one negative). The sign of (b) will tell us which number has the larger absolute value. If (b) is positive, the number with the larger absolute value is positive. If (b) is negative, the number with the larger absolute value is negative.
-
-Let's factor (x^2 \+ 7x \+ 10). Here, (b \= 7\) and (c \= 10). We need to find two numbers that multiply to 10 and add to 7\. The pairs of factors of 10 are (1, 10\) and (2, 5). The pair (2, 5\) adds up to 7\. So, (p \= 2\) and (q \= 5). Therefore, (x^2 \+ 7x \+ 10 \= (x \+ 2)(x \+ 5)).Let's factor (x^2 \- 5x \- 14). Here, (b \= \-5) and (c \= \-14). We need two numbers that multiply to \-14 and add to \-5. Since (c) is negative, the numbers must have opposite signs. Factors of 14 are (1, 14\) and (2, 7). We need a difference of 5, so we should use 2 and 7\. Since the sum is \-5, the number with the larger absolute value (7) must be negative, and the other (2) must be positive. So, (p \= 2\) and (q \= \-7). Therefore, (x^2 \- 5x \- 14 \= (x \+ 2)(x \- 7)).
-
--   **\#40: Factoring Trinomials: a ≠ 1**
-    Factoring a trinomial of the form (ax^2 \+ bx \+ c) where the leading coefficient (a) is not 1 is generally more challenging than when (a \= 1). There are several methods to approach this, including the "ac method" (also known as factoring by grouping) and trial and error.
-    The **"ac method"** involves the following steps:
-
-    1. Multiply the leading coefficient (a) by the constant term (c). Let's call this product (ac).
-    2. Find two numbers that multiply to (ac) and add up to (b) (the coefficient of the middle term). Let these two numbers be (m) and (n).
-    3. Rewrite the middle term (bx) as the sum of two terms using (m) and (n): (mx \+ nx). So the trinomial becomes (ax^2 \+ mx \+ nx \+ c).
-    4. Factor this four-term polynomial by grouping. Group the first two terms and the last two terms, and factor out the GCF from each group. If done correctly, the two resulting binomials in parentheses should be the same.
-    5. Factor out this common binomial factor to get the final factored form.
-
-    Let's factor (2x^2 \+ 7x \+ 3\) using the ac method. Here, (a \= 2), (b \= 7), and (c \= 3).
-
-    1. (ac \= 2 \\times 3 \= 6).
-    2. We need two numbers that multiply to 6 and add to 7\. These numbers are 1 and 6\.
-    3. Rewrite the middle term: (7x \= 1x \+ 6x). So, (2x^2 \+ 7x \+ 3\) becomes (2x^2 \+ x \+ 6x \+ 3).
-    4. Factor by grouping:
-        - From (2x^2 \+ x), the GCF is (x), giving (x(2x \+ 1)).
-        - From (6x \+ 3), the GCF is 3, giving (3(2x \+ 1)). Now we have (x(2x \+ 1\) \+ 3(2x \+ 1)).
-    5. Factor out the common binomial factor ((2x \+ 1)): ((2x \+ 1)(x \+ 3)).
-
-So, (2x^2 \+ 7x \+ 3 \= (2x \+ 1)(x \+ 3)).The **trial and error** method involves trying different combinations of binomial factors that would multiply to give the original trinomial. This method can be quicker if you have a good intuition for factoring or if the number of factors of (a) and (c) is small. For (ax^2 \+ bx \+ c), the binomial factors will be of the form ((px \+ q)(rx \+ s)), where (pr \= a), (qs \= c), and (ps \+ qr \= b). You would try different factors of (a) for (p) and (r), and different factors of (c) for (q) and (s), and then check if the middle term (psx \+ qrx) combines to give (bx). This can take some practice.
-
--   **\#41: Special Factoring**
-    Just as there are special products when multiplying polynomials, there are also special factoring patterns that correspond to these products. Recognizing these patterns allows for quick and efficient factoring of certain types of polynomials. The main special factoring patterns are the difference of squares and perfect square trinomials.
-    1. Difference of Squares: A binomial of the form (a^2 \- b^2) can be factored as:
-       \[a^2 \- b^2 \= (a \+ b)(a \- b)\]
-       This pattern occurs when you have two terms that are perfect squares separated by a minus sign. To factor it, you take the square root of each term ((a) and (b)), and then write one factor as the sum of these square roots and the other as the difference. For example, (x^2 \- 9 \= x^2 \- 3^2 \= (x \+ 3)(x \- 3)). Another example: (4y^2 \- 25 \= (2y)^2 \- 5^2 \= (2y \+ 5)(2y \- 5)).
-    2. Perfect Square Trinomials: A trinomial of the form (a^2 \+ 2ab \+ b^2) can be factored as the square of a binomial sum:
-       \[a^2 \+ 2ab \+ b^2 \= (a \+ b)^2\]
-       A trinomial of the form (a^2 \- 2ab \+ b^2) can be factored as the square of a binomial difference:
-       \[a^2 \- 2ab \+ b^2 \= (a \- b)^2\]
-       These patterns occur when the first and last terms of the trinomial are perfect squares, and the middle term is either twice the product of their square roots (for the sum) or the negative of twice their product (for the difference). For example, (x^2 \+ 6x \+ 9). Here, (x^2) is the square of (x), 9 is the square of 3, and (6x) is (2 \\times x \\times 3). So, (x^2 \+ 6x \+ 9 \= (x \+ 3)^2). Another example: (4y^2 \- 12y \+ 9). Here, (4y^2 \= (2y)^2), (9 \= 3^2), and (-12y \= \-2 \\times 2y \\times 3). So, (4y^2 \- 12y \+ 9 \= (2y \- 3)^2).
-
-Recognizing these special factoring patterns can greatly simplify the factoring process when they apply. Always be on the lookout for these forms when trying to factor a polynomial.
-
-| Factoring Pattern        | Formula                           |
-| :----------------------- | :-------------------------------- |
-| Difference of Squares    | (a^2 \- b^2 \= (a \+ b)(a \- b))  |
-| Perfect Square Trinomial | (a^2 \+ 2ab \+ b^2 \= (a \+ b)^2) |
-| Perfect Square Trinomial | (a^2 \- 2ab \+ b^2 \= (a \- b)^2) |
-
-This table summarizes the special factoring formulas, which are the reverse of the special product formulas we learned earlier.
-
--   **\#42: Solving Quadratic Equations by Factoring**
-    A quadratic equation is an equation that can be written in the standard form (ax^2 \+ bx \+ c \= 0), where (a), (b), and (c) are constants and (a \\neq 0). One method for solving quadratic equations is by factoring the quadratic expression on the left side of the equation. This method relies on the zero product property, which states that if the product of two or more factors is zero, then at least one of the factors must be zero. In other words, if (AB \= 0), then (A \= 0\) or (B \= 0\) (or both).
-    The steps to solve a quadratic equation by factoring are:
-
-    1. Rearrange the equation so that it is in the standard form (ax^2 \+ bx \+ c \= 0).
-    2. Factor the quadratic expression (ax^2 \+ bx \+ c) into two linear factors.
-    3. Set each factor equal to zero.
-    4. Solve each of the resulting linear equations to find the values of (x). These values are the solutions (or roots) of the quadratic equation.
-
-    Let's solve the quadratic equation (x^2 \- 5x \+ 6 \= 0\) by factoring.
-
-    1. The equation is already in standard form.
-    2. We need to factor (x^2 \- 5x \+ 6). We are looking for two numbers that multiply to 6 and add to \-5. These numbers are \-2 and \-3. So, the factored form is ((x \- 2)(x \- 3\) \= 0).
-    3. Now, we set each factor equal to zero:
-        - (x \- 2 \= 0\)
-        - (x \- 3 \= 0\)
-    4. Solve each equation:
-        - For (x \- 2 \= 0), add 2 to both sides to get (x \= 2).
-        - For (x \- 3 \= 0), add 3 to both sides to get (x \= 3).
-
-So, the solutions to the quadratic equation (x^2 \- 5x \+ 6 \= 0\) are (x \= 2\) and (x \= 3). We can check these solutions by substituting them back into the original equation. For (x \= 2): (2^2 \- 5(2) \+ 6 \= 4 \- 10 \+ 6 \= 0). For (x \= 3): (3^2 \- 5(3) \+ 6 \= 9 \- 15 \+ 6 \= 0). Both solutions are correct.Not all quadratic equations can be easily factored using integer coefficients. In such cases, other methods like the quadratic formula or completing the square are needed to find the solutions. However, when a quadratic equation can be factored, solving it by factoring is often a quick and efficient method.
-
-**Section 9: Rational Expressions**
-
--   **\#43: Rational Expression Definition**
-    A rational expression is essentially a fraction where the numerator and/or the denominator are polynomials. It has the general form (\\frac{P(x)}{Q(x)}), where (P(x)) and (Q(x)) are polynomials, and (Q(x)) is not the zero polynomial. Just like with numerical fractions, the denominator of a rational expression cannot be zero, because division by zero is undefined. Therefore, any value of the variable (x) that makes the denominator (Q(x)) equal to zero must be excluded from the domain of the rational expression. These values are called excluded values.
-    For example, consider the rational expression (\\frac{x \+ 3}{x \- 2}). The denominator is (x \- 2). If (x \= 2), the denominator becomes (2 \- 2 \= 0), which is undefined. Therefore, (x \= 2\) is an excluded value for this rational expression. The domain of this expression is all real numbers except (x \= 2).
-    Another example is (\\frac{x^2 \- 1}{x^2 \+ 3x \+ 2}). To find the excluded values, we need to find the values of (x) that make the denominator zero. So we set (x^2 \+ 3x \+ 2 \= 0\) and solve for (x). We can factor the quadratic as ((x \+ 1)(x \+ 2\) \= 0). This equation is true if (x \+ 1 \= 0\) or (x \+ 2 \= 0), which means (x \= \-1) or (x \= \-2). Therefore, the excluded values for this rational expression are (x \= \-1) and (x \= \-2). The domain is all real numbers except (x \= \-1) and (x \= \-2).
-    Rational expressions can often be simplified by factoring both the numerator and the denominator and then canceling out any common factors. This process is analogous to reducing numerical fractions to their lowest terms. For instance, in the second example above, we can factor the numerator as a difference of squares: (x^2 \- 1 \= (x \- 1)(x \+ 1)). So the rational expression is (\\frac{(x \- 1)(x \+ 1)}{(x \+ 1)(x \+ 2)}). For any (x \\neq \-1), we can cancel the common factor of ((x \+ 1)), resulting in the simplified expression (\\frac{x \- 1}{x \+ 2}). It's important to note that even though the factor ((x \+ 1)) was canceled, the original excluded value of (x \= \-1) still applies to the original expression.
--   **\#44: Multiplying Rational Expressions**
-    Multiplying rational expressions follows the same rule as multiplying numerical fractions: you multiply the numerators together to get the new numerator, and you multiply the denominators together to get the new denominator. If we have two rational expressions (\\frac{P(x)}{Q(x)}) and (\\frac{R(x)}{S(x)}), their product is:
-    \\
-    It is often helpful to factor the numerators and denominators of the rational expressions first, before multiplying. This allows for easier cancellation of any common factors between the numerator and the denominator, which simplifies the resulting rational expression.
-    Let's consider an example: multiply (\\frac{x \+ 2}{x \- 3}) by (\\frac{x^2 \- 9}{2x \+ 4}).
-    1. Factor the numerators and denominators:
-        - (x \+ 2\) is already factored.
-        - (x \- 3\) is already factored.
-        - (x^2 \- 9\) is a difference of squares, so it factors as ((x \+ 3)(x \- 3)).
-        - In (2x \+ 4), we can factor out a 2, giving (2(x \+ 2)).
-    2. Rewrite the multiplication with the factored forms:
-       \[\\frac{x \+ 2}{x \- 3} \\times \\frac{(x \+ 3)(x \- 3)}{2(x \+ 2)}\]
-    3. Multiply the numerators and the denominators:
-       \[\\frac{(x \+ 2)(x \+ 3)(x \- 3)}{(x \- 3\) \\times 2(x \+ 2)}\]
-    4. Cancel any common factors that appear in both the numerator and the denominator. We can cancel ((x \+ 2)) (provided (x \\neq \-2)) and ((x \- 3)) (provided (x \\neq 3)).
-    5. The simplified result is (\\frac{x \+ 3}{2}).
-
-Remember to state any excluded values from the original expressions. In this case, from (\\frac{x \+ 2}{x \- 3}), (x \\neq 3). From (\\frac{x^2 \- 9}{2x \+ 4}), we have (2x \+ 4 \\neq 0 \\Rightarrow x \\neq \-2) and also (x^2 \- 9\) is in the numerator, but its factors include (x \- 3), which was in the denominator of the first fraction, so (x \\neq 3\) is still relevant. Thus, the product is (\\frac{x \+ 3}{2}) for (x \\neq 3\) and (x \\neq \-2).
-
--   **\#45: LCD of Rational Expressions**
-    Just like with numerical fractions, when we want to add or subtract rational expressions that have different denominators, we need to find a common denominator. The most efficient common denominator to use is the Least Common Denominator (LCD). The LCD of a set of rational expressions is the polynomial of the lowest degree that is a multiple of all the denominators.
-    To find the LCD of two or more rational expressions, we follow these steps:
-
-    1. Factor each denominator completely into its prime factors (which may include polynomials).
-    2. List all the distinct factors that appear in any of the denominators.
-    3. For each distinct factor, take the highest power of that factor that appears in any of the denominators.
-    4. The LCD is the product of all these factors raised to their highest powers.
-
-    Let's find the LCD of the rational expressions (\\frac{1}{x^2 \- 4}) and (\\frac{3}{x^2 \+ x \- 6}).
-
-    1. Factor the denominators:
-        - (x^2 \- 4\) is a difference of squares, so it factors as ((x \- 2)(x \+ 2)).
-        - (x^2 \+ x \- 6\) factors as ((x \+ 3)(x \- 2)) (we need two numbers that multiply to \-6 and add to 1, which are 3 and \-2).
-    2. The distinct factors that appear are ((x \- 2)), ((x \+ 2)), and ((x \+ 3)).
-    3. The highest power of each factor is 1 (since each factor appears at most once in any single denominator's factorization).
-    4. Therefore, the LCD is the product of these factors: ((x \- 2)(x \+ 2)(x \+ 3)).
-
-To use this LCD to add or subtract the rational expressions, we would need to rewrite each fraction with this denominator by multiplying the numerator and denominator by the appropriate factors that are missing from its original denominator. For example, for the first fraction (\\frac{1}{(x \- 2)(x \+ 2)}), we would multiply the numerator and denominator by ((x \+ 3)) to get (\\frac{1 \\times (x \+ 3)}{(x \- 2)(x \+ 2)(x \+ 3)} \= \\frac{x \+ 3}{(x \- 2)(x \+ 2)(x \+ 3)}). Similarly, for the second fraction (\\frac{3}{(x \+ 3)(x \- 2)}), we would multiply the numerator and denominator by ((x \+ 2)) to get (\\frac{3 \\times (x \+ 2)}{(x \+ 3)(x \- 2)(x \+ 2)} \= \\frac{3x \+ 6}{(x \- 2)(x \+ 2)(x \+ 3)}). Now that they have a common denominator, we can add or subtract them.
-
--   **\#46: Adding Rational Expressions**
-    To add rational expressions, just like with numerical fractions, they must have a common denominator. If they already have a common denominator, say (\\frac{P(x)}{Q(x)}) and (\\frac{R(x)}{Q(x)}), then you can add them by adding their numerators and keeping the common denominator:
-    \\
-    If the rational expressions have different denominators, you first need to find a common denominator, preferably the Least Common Denominator (LCD), as discussed in the previous chapter. Once you have the LCD, you rewrite each fraction with this denominator by multiplying both the numerator and the denominator by the appropriate factors. After all the fractions have the same denominator, you can then add their numerators and keep the common denominator. Finally, it's always a good idea to simplify the resulting rational expression if possible, by factoring the numerator and/or the denominator and canceling any common factors.
-    Let's add the two rational expressions from the previous example: (\\frac{1}{x^2 \- 4}) and (\\frac{3}{x^2 \+ x \- 6}). We found that the LCD is ((x \- 2)(x \+ 2)(x \+ 3)). We rewrote them as (\\frac{x \+ 3}{(x \- 2)(x \+ 2)(x \+ 3)}) and (\\frac{3x \+ 6}{(x \- 2)(x \+ 2)(x \+ 3)}). Now we can add them:
-    \[\\frac{x \+ 3}{(x \- 2)(x \+ 2)(x \+ 3)} \+ \\frac{3x \+ 6}{(x \- 2)(x \+ 2)(x \+ 3)} \= \\frac{(x \+ 3\) \+ (3x \+ 6)}{(x \- 2)(x \+ 2)(x \+ 3)}\]
-    \[= \\frac{x \+ 3 \+ 3x \+ 6}{(x \- 2)(x \+ 2)(x \+ 3)} \= \\frac{4x \+ 9}{(x \- 2)(x \+ 2)(x \+ 3)}\]
-    In this case, the numerator (4x \+ 9\) cannot be factored further, so the sum is (\\frac{4x \+ 9}{(x \- 2)(x \+ 2)(x \+ 3)}). Remember to consider any excluded values, which would be (x \= 2), (x \= \-2), and (x \= \-3) (the values that make the LCD zero).
-    The process for subtracting rational expressions is very similar: you need a common denominator, then you subtract the numerators, and keep the common denominator. Be careful to distribute the negative sign to all terms in the numerator of the fraction being subtracted. Finally, simplify the result if possible.
--   **\#47: Complex Rational Expressions**
-    A complex rational expression is a rational expression that contains one or more fractions in its numerator, its denominator, or both. These can look quite complicated, but they can be simplified using a couple of main methods.
-    Method 1: Simplify the numerator and denominator separately, then divide.
-    In this method, you first simplify the numerator into a single fraction (if it isn't already), and then you simplify the denominator into a single fraction. Once you have a single fraction in the numerator and a single fraction in the denominator, you can simplify the complex fraction by treating it as a division problem: (\\frac{\\frac{a}{b}}{\\frac{c}{d}} \= \\frac{a}{b} \\div \\frac{c}{d} \= \\frac{a}{b} \\times \\frac{d}{c}).
-    Let's consider an example: simplify (\\frac{\\frac{1}{x} \+ 1}{\\frac{1}{x} \- 1}).
-    -   Numerator: (\\frac{1}{x} \+ 1 \= \\frac{1}{x} \+ \\frac{x}{x} \= \\frac{1 \+ x}{x}).
-    -   Denominator: (\\frac{1}{x} \- 1 \= \\frac{1}{x} \- \\frac{x}{x} \= \\frac{1 \- x}{x}).
-    -   Now we divide: (\\frac{\\frac{1 \+ x}{x}}{\\frac{1 \- x}{x}} \= \\frac{1 \+ x}{x} \\times \\frac{x}{1 \- x}).
-    -   We can cancel the common factor of (x) (assuming (x \\neq 0)), giving (\\frac{1 \+ x}{1 \- x}).
-
-Method 2: Multiply the numerator and denominator by the LCD of all the inner fractions.In this method, you identify all the smaller fractions that are within the complex fraction and find the least common denominator (LCD) of all their denominators. Then, you multiply both the entire numerator and the entire denominator of the complex fraction by this LCD. This should eliminate all the inner fractions, leaving you with a simpler rational expression that you can then simplify further if needed.Using the same example: (\\frac{\\frac{1}{x} \+ 1}{\\frac{1}{x} \- 1}). The only inner denominator is (x). So the LCD of all inner fractions is (x). We multiply both the numerator and the denominator by (x):\[\\frac{(\\frac{1}{x} \+ 1\) \\times x}{(\\frac{1}{x} \- 1\) \\times x} \= \\frac{\\frac{1}{x} \\times x \+ 1 \\times x}{\\frac{1}{x} \\times x \- 1 \\times x} \= \\frac{1 \+ x}{1 \- x}\]Both methods lead to the same result. The choice of which method to use often depends on the specific complex fraction. The second method can sometimes be quicker if there are multiple inner fractions.
-
--   **\#48: Solving Rational Equations**
-    A rational equation is an equation that contains one or more rational expressions. To solve these equations, a common strategy is to eliminate the denominators by multiplying both sides of the equation by the least common denominator (LCD) of all the rational expressions in the equation. This will transform the rational equation into a polynomial equation (usually linear or quadratic), which we can then solve using the techniques we have learned previously.
-    Let's consider an example: solve the equation (\\frac{2}{x \- 1} \+ \\frac{3}{x \+ 1} \= \\frac{5}{x^2 \- 1}).
-    1. First, find the LCD of the denominators (x \- 1), (x \+ 1), and (x^2 \- 1). Notice that (x^2 \- 1\) factors as ((x \- 1)(x \+ 1)). So the LCD is ((x \- 1)(x \+ 1)).
-    2. Multiply both sides of the equation by the LCD:
-       \[(x \- 1)(x \+ 1\) \\left( \\frac{2}{x \- 1} \+ \\frac{3}{x \+ 1} \\right) \= (x \- 1)(x \+ 1\) \\left( \\frac{5}{(x \- 1)(x \+ 1)} \\right)\]
-    3. Distribute the LCD to each term on the left side:
-       \[(x \- 1)(x \+ 1\) \\times \\frac{2}{x \- 1} \+ (x \- 1)(x \+ 1\) \\times \\frac{3}{x \+ 1} \= 5\]
-    4. Cancel out common factors in each term:
-       \[(x \+ 1\) \\times 2 \+ (x \- 1\) \\times 3 \= 5\]
-       \[2x \+ 2 \+ 3x \- 3 \= 5\]
-    5. Simplify and solve the resulting polynomial equation:
-       \[5x \- 1 \= 5\]
-       \[5x \= 6\]
-       \[x \= \\frac{6}{5}\]
-    6. It is crucial to check your solution(s) in the original equation to make sure they are valid and do not make any of the original denominators zero. In this case, if (x \= \\frac{6}{5}), then (x \- 1 \= \\frac{1}{5} \\neq 0), (x \+ 1 \= \\frac{11}{5} \\neq 0), and (x^2 \- 1 \= (\\frac{36}{25} \- 1\) \= \\frac{11}{25} \\neq 0). So, (x \= \\frac{6}{5}) is a valid solution.
-
-Multiplying by the LCD can sometimes introduce extraneous solutions (solutions that satisfy the transformed equation but not the original one because they would make a denominator zero). Therefore, always check your solutions in the original rational equation.
-
--   **\#49: Applications of Rational Expressions**
-    Rational expressions and equations are useful for modeling and solving various real-world problems, especially those involving rates, proportions, and inverse relationships.
-    **Rate Problems:** These often involve situations where two or more people or machines are working together to complete a task, or where there is a flow rate involved (e.g., filling or emptying a tank). If a person can complete a job in (t) hours, their rate of work is (\\frac{1}{t}) of the job per hour. If two people work together, their combined rate is the sum of their individual rates. For example, if one person can paint a room in 4 hours (rate (\\frac{1}{4}) per hour) and another can do it in 6 hours (rate (\\frac{1}{6}) per hour), their combined rate is (\\frac{1}{4} \+ \\frac{1}{6} \= \\frac{3 \+ 2}{12} \= \\frac{5}{12}) of the room per hour. To find the time it takes them to paint the room together, we take the reciprocal of their combined rate: (\\frac{12}{5}) hours, or 2 hours and 24 minutes.
-    **Mixture Problems:** We saw an example of mixture problems with linear equations earlier. Rational expressions can also be used, especially when dealing with concentrations or proportions. For instance, if you have a solution with a certain percentage of solute, and you add more solute or more solvent, you might need to set up a rational equation to find the new concentration.
-    **Inverse Variation:** As we will see in the next sections, inverse variation is a relationship where one variable is inversely proportional to another. This relationship can be expressed using a rational equation. For example, if the time it takes to travel a certain distance is inversely proportional to the speed, we can write (t \= \\frac{k}{s}), where (t) is time, (s) is speed, and (k) is a constant of proportionality. Problems involving inverse variation often lead to rational equations when we need to find unknown quantities.
-    Rational expressions can also arise in other areas, such as in problems involving averages or costs per unit. The key is to translate the word problem into a mathematical equation using rational expressions that accurately represent the relationships described.
--   **\#50: Direct Variation**
-    Direct variation describes a relationship between two variables where one variable is directly proportional to the other. This means that as one variable increases, the other increases at a constant rate, and as one decreases, the other decreases proportionally. Mathematically, we say that (y) varies directly as (x) if there exists a non-zero constant (k) such that:
-    \[y \= kx\]
-    The constant (k) is called the constant of variation or the constant of proportionality.
-    The graph of a direct variation equation (y \= kx) is a straight line that passes through the origin (0, 0\) with a slope of (k). This is because when (x \= 0), (y \= k(0) \= 0), so the line goes through the origin. The slope (m) of the line is given by the coefficient of (x), which is (k).
-    If (y) varies directly as (x), then the ratio (\\frac{y}{x}) is always constant and equal to (k) (provided (x \\neq 0)). This property can be useful for solving problems involving direct variation. If we know that (y) varies directly as (x), and we are given a pair of corresponding values ((x_1, y_1)), we can find the constant of variation (k) using (k \= \\frac{y_1}{x_1}). Once we know (k), we can use the equation (y \= kx) to find the value of (y) for any other given value of (x), or vice versa.
-    For example, suppose the cost (C) of gasoline varies directly as the number of gallons (g) purchased. If 10 gallons of gasoline cost $35, we can find the constant of variation (k) (which represents the price per gallon) as (k \= \\frac{C}{g} \= \\frac{35}{10} \= 3.5). So the equation is (C \= 3.5g). Now, if we want to find the cost of 15 gallons, we can use this equation: (C \= 3.5 \\times 15 \= 52.5). So, 15 gallons would cost $52.50.
--   **\#51: Inverse Variation**
-    Inverse variation describes a relationship between two variables where one variable is inversely proportional to the other. This means that as one variable increases, the other decreases proportionally, and vice versa. Mathematically, we say that (y) varies inversely as (x) if there exists a non-zero constant (k) such that:
-    \[y \= \\frac{k}{x}\]
-    This can also be written as (xy \= k). The constant (k) is again called the constant of variation or the constant of proportionality.
-    The graph of an inverse variation equation (y \= \\frac{k}{x}) is a hyperbola with the x and y axes as asymptotes. It does not pass through the origin.
-    If (y) varies inversely as (x), then the product (xy) is always constant and equal to (k). This property is useful for solving problems involving inverse variation. If we know that (y) varies inversely as (x), and we are given a pair of corresponding values ((x_1, y_1)), we can find the constant of variation (k) using (k \= x_1y_1). Once we know (k), we can use the equation (y \= \\frac{k}{x}) (or (xy \= k)) to find the value of (y) for any other given value of (x), or vice versa.
-    For example, suppose the time (t) it takes to travel a certain distance varies inversely as the speed (s). If it takes 4 hours to travel the distance at a speed of 60 mph, we can find the constant of variation (k) using (k \= ts \= 4 \\times 60 \= 240). So the equation is (t \= \\frac{240}{s}) (or (ts \= 240), which represents the distance). Now, if we want to find the time it would take to travel the same distance at a speed of 80 mph, we can use this equation: (t \= \\frac{240}{80} \= 3\) hours.
-
-**Section 10: Radicals**
-
--   **\#52: Square Roots**
-    A square root of a number (n) is a number that, when multiplied by itself, equals (n). For example, a square root of 9 is 3 because (3 \\times 3 \= 9), and another square root of 9 is \-3 because ((-3) \\times (-3) \= 9). Every positive number has two square roots, one positive and one negative. The radical symbol, (\\sqrt{}), is used to denote the principal square root, which is the non-negative square root. So, (\\sqrt{9} \= 3). If we want to refer to both square roots, we use the (\\pm) symbol, as in (\\pm \\sqrt{9} \= \\pm 3). The number under the radical symbol is called the radicand.
-    Understanding perfect squares is helpful when working with square roots. A perfect square is a number that can be obtained by squaring an integer (e.g., 1, 4, 9, 16, 25, ...). The square root of a perfect square is an integer. For example, (\\sqrt{16} \= 4\) and (\\sqrt{100} \= 10). If a number is not a perfect square, its square root will be an irrational number (a number that cannot be expressed as a simple fraction and has a non-repeating, non-terminating decimal expansion), such as (\\sqrt{2} \\approx 1.414) or (\\sqrt{3} \\approx 1.732).
-    When we encounter an expression like (\\sqrt{x^2}), we need to be careful. If (x) is positive, then (\\sqrt{x^2} \= x). However, if (x) is negative, then (\\sqrt{x^2} \= |x| \= \-x) (since the principal square root must be non-negative). For example, if (x \= \-3), then (\\sqrt{(-3)^2} \= \\sqrt{9} \= 3), which is (-(-3)).
-
-| Number | Square Root |
-| :----- | :---------- |
-| 1      | 1           |
-| 4      | 2           |
-| 9      | 3           |
-| 16     | 4           |
-| 25     | 5           |
-| 36     | 6           |
-| 49     | 7           |
-| 64     | 8           |
-| 81     | 9           |
-| 100    | 10          |
-| 121    | 11          |
-| 144    | 12          |
-
-This table lists some common perfect squares and their principal square roots. Knowing these can be helpful in simplifying radicals.
-
--   **\#53: The Distance Formula (Continued)**
-    The distance formula is a fundamental tool in coordinate geometry that allows for the calculation of the distance between two points in a Cartesian plane. Its derivation is elegantly rooted in the well-established Pythagorean theorem. Consider two points, ((x_1, y_1)) and ((x_2, y_2)), on a coordinate plane. These two points, along with a third point formed by their x and y coordinates (either ((x_2, y_1)) or ((x_1, y_2))), create a right-angled triangle. The hypotenuse of this triangle is the straight line segment connecting the two original points, and its length represents the distance we wish to find. The other two sides, the legs of the right triangle, are formed by horizontal and vertical line segments. The length of the horizontal leg is determined by the absolute difference in the x-coordinates of the two points, expressed as (|x_2 \- x_1|). Similarly, the length of the vertical leg is given by the absolute difference in their y-coordinates, (|y_2 \- y_1|) \[snippet_id: 53\].
-    Applying the Pythagorean theorem, which states that in a right-angled triangle, the square of the length of the hypotenuse (c) is equal to the sum of the squares of the lengths of the other two sides (a and b), i.e., (c^2 \= a^2 \+ b^2), we can substitute the lengths of the legs we identified. Let (d) represent the distance between the two points (the length of the hypotenuse). Then, according to the Pythagorean theorem in this context, we have:
-    \[d^2 \= |x_2 \- x_1|^2 \+ |y_2 \- y_1|^2\]
-    Since squaring any real number, whether positive or negative, results in a non-negative value, we can remove the absolute value signs without changing the result. This is because ((x_2 \- x_1)^2) will always be equal to (|x_2 \- x_1|^2), and the same holds true for the y-coordinates. Therefore, the equation simplifies to:
-    \[d^2 \= (x_2 \- x_1)^2 \+ (y_2 \- y_1)^2\]
-    To find the distance (d), we take the principal square root of both sides of the equation, yielding the distance formula:
-    \[d \= \\sqrt{(x_2 \- x_1)^2 \+ (y_2 \- y_1)^2}\]
-    This formula provides a direct method to calculate the distance between any two points given their coordinates. The process involves subtracting the x-coordinates, squaring the result, subtracting the y-coordinates, squaring that result, adding these two squared values, and finally taking the square root of the sum. Visualizing these two points and the right triangle formed by them on a coordinate plane can provide a more intuitive understanding of why this formula works \[snippet_id: 53\].
-    The examples provided illustrate the straightforward application of this formula. By substituting the coordinates of the given points into the distance formula, one can readily compute the distance between them. These examples cover various scenarios, including points with positive and negative coordinates, as well as cases where the line segment connecting the points is either horizontal or vertical. In the case of a horizontal line (Example 4), the y-coordinates are the same, resulting in ((y_2 \- y_1)^2 \= 0), and the distance is simply the absolute difference in the x-coordinates. Similarly, for a vertical line (Example 5), the x-coordinates are the same, making ((x_2 \- x_1)^2 \= 0), and the distance is the absolute difference in the y-coordinates. These special cases align with our understanding of distances on a coordinate plane.
--   **\#54: Simplifying Radicals**
-    Simplifying radicals is a crucial skill in algebra that involves rewriting a radical expression in its most basic form, where the number under the radical sign, known as the radicand, does not contain any perfect square factors other than 1\. This process makes radicals easier to interpret and manipulate in further calculations. The fundamental property used for simplifying square roots is (\\sqrt{ab} \= \\sqrt{a} \\times \\sqrt{b}) \[snippet*id: 54\].
-    The general procedure for simplifying a square root involves several steps. First, identify the largest perfect square that is a factor of the radicand. A perfect square is an integer that can be obtained by squaring another integer (e.g., 4, 9, 16, 25, etc.). Once this largest perfect square factor is found, the radicand can be expressed as the product of this perfect square and the remaining factor. Next, apply the property (\\sqrt{ab} \= \\sqrt{a} \\times \\sqrt{b}) to separate the radical into the product of the square root of the perfect square and the square root of the remaining factor. Finally, take the square root of the perfect square, which will be an integer or a simpler radical. The resulting expression, where the radicand of the remaining radical has no other perfect square factors, is the simplified form. While finding the largest perfect square factor directly is efficient, an alternative approach involves using prime factorization. By breaking down the radicand into its prime factors, any prime factor that appears an even number of times indicates a perfect square factor. These pairs of prime factors can be taken out from under the radical sign as a single factor \[snippet_id: 54\].
-    The examples provided clearly demonstrate this process. For instance, to simplify (\\sqrt{32}), we recognize that 16 is the largest perfect square factor of 32 ((32 \= 16 \\times 2)). Thus, (\\sqrt{32} \= \\sqrt{16 \\times 2} \= \\sqrt{16} \\times \\sqrt{2} \= 4\\sqrt{2}). Similarly, for (\\sqrt{75}), the largest perfect square factor is 25 ((75 \= 25 \\times 3)), leading to (\\sqrt{75} \= \\sqrt{25 \\times 3} \= \\sqrt{25} \\times \\sqrt{3} \= 5\\sqrt{3}). The example of (\\sqrt{48}) highlights the importance of finding the \_largest* perfect square factor. While 4 is a factor of 48, using 16 (the largest perfect square factor) directly leads to the simplified form (4\\sqrt{3}), avoiding an extra step of simplification. For (\\sqrt{180}), the largest perfect square factor is 36, resulting in (6\\sqrt{5}). Finally, the example with a variable, (\\sqrt{x^3}), shows how to handle exponents by separating out perfect square powers ((\\sqrt{x^3} \= \\sqrt{x^2 \\times x} \= x\\sqrt{x}) for (x \\geq 0)).
--   **\#55: Adding Radicals**
-    Adding or subtracting radicals requires that they are "like radicals." Like radicals are defined as radicals that possess the same radicand (the number or expression under the radical sign) and the same index (the type of root, which is 2 for square root, 3 for cube root, and so on). In the context of square roots, this simply means that the numbers under the (\\sqrt{}) symbol must be identical. When adding or subtracting like radicals, the process is analogous to combining like terms with variables. The coefficients (the numbers preceding the radical) are added or subtracted, while the radical part remains unchanged. For example, (3\\sqrt{2} \+ 5\\sqrt{2}) can be thought of as 3 groups of (\\sqrt{2}) plus 5 groups of (\\sqrt{2}), resulting in a total of 8 groups of (\\sqrt{2}), or (8\\sqrt{2}) \[snippet_id: 55\]. It is important to explicitly note that radicals with different radicands cannot be directly added or subtracted; for instance, (\\sqrt{2} \+ \\sqrt{3}) does not equal (\\sqrt{5}). This is a common mistake among beginners.
-    If the radicals in an expression are not initially like radicals, it may be possible to simplify them first to see if they can be transformed into like radicals. This often involves using the simplification techniques discussed earlier to extract any perfect square factors from the radicands. Once simplified, the radicals can be checked again to see if they now have the same radicand.
-    The provided examples illustrate this process effectively. In Example 1, (3\\sqrt{5} \+ 7\\sqrt{5}) are already like radicals, so their coefficients are simply added: ((3 \+ 7)\\sqrt{5} \= 10\\sqrt{5}). Similarly, in Example 2, (9\\sqrt{7} \- 4\\sqrt{7}) are like radicals, and their coefficients are subtracted: ((9 \- 4)\\sqrt{7} \= 5\\sqrt{7}). Example 3, (\\sqrt{12} \+ \\sqrt{27}), demonstrates the need for initial simplification. (\\sqrt{12}) simplifies to (2\\sqrt{3}), and (\\sqrt{27}) simplifies to (3\\sqrt{3}). Now that they are like radicals, they can be added: (2\\sqrt{3} \+ 3\\sqrt{3} \= 5\\sqrt{3}). Example 4, (\\sqrt{50} \- \\sqrt{18}), also requires simplification first: (\\sqrt{50} \= 5\\sqrt{2}) and (\\sqrt{18} \= 3\\sqrt{2}). Subtracting these like radicals gives (5\\sqrt{2} \- 3\\sqrt{2} \= 2\\sqrt{2}). Finally, Example 5, (2\\sqrt{8} \+ 3\\sqrt{3}), shows a case where simplification does not lead to like radicals. (2\\sqrt{8}) simplifies to (4\\sqrt{2}), but (3\\sqrt{3}) remains as is. Since (\\sqrt{2}) and (\\sqrt{3}) are different, the expression (4\\sqrt{2} \+ 3\\sqrt{3}) cannot be simplified further.
--   **\#56: Rationalizing the Denominator**
-    Rationalizing the denominator is a standard algebraic technique used to eliminate any radical expressions from the denominator of a fraction. While not strictly necessary for the mathematical value of the fraction in all contexts, it is a convention that often simplifies further calculations and provides a more standard form for expressions. Historically, it also made manual calculation easier before the advent of calculators. The process depends on the form of the denominator \[snippet_id: 56\].
-    In the first case, where the denominator contains a single square root term, such as (\\sqrt{b}), the rationalization is achieved by multiplying both the numerator and the denominator of the fraction by (\\sqrt{b}). This works because the product of a square root by itself results in the original number (i.e., (\\sqrt{b} \\times \\sqrt{b} \= b)), which is rational (contains no radicals). For example, to rationalize (\\frac{5}{\\sqrt{3}}), we multiply both numerator and denominator by (\\sqrt{3}), resulting in (\\frac{5 \\times \\sqrt{3}}{\\sqrt{3} \\times \\sqrt{3}} \= \\frac{5\\sqrt{3}}{3}). Similarly, for (\\frac{\\sqrt{2}}{3\\sqrt{5}}), we multiply by (\\frac{\\sqrt{5}}{\\sqrt{5}}) to get (\\frac{\\sqrt{2} \\times \\sqrt{5}}{3\\sqrt{5} \\times \\sqrt{5}} \= \\frac{\\sqrt{10}}{3 \\times 5} \= \\frac{\\sqrt{10}}{15}).
-    The second case involves denominators that are sums or differences containing square roots, such as (a \+ \\sqrt{b}) or (\\sqrt{a} \- \\sqrt{b}). In these situations, we utilize the concept of conjugates. The conjugate of a binomial of the form (x \+ y) is (x \- y), and their product results in a difference of squares: ((x \+ y)(x \- y) \= x^2 \- y^2). When the binomial involves a square root, this difference of squares eliminates the radical. For instance, the conjugate of (a \+ \\sqrt{b}) is (a \- \\sqrt{b}), and their product is (a^2 \- (\\sqrt{b})^2 \= a^2 \- b). Similarly, the conjugate of (\\sqrt{a} \- \\sqrt{b}) is (\\sqrt{a} \+ \\sqrt{b}), and their product is ((\\sqrt{a})^2 \- (\\sqrt{b})^2 \= a \- b). To rationalize a denominator of this form, we multiply both the numerator and the denominator of the fraction by the conjugate of the denominator.
-    Consider the example (\\frac{2}{1 \+ \\sqrt{3}}). The conjugate of the denominator (1 \+ \\sqrt{3}) is (1 \- \\sqrt{3}). Multiplying the numerator and denominator by the conjugate gives (\\frac{2 \\times (1 \- \\sqrt{3})}{(1 \+ \\sqrt{3})(1 \- \\sqrt{3})} \= \\frac{2 \- 2\\sqrt{3}}{1^2 \- (\\sqrt{3})^2} \= \\frac{2 \- 2\\sqrt{3}}{1 \- 3} \= \\frac{2 \- 2\\sqrt{3}}{-2}). This can be further simplified by dividing each term in the numerator by \-2, yielding (-1 \+ \\sqrt{3}) or (\\sqrt{3} \- 1). Another example is (\\frac{\\sqrt{5}}{\\sqrt{5} \- 2}). The conjugate of (\\sqrt{5} \- 2\) is (\\sqrt{5} \+ 2). Multiplying gives (\\frac{\\sqrt{5} \\times (\\sqrt{5} \+ 2)}{(\\sqrt{5} \- 2)(\\sqrt{5} \+ 2)} \= \\frac{5 \+ 2\\sqrt{5}}{(\\sqrt{5})^2 \- 2^2} \= \\frac{5 \+ 2\\sqrt{5}}{5 \- 4} \= \\frac{5 \+ 2\\sqrt{5}}{1} \= 5 \+ 2\\sqrt{5}). Finally, for a more general case like (\\frac{1}{\\sqrt{x} \+ \\sqrt{y}}), the conjugate of the denominator is (\\sqrt{x} \- \\sqrt{y}), and multiplying gives (\\frac{1 \\times (\\sqrt{x} \- \\sqrt{y})}{(\\sqrt{x} \+ \\sqrt{y})(\\sqrt{x} \- \\sqrt{y})} \= \\frac{\\sqrt{x} \- \\sqrt{y}}{(\\sqrt{x})^2 \- (\\sqrt{y})^2} \= \\frac{\\sqrt{x} \- \\sqrt{y}}{x \- y}).
--   **\#57: Further Operations with Radicals**
-    Beyond addition, subtraction, and simplification, other fundamental operations with radicals include multiplication, division, and raising them to powers. These operations follow specific rules that are closely related to the properties of exponents \[snippet_id: 57\].
-    When multiplying radicals with the same index (such as square roots), we use the property (\\sqrt{a} \\times \\sqrt{b} \= \\sqrt{ab}). If the radicals have coefficients, we multiply the coefficients together and the radicands together. For instance, (2\\sqrt{3} \\times 5\\sqrt{7}) is calculated by multiplying the coefficients (2 and 5\) to get 10 and the radicands (3 and 7\) to get 21, resulting in (10\\sqrt{21}). Another example is (\\sqrt{6} \\times \\sqrt{8}), which equals (\\sqrt{6 \\times 8} \= \\sqrt{48}). This result can then be simplified further as (\\sqrt{16 \\times 3} \= 4\\sqrt{3}). When multiplying a radical by an expression containing radicals, the distributive property may be applied, as seen in (\\sqrt{x}(\\sqrt{x} \+ \\sqrt{y}) \= \\sqrt{x} \\times \\sqrt{x} \+ \\sqrt{x} \\times \\sqrt{y} \= \\sqrt{x^2} \+ \\sqrt{xy} \= |x| \+ \\sqrt{xy}), which simplifies to (x \+ \\sqrt{xy}) if we assume (x \\geq 0). This connection to exponent rules is evident when we consider that (\\sqrt{a} \= a^{1/2}) and (\\sqrt{b} \= b^{1/2}), so (\\sqrt{a} \\times \\sqrt{b} \= a^{1/2} \\times b^{1/2} \= (ab)^{1/2} \= \\sqrt{ab}).
-    For dividing radicals with the same index, we use the property (\\frac{\\sqrt{a}}{\\sqrt{b}} \= \\sqrt{\\frac{a}{b}}). For example, (\\frac{\\sqrt{15}}{\\sqrt{3}} \= \\sqrt{\\frac{15}{3}} \= \\sqrt{5}). If there are coefficients involved, we divide the coefficients and the radicands separately. Consider (\\frac{10\\sqrt{6}}{2\\sqrt{3}}). Dividing the coefficients gives (10 \\div 2 \= 5), and dividing the radicands gives (\\sqrt{6} \\div \\sqrt{3} \= \\sqrt{\\frac{6}{3}} \= \\sqrt{2}). Combining these results, we get (5\\sqrt{2}). This division rule also aligns with exponent properties: (\\frac{\\sqrt{a}}{\\sqrt{b}} \= \\frac{a^{1/2}}{b^{1/2}} \= (\\frac{a}{b})^{1/2} \= \\sqrt{\\frac{a}{b}}).
-    Raising a radical to a power involves using the property ((\\sqrt{a})^n \= \\sqrt{a^n}). A simple case is squaring a square root, such as ((\\sqrt{7})^2 \= \\sqrt{7^2} \= \\sqrt{49} \= 7), where the square operation effectively cancels out the square root. For a higher power, like cubing a square root, we have ((\\sqrt{2})^3 \= \\sqrt{2^3} \= \\sqrt{8}), which can be simplified to (2\\sqrt{2}). When a radical with a coefficient is raised to a power, both the coefficient and the radical are raised to that power. For example, ((3\\sqrt{5})^2 \= 3^2 \\times (\\sqrt{5})^2 \= 9 \\times 5 \= 45).
--   **\#58: Solving Radical Equations**
-    A radical equation is an equation where the variable appears under a radical sign. The primary strategy for solving these equations is to isolate the radical term and then eliminate the radical by raising both sides of the equation to the power corresponding to the index of the root (e.g., squaring for square roots). However, a crucial step in solving radical equations is to always check the solutions obtained in the original equation, as this process of raising both sides to a power can sometimes introduce extraneous solutions, which are solutions that satisfy the transformed equation but not the original one \[snippet_id: 58\]. The reason extraneous solutions may arise is that the squaring operation can make two unequal quantities equal (e.g., ((-a)^2 \= a^2)).
-    The general steps for solving a radical equation involving a square root are as follows: First, if necessary, isolate the radical term on one side of the equation. This means that the radical should be the only term on that side. Second, square both sides of the equation to eliminate the square root. This will result in an equation without radicals, which is usually linear or quadratic. Third, solve the resulting equation using standard algebraic techniques. Finally, and most importantly, substitute each potential solution back into the original radical equation to verify its validity. Discard any solutions that do not satisfy the original equation.
-    The examples provided illustrate these steps. In Example 1, (\\sqrt{x} \= 5), the radical is already isolated. Squaring both sides gives (x \= 25). Checking this solution in the original equation confirms that (\\sqrt{25} \= 5), so it is a valid solution. In Example 2, (\\sqrt{2x \- 1} \= 3), squaring both sides yields (2x \- 1 \= 9), leading to (x \= 5). Checking confirms (\\sqrt{2(5) \- 1} \= \\sqrt{9} \= 3), so (x \= 5\) is the solution. Example 3, (\\sqrt{x \+ 2} \+ 3 \= 7), requires isolating the radical first: (\\sqrt{x \+ 2} \= 4). Squaring both sides gives (x \+ 2 \= 16), so (x \= 14). Checking confirms (\\sqrt{14 \+ 2} \+ 3 \= \\sqrt{16} \+ 3 \= 4 \+ 3 \= 7), making (x \= 14\) a valid solution.
-    Example 4, (\\sqrt{3x \+ 7} \= x \+ 1), demonstrates the possibility of extraneous solutions. Squaring both sides leads to a quadratic equation (3x \+ 7 \= x^2 \+ 2x \+ 1), which simplifies to (x^2 \- x \- 6 \= 0). Factoring gives ((x \- 3)(x \+ 2\) \= 0), with potential solutions (x \= 3\) and (x \= \-2). Checking (x \= 3\) in the original equation gives (\\sqrt{3(3) \+ 7} \= 4\) and (3 \+ 1 \= 4), so it is a valid solution. However, checking (x \= \-2) gives (\\sqrt{3(-2) \+ 7} \= 1\) and (-2 \+ 1 \= \-1), which are not equal, so (x \= \-2) is an extraneous solution. Finally, Example 5, (\\sqrt{x \+ 1} \= \\sqrt{3x \- 5}), involves radicals on both sides. Squaring both sides gives (x \+ 1 \= 3x \- 5), leading to (x \= 3). Checking confirms (\\sqrt{3 \+ 1} \= 2\) and (\\sqrt{3(3) \- 5} \= 2), so (x \= 3\) is the valid solution.
--   **\#59: Fractional Exponents**
-    Fractional exponents offer an alternative notation for representing radicals, providing a powerful way to connect the concepts of roots and powers. An expression with a fractional exponent can be directly translated into radical form, and vice versa. The fundamental definition is (a^{1/n} \= \\sqrt\[n\]{a}), where (n) is a positive integer greater than 1\. This signifies that raising a base (a) to the power of (1/n) is equivalent to taking the (n)th root of (a). For instance, (x^{1/2}) is the square root of (x) ((\\sqrt{x})), (y^{1/3}) is the cube root of (y) ((\\sqrt{y})), and (8^{1/3}) is the cube root of 8, which equals 2 because (2 \\times 2 \\times 2 \= 8\) \[snippet_id: 59\].
-    The more general form of a fractional exponent is (a^{m/n}), where (m) is an integer and (n) is a positive integer greater than 1\. This can be interpreted in two equivalent ways: as the (n)th root of (a) raised to the power of (m), i.e., ((\\sqrt\[n\]{a})^m), or as the (n)th root of (a) raised to the power of (m), i.e., (\\sqrt\[n\]{a^m}). The numerator (m) of the fractional exponent indicates the power to which the base (a) is raised, while the denominator (n) indicates the index of the root to be taken. This unified representation allows the rules of exponents to be applied to expressions involving radicals, often simplifying calculations and providing a deeper understanding of their properties.
-    The examples illustrate the conversion between these forms and the application of exponent rules. Rewriting (x^{3/2}) in radical form, using (a^{m/n} \= \\sqrt\[n\]{a^m}), gives (\\sqrt{x^3}), commonly written as (\\sqrt{x^3}). This is also equivalent to ((\\sqrt{x})^3). Evaluating (8^{2/3}) involves taking the cube root of 8 (which is 2\) and then squaring the result: ((\\sqrt{8})^2 \= 2^2 \= 4). Alternatively, it can be calculated as the cube root of (8^2) (which is 64), and (\\sqrt{64} \= 4). Converting (\\sqrt{y^5}) to fractional exponent form involves recognizing the index of the root as the denominator and the power of the variable as the numerator, resulting in (y^{5/4}). Simplifying (16^{3/4}) can be done by taking the fourth root of 16 (which is 2\) and then cubing the result: ((\\sqrt{16})^3 \= 2^3 \= 8). Finally, simplifying (x^{1/2} \\times x^{3/2}) using the product rule of exponents ((a^m \\times a^n \= a^{m+n})) gives (x^{1/2 \+ 3/2} \= x^{4/2} \= x^2). In radical form, this is (\\sqrt{x} \\times \\sqrt{x^3} \= \\sqrt{x \\times x^3} \= \\sqrt{x^4} \= x^2) (assuming (x \\geq 0)).
-
-**Section 11: Quadratic Equations**
-
--   **\#60: Square Root Property**
-    The square root property is a direct and efficient method for solving quadratic equations that are in a specific form: (x^2 \= k), where (k) is a constant. This property stems from the fundamental relationship between squaring and taking the square root. If (k) is a positive number, then there are precisely two real numbers that, when squared, equal (k). These are the principal square root of (k) (denoted as (\\sqrt{k})) and its negative counterpart (-(\\sqrt{k})). Therefore, the equation (x^2 \= k) has two solutions when (k \> 0), which can be concisely written as (x \= \\pm \\sqrt{k}). If (k \= 0), then the only real number that satisfies the equation (x^2 \= 0\) is (x \= 0), resulting in one real solution. If (k) is a negative number, there are no real solutions, as no real number squared can result in a negative value. In this case, the solutions would be complex numbers involving the imaginary unit (i) ((i^2 \= \-1)), which are typically covered in more advanced algebra courses \[snippet_id: 60\]. The square root property is particularly useful when the quadratic equation lacks a linear term (i.e., the term with (x) to the power of 1).
-    The application of the square root property extends to equations of the form ((ax \+ b)^2 \= k). In such cases, we can treat the entire expression ((ax \+ b)) as a single entity. By taking the square root of both sides of the equation, we get (ax \+ b \= \\pm \\sqrt{k}). From this point, we can solve the resulting linear equations for (x). This method avoids the need to expand the squared term and potentially factor or use other more complex methods. The square root property offers a quick and straightforward way to find the solutions in these specific scenarios.
-    The examples provided illustrate the application of this property. For the equation (x^2 \= 16), using the square root property directly gives (x \= \\pm \\sqrt{16} \= \\pm 4), so the solutions are (x \= 4\) and (x \= \-4). For (y^2 \= 7), the solutions are (y \= \\pm \\sqrt{7}). To solve (3z^2 \= 27), we first isolate the (z^2) term by dividing by 3, resulting in (z^2 \= 9). Then, applying the square root property gives (z \= \\pm \\sqrt{9} \= \\pm 3). For the equation ((x \- 2)^2 \= 25), taking the square root of both sides yields (x \- 2 \= \\pm 5). This leads to two separate linear equations: (x \- 2 \= 5), which gives (x \= 7), and (x \- 2 \= \-5), which gives (x \= \-3). Finally, for ((2w \+ 1)^2 \= 10), taking the square root of both sides gives (2w \+ 1 \= \\pm \\sqrt{10}). Solving for (w) involves subtracting 1 from both sides and then dividing by 2, resulting in (w \= \\frac{-1 \\pm \\sqrt{10}}{2}).
--   **\#61: Completing the Square**
-    Completing the square is a versatile technique used to solve quadratic equations by transforming them into a perfect square trinomial, which can then be easily solved using the square root property. This method is particularly valuable when the quadratic equation cannot be readily factored using simple techniques. Furthermore, the process of completing the square is fundamental to deriving the quadratic formula and is also used to rewrite quadratic expressions in vertex form, which is essential for graphing parabolas \[snippet_id: 61\]. The core idea is to manipulate the quadratic expression (ax^2 \+ bx \+ c) so that it takes the form (a(x \+ h)^2 \+ k).
-    The steps involved in solving a quadratic equation (ax^2 \+ bx \+ c \= 0\) by completing the square are as follows: First, if the coefficient of the (x^2) term (i.e., (a)) is not equal to 1, divide every term in the equation by (a) to make the leading coefficient 1\. Second, move the constant term (the term without (x)) to the right side of the equation. Third, take half of the coefficient of the (x) term, square this value, and add it to both sides of the equation. This seemingly arbitrary step is what "completes the square" on the left side, transforming it into a perfect square trinomial. A perfect square trinomial is a trinomial that can be factored into the square of a binomial. Fourth, rewrite the perfect square trinomial on the left side as a binomial squared in the form ((x \+ h)^2). Fifth, simplify the constant terms on the right side of the equation to obtain a single constant value, say (k). Finally, the equation is now in the form ((x \+ h)^2 \= k), and the square root property can be applied to solve for (x).
-    Consider the example (x^2 \+ 6x \- 7 \= 0). The coefficient of (x^2) is already 1\. Moving the constant term to the right gives (x^2 \+ 6x \= 7). Half of the coefficient of (x) (which is 6\) is 3, and (3^2 \= 9). Adding 9 to both sides gives (x^2 \+ 6x \+ 9 \= 7 \+ 9), which simplifies to ((x \+ 3)^2 \= 16). Using the square root property, (x \+ 3 \= \\pm \\sqrt{16} \= \\pm 4). This leads to two solutions: (x \+ 3 \= 4 \\Rightarrow x \= 1\) and (x \+ 3 \= \-4 \\Rightarrow x \= \-7).
-    Another example, (2x^2 \- 8x \+ 5 \= 0), requires an initial step of dividing by the leading coefficient. Dividing by 2 gives (x^2 \- 4x \+ \\frac{5}{2} \= 0). Moving the constant term yields (x^2 \- 4x \= \-\\frac{5}{2}). Half of the coefficient of (x) (-4) is \-2, and ((-2)^2 \= 4). Adding 4 to both sides gives (x^2 \- 4x \+ 4 \= \-\\frac{5}{2} \+ 4), which simplifies to ((x \- 2)^2 \= \\frac{3}{2}). Applying the square root property, (x \- 2 \= \\pm \\sqrt{\\frac{3}{2}} \= \\pm \\frac{\\sqrt{6}}{2}) (after rationalizing the denominator). Thus, the solutions are (x \= 2 \\pm \\frac{\\sqrt{6}}{2} \= \\frac{4 \\pm \\sqrt{6}}{2}).
--   **\#62: The Quadratic Formula**
-    The quadratic formula is a universally applicable method for finding the solutions, also known as roots, of any quadratic equation that is expressed in the standard form (ax^2 \+ bx \+ c \= 0), where (a), (b), and (c) are constant coefficients and (a) is not equal to zero. This formula is derived by applying the method of completing the square to the general form of the quadratic equation. The power of the quadratic formula lies in its ability to solve any quadratic equation, regardless of whether it can be easily factored or if its solutions are rational, irrational, or even complex \[snippet_id: 62\]. The formula itself is given by:
-    \[x \= \\frac{-b \\pm \\sqrt{b^2 \- 4ac}}{2a}\]
-    To utilize the quadratic formula, one simply needs to identify the values of the coefficients (a), (b), and (c) from the given quadratic equation and substitute these values directly into the formula. The presence of the (\\pm) symbol indicates that there are generally two solutions to a quadratic equation, one obtained by using the plus sign and the other by using the minus sign.
-    A critical component of the quadratic formula is the expression under the radical sign, (b^2 \- 4ac), which is known as the discriminant. The discriminant provides valuable information about the nature and number of solutions to the quadratic equation without actually solving it. If the discriminant is positive ((b^2 \- 4ac \> 0)), the equation has two distinct real solutions. If the discriminant is equal to zero ((b^2 \- 4ac \= 0)), the equation has exactly one real solution, which is sometimes referred to as a repeated root. If the discriminant is negative ((b^2 \- 4ac \< 0)), the equation has no real solutions; instead, it has two complex conjugate solutions, which involve the imaginary unit (i \= \\sqrt{-1}). Furthermore, the value of the discriminant has a graphical interpretation: it indicates the number of x-intercepts of the graph of the corresponding quadratic function (y \= ax^2 \+ bx \+ c). A positive discriminant corresponds to two x-intercepts, a zero discriminant to one x-intercept (where the vertex of the parabola touches the x-axis), and a negative discriminant to no real x-intercepts (the parabola does not intersect the x-axis).
-    The examples illustrate the application of the quadratic formula in different scenarios. For the equation (2x^2 \- 5x \+ 3 \= 0), we have (a \= 2), (b \= \-5), and (c \= 3). Substituting these values into the formula gives:
-    \[x \= \\frac{-(-5) \\pm \\sqrt{(-5)^2 \- 4(2)(3)}}{2(2)} \= \\frac{5 \\pm \\sqrt{25 \- 24}}{4} \= \\frac{5 \\pm \\sqrt{1}}{4} \= \\frac{5 \\pm 1}{4}\]
-    This yields two solutions: (x_1 \= \\frac{5 \+ 1}{4} \= \\frac{6}{4} \= \\frac{3}{2}) and (x_2 \= \\frac{5 \- 1}{4} \= \\frac{4}{4} \= 1).
-    For the equation (x^2 \+ 4x \+ 4 \= 0), we have (a \= 1), (b \= 4), and (c \= 4). Substituting these values gives:
-    \[x \= \\frac{-4 \\pm \\sqrt{4^2 \- 4(1)(4)}}{2(1)} \= \\frac{-4 \\pm \\sqrt{16 \- 16}}{2} \= \\frac{-4 \\pm \\sqrt{0}}{2} \= \\frac{-4}{2} \= \-2\]
-    In this case, the discriminant is zero, resulting in one repeated real solution: (x \= \-2).
-    Finally, for the equation (x^2 \+ x \+ 1 \= 0), we have (a \= 1), (b \= 1), and (c \= 1). Substituting these values gives:
-    \[x \= \\frac{-1 \\pm \\sqrt{1^2 \- 4(1)(1)}}{2(1)} \= \\frac{-1 \\pm \\sqrt{1 \- 4}}{2} \= \\frac{-1 \\pm \\sqrt{-3}}{2}\]
-    Here, the discriminant is negative, indicating that there are no real solutions. The solutions are complex numbers: (x \= \\frac{-1 \+ i\\sqrt{3}}{2}) and (x \= \\frac{-1 \- i\\sqrt{3}}{2}).
-
-**Conclusions**
-
-The exploration of radicals and quadratic equations reveals fundamental concepts in algebra with wide-ranging applications. Understanding the distance formula allows for the calculation of distances in a coordinate plane, a cornerstone of geometry and its applications. The ability to simplify, add, subtract, multiply, and divide radicals, as well as to rationalize denominators, provides essential tools for manipulating and working with expressions involving roots. Solving radical equations introduces the important concept of extraneous solutions and the necessity of verifying results. Fractional exponents offer a powerful connection between radicals and exponents, unifying these concepts and allowing for the application of exponent rules to radical expressions.
-
-Quadratic equations, a step up in complexity from linear equations, are encountered frequently in mathematical modeling of real-world phenomena. The square root property offers a direct solution method for specific forms of quadratic equations. Completing the square not only provides another method for solving quadratic equations but also serves as a foundational technique for deriving the quadratic formula and for understanding the structure of quadratic expressions. The quadratic formula itself stands as a testament to the power of algebraic manipulation, providing a universal method for solving any quadratic equation. The discriminant, a key component of the quadratic formula, offers valuable insights into the nature and number of solutions. Mastering these concepts lays a crucial foundation for further study in algebra and related mathematical disciplines.
+### Definitions
+
+-   **Negative Exponent**: Indicates reciprocal (a⁻ⁿ = 1/aⁿ)
+-   **Quotient Rule**: aᵐ/aⁿ = aᵐ⁻ⁿ
+-   **Reciprocal**: Multiplicative inverse (1/x)
+
+### Rules Expansion
+
+| Rule              | Formula      | Example    |
+| ----------------- | ------------ | ---------- |
+| Negative Exponent | a⁻ⁿ = 1/aⁿ   | 3⁻² = 1/9  |
+| Quotient Rule     | aᵐ/aⁿ = aᵐ⁻ⁿ | x⁷/x³ = x⁴ |
+| Double Negative   | 1/a⁻ⁿ = aⁿ   | 1/y⁻³ = y³ |
+
+### Examples
+
+1. **Negative to Positive**
+
+    - Problem: Rewrite 5⁻³ without negative exponents
+    - Solution:
+        ```
+        5⁻³ = 1/5³ = 1/125
+        ```
+
+2. **Quotient Rule Application**
+
+    - Problem: Simplify (8a⁵b⁻²)/(2a²b⁴)
+    - Solution:
+        ```
+        (8/2) × a⁵⁻² × b⁻²⁻⁴ = 4a³b⁻⁶ = 4a³/b⁶
+        ```
+
+3. **Complex Simplification**
+    - Problem: Simplify (x⁻²y³)⁻² / (xy⁻¹)³
+    - Solution:
+        ```
+        = (x⁴y⁻⁶) / (x³y⁻³) = x⁴⁻³y⁻⁶⁺³ = xy⁻³ = x/y³
+        ```
+
+### Key Takeaways
+
+> -   Negative exponents indicate reciprocals
+> -   Quotient Rule: Subtract exponents when dividing same bases
+> -   Expressions can be rewritten without negative exponents
+> -   Critical for working with scientific notation
+
+## Chapter 28: Scientific Notation
+
+### Definitions
+
+-   **Scientific Notation**: a × 10ⁿ where 1 ≤ |a| < 10
+-   **Coefficient**: The a in a × 10ⁿ (must be 1-10)
+-   **Order of Magnitude**: The power of 10 (n in 10ⁿ)
+
+### Conversion Rules
+
+| Direction             | Action                     | Example             |
+| --------------------- | -------------------------- | ------------------- |
+| Standard → Scientific | Move decimal, count places | 34,500 → 3.45 × 10⁴ |
+| Scientific → Standard | Move decimal per exponent  | 2.1 × 10⁻³ → 0.0021 |
+
+### Examples
+
+1. **Large Number Conversion**
+
+    - Problem: Write 602,200,000,000,000,000,000,000 in scientific notation
+    - Solution:
+        ```
+        6.022 × 10²³ (Avogadro's number)
+        ```
+
+2. **Small Number Conversion**
+
+    - Problem: Express 0.000000025 meters scientifically
+    - Solution:
+        ```
+        2.5 × 10⁻⁸ m
+        ```
+
+3. **Operations in Scientific Notation**
+    - Problem: Multiply (3 × 10⁵) by (2 × 10⁻³)
+    - Solution:
+        ```
+        (3×2) × 10⁵⁺⁽⁻³⁾ = 6 × 10²
+        ```
+
+### Key Takeaways
+
+> -   Used for extremely large/small numbers
+> -   Coefficient must be between 1 and 10
+> -   Exponent shows decimal movement
+> -   Maintains significant figures
+> -   Essential in science and engineering
