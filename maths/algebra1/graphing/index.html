@@ -1,0 +1,2736 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../linear-inequalities/">
+      
+      
+        <link rel="next" href="../functions/">
+      
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>Graphing - ManiMorphs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Sans 3";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#graphing" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="ManiMorphs" class="md-header__button md-logo" aria-label="ManiMorphs" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ManiMorphs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Graphing
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ManiMorphs" class="md-nav__button md-logo" aria-label="ManiMorphs" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
+
+    </a>
+    ManiMorphs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Maths
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pre-Algebra
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Pre-Algebra
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pre-algebra/whole-numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Whole Numbers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pre-algebra/integers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pre-algebra/foundational-number-concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Number Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pre-algebra/fractions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fractions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pre-algebra/ratios-rates-and-proportions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ratios, Rates & Proportions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pre-algebra/decimals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Decimals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pre-algebra/percentages-and-basic-statistics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Percentages & Basic Statistics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pre-algebra/measurement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Algebra 1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Algebra 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linear-equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linear-inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Inequalities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Graphing
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Graphing
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-13-linear-equations-in-two-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 13: Linear Equations in Two Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 13: Linear Equations in Two Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forms-of-linear-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forms of Linear Equations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forms of Linear Equations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Form
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slope-intercept-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slope-Intercept Form
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#point-slope-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Point-Slope Form
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-14-plotting-ordered-pairs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 14: Plotting Ordered Pairs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 14: Plotting Ordered Pairs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-15-graphing-linear-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 15: Graphing Linear Equations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 15: Graphing Linear Equations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-16-slope-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 16: Slope Formula
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 16: Slope Formula">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-forms-or-classifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Forms or Classifications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Forms or Classifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-slope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Slope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-17-equations-of-a-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 17: Equations of a Line
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 17: Equations of a Line">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways Section
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-18-parallel-perpendicular-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 18: Parallel &amp; Perpendicular Lines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 18: Parallel &amp; Perpendicular Lines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forms-or-classifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forms or Classifications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forms or Classifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relationships-between-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relationships Between Lines
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-19-graphing-inequalities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 19: Graphing Inequalities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 19: Graphing Inequalities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forms-or-classifications_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forms or Classifications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forms or Classifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-inequalities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Inequalities
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linear-systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exponents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exponents
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factoring/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Factoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-13-linear-equations-in-two-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 13: Linear Equations in Two Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 13: Linear Equations in Two Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forms-of-linear-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forms of Linear Equations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forms of Linear Equations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Form
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slope-intercept-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slope-Intercept Form
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#point-slope-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Point-Slope Form
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-14-plotting-ordered-pairs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 14: Plotting Ordered Pairs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 14: Plotting Ordered Pairs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-15-graphing-linear-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 15: Graphing Linear Equations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 15: Graphing Linear Equations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-16-slope-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 16: Slope Formula
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 16: Slope Formula">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-forms-or-classifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Forms or Classifications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Forms or Classifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-slope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Slope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-17-equations-of-a-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 17: Equations of a Line
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 17: Equations of a Line">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways Section
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-18-parallel-perpendicular-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 18: Parallel &amp; Perpendicular Lines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 18: Parallel &amp; Perpendicular Lines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forms-or-classifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forms or Classifications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forms or Classifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relationships-between-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relationships Between Lines
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-19-graphing-inequalities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 19: Graphing Inequalities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 19: Graphing Inequalities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forms-or-classifications_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forms or Classifications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forms or Classifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-inequalities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Inequalities
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="graphing"><strong>Graphing</strong></h1>
+<ol>
+<li><strong>Cartesian Coordinate Plane</strong>: A two-dimensional plane formed by two perpendicular number lines (the x-axis and y-axis) that intersect at the origin (0, 0).</li>
+<li><strong>Origin</strong>: The central point of the Cartesian plane at <span class="arithmatex">\((0,0)\)</span>.</li>
+<li>
+<p><strong>Ordered Pair</strong>: A pair of numbers <span class="arithmatex">\((x, y)\)</span> that represents a point in the Cartesian plane, where <span class="arithmatex">\(x\)</span> is the horizontal distance from the origin and <span class="arithmatex">\(y\)</span> is the vertical distance.</p>
+</li>
+<li>
+<p><strong>Quadrants</strong>: The four sections of the Cartesian plane, divided by the x-axis and y-axis:</p>
+<ul>
+<li>Quadrant I: <span class="arithmatex">\(x &gt; 0, y &gt; 0\)</span></li>
+<li>Quadrant II: <span class="arithmatex">\(x &lt; 0, y &gt; 0\)</span></li>
+<li>Quadrant III: <span class="arithmatex">\(x &lt; 0, y &lt; 0\)</span></li>
+<li>Quadrant IV: <span class="arithmatex">\(x &gt; 0, y &lt; 0\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Collinear Points</strong>: Points that lie on the same straight line.</p>
+</li>
+</ol>
+<h2 id="chapter-13-linear-equations-in-two-variables">Chapter 13: Linear Equations in Two Variables</h2>
+<h3 id="definitions">Definitions</h3>
+<ul>
+<li>
+<p><strong>Linear Equation in Two Variables</strong>: An equation of the form <span class="arithmatex">\(Ax + By = C\)</span>, where <span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(B\)</span>, and <span class="arithmatex">\(C\)</span> are constants, and <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> are not both zero.</p>
+</li>
+<li>
+<p><strong>Solution to a Linear Equation</strong>: Any ordered pair <span class="arithmatex">\((x, y)\)</span> that, when substituted into the equation, makes the equation true.</p>
+</li>
+<li>
+<p><strong>Slope</strong>: A measure of the steepness and direction of a line, typically denoted by <span class="arithmatex">\(m\)</span>. It represents the ratio of the vertical change to the horizontal change between any two points on the line.</p>
+</li>
+<li>
+<p><strong>x-intercept</strong>: The point where a line crosses the x-axis (has the form <span class="arithmatex">\((a, 0)\)</span>).</p>
+</li>
+<li>
+<p><strong>y-intercept</strong>: The point where a line crosses the y-axis (has the form <span class="arithmatex">\((0, b)\)</span>).</p>
+</li>
+</ul>
+<h3 id="forms-of-linear-equations">Forms of Linear Equations</h3>
+<h4 id="standard-form">Standard Form</h4>
+<p><span class="arithmatex">\(Ax + By = C\)</span></p>
+<ul>
+<li>Useful for finding x and y intercepts</li>
+<li>x-intercept: <span class="arithmatex">\((\frac{C}{A}, 0)\)</span> when <span class="arithmatex">\(B \neq 0\)</span></li>
+<li>y-intercept: <span class="arithmatex">\((0, \frac{C}{B})\)</span> when <span class="arithmatex">\(A \neq 0\)</span></li>
+</ul>
+<h4 id="slope-intercept-form">Slope-Intercept Form</h4>
+<p><span class="arithmatex">\(y = mx + b\)</span></p>
+<ul>
+<li><span class="arithmatex">\(m\)</span> is the slope of the line</li>
+<li><span class="arithmatex">\(b\)</span> is the y-intercept</li>
+<li>Directly shows how <span class="arithmatex">\(y\)</span> changes as <span class="arithmatex">\(x\)</span> changes</li>
+</ul>
+<h4 id="point-slope-form">Point-Slope Form</h4>
+<p><span class="arithmatex">\(y - y_1 = m(x - x_1)\)</span></p>
+<ul>
+<li><span class="arithmatex">\(m\)</span> is the slope of the line</li>
+<li><span class="arithmatex">\((x_1, y_1)\)</span> is a point on the line</li>
+<li>Useful when a point and slope are known</li>
+</ul>
+<h3 id="examples">Examples</h3>
+<ul>
+<li>
+<p><strong>Example 1: Converting Between Forms</strong></p>
+<ul>
+<li>Problem: Convert the equation <span class="arithmatex">\(3x + 2y = 6\)</span> to slope-intercept form.</li>
+<li>Solution:<ol>
+<li>Start with <span class="arithmatex">\(3x + 2y = 6\)</span></li>
+<li>Solve for <span class="arithmatex">\(y\)</span>:
+    $$
+    2y = 6 - 3x \implies
+    y = \frac{6 - 3x}{2}
+    $$
+    $$
+    y = \frac{6}{2} - \frac{3x}{2} \implies
+    y = 3 - \frac{3}{2}x
+    $$
+    $$
+    y = -\frac{3}{2}x + 3
+    $$</li>
+<li>Now in slope-intercept form, we can identify:<ul>
+<li>Slope <span class="arithmatex">\(m = -\frac{3}{2}\)</span></li>
+<li>y-intercept <span class="arithmatex">\(b = 3\)</span>, or point <span class="arithmatex">\((0, 3)\)</span></li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 2: Finding Intercepts</strong></p>
+<ul>
+<li>Problem: Find the x and y intercepts of the line <span class="arithmatex">\(4x - 5y = 20\)</span>.</li>
+<li>Solution:<ol>
+<li>For x-intercept, set <span class="arithmatex">\(y = 0\)</span>:
+    $$
+    4x - 5(0) = 20 \implies
+    4x = 20
+    $$
+    $$
+    x = 5
+    $$
+    So the x-intercept is at point <span class="arithmatex">\((5, 0)\)</span></li>
+<li>For y-intercept, set <span class="arithmatex">\(x = 0\)</span>:
+    $$
+    4(0) - 5y = 20 \implies
+    -5y = 20
+    $$
+    $$
+    y = -4
+    $$
+    So the y-intercept is at point <span class="arithmatex">\((0, -4)\)</span></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 3: Graphing a Linear Equation</strong></p>
+<ul>
+<li>Problem: Graph the line <span class="arithmatex">\(y = 2x - 3\)</span>.</li>
+<li>Solution:<ol>
+<li>Identify the slope <span class="arithmatex">\(m = 2\)</span> and y-intercept <span class="arithmatex">\(b = -3\)</span></li>
+<li>Plot the y-intercept: <span class="arithmatex">\((0, -3)\)</span></li>
+<li>Use the slope to find another point:
+   Starting from <span class="arithmatex">\((0, -3)\)</span>, move 1 unit right and 2 units up to get <span class="arithmatex">\((1, -1)\)</span></li>
+<li>Draw a line through these points</li>
+</ol>
+</li>
+</ul>
+<p><img alt="Example 3: Graphing a Linear Equation" src="../graph/example3_linear_equation.svg" /></p>
+</li>
+<li>
+<p><strong>Example 4: Finding the Equation of a Line</strong></p>
+<ul>
+<li>Problem: Find the equation of a line passing through the points <span class="arithmatex">\((2, 5)\)</span> and <span class="arithmatex">\((4, 9)\)</span>.</li>
+<li>Solution:<ol>
+<li>Calculate the slope:
+    $$
+    m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{9 - 5}{4 - 2} = \frac{4}{2} = 2
+    $$</li>
+<li>Use point-slope form with <span class="arithmatex">\((x_1, y_1) = (2, 5)\)</span>:
+    $$
+    y - 5 = 2(x - 2) \implies
+    y - 5 = 2x - 4
+    $$
+    $$
+    y = 2x - 4 + 5 \implies
+    y = 2x + 1
+    $$</li>
+<li>The equation in slope-intercept form is <span class="arithmatex">\(y = 2x + 1\)</span>, with slope <span class="arithmatex">\(m = 2\)</span> and y-intercept <span class="arithmatex">\(b = 1\)</span></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 5: Parallel and Perpendicular Lines</strong></p>
+<ul>
+<li>Problem: Find the equation of a line that passes through the point <span class="arithmatex">\((3, 4)\)</span> and is:
+    a) Parallel to the line <span class="arithmatex">\(y = 2x - 5\)</span>
+    b) Perpendicular to the line <span class="arithmatex">\(y = 2x - 5\)</span></li>
+<li>
+<p>Solution:
+    a) Parallel lines have the same slope. Line <span class="arithmatex">\(y = 2x - 5\)</span> has slope <span class="arithmatex">\(m = 2\)</span>.</p>
+<ol>
+<li>Use point-slope form with <span class="arithmatex">\(m = 2\)</span> and <span class="arithmatex">\((x_1, y_1) = (3, 4)\)</span>:
+    $$
+    y - 4 = 2(x - 3) \implies
+    y - 4 = 2x - 6
+    $$
+    $$
+    y = 2x - 6 + 4 \implies
+    y = 2x - 2
+    $$</li>
+<li>The parallel line equation is <span class="arithmatex">\(y = 2x - 2\)</span></li>
+</ol>
+<p>b) Perpendicular lines have slopes that are negative reciprocals: <span class="arithmatex">\(m_1 \times m_2 = -1\)</span></p>
+<ol>
+<li>Original line has slope <span class="arithmatex">\(m_1 = 2\)</span>, so perpendicular slope <span class="arithmatex">\(m_2 = -\frac{1}{2}\)</span></li>
+<li>Use point-slope form with <span class="arithmatex">\(m = -\frac{1}{2}\)</span> and <span class="arithmatex">\((x_1, y_1) = (3, 4)\)</span>:
+    $$
+    y - 4 = -\frac{1}{2}(x - 3) \implies
+    y - 4 = -\frac{1}{2}x + \frac{3}{2}
+    $$
+    $$
+    y = -\frac{1}{2}x + \frac{3}{2} + 4 \implies
+    y = -\frac{1}{2}x + \frac{3}{2} + \frac{8}{2}
+    $$
+    $$
+    y = -\frac{1}{2}x + \frac{11}{2}
+    $$</li>
+<li>The perpendicular line equation is <span class="arithmatex">\(y = -\frac{1}{2}x + \frac{11}{2}\)</span></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 6: Application in Data Analysis</strong></p>
+<ul>
+<li>Problem: A dataset shows the relationship between study time (x) in hours and test score (y) in percentage. Data points: <span class="arithmatex">\((1, 65)\)</span>, <span class="arithmatex">\((2, 70)\)</span>, <span class="arithmatex">\((3, 75)\)</span>, <span class="arithmatex">\((4, 80)\)</span>. Find the linear equation that models this relationship and predict the score for 5 hours of study.</li>
+<li>Solution:<ol>
+<li>Calculate the slope using the first and last points:
+    $$
+    m = \frac{80 - 65}{4 - 1} = \frac{15}{3} = 5
+    $$</li>
+<li>Use point-slope form with <span class="arithmatex">\((x_1, y_1) = (1, 65)\)</span>:
+    $$
+    y - 65 = 5(x - 1) \implies
+    y - 65 = 5x - 5
+    $$
+    $$
+    y = 5x - 5 + 65 \implies
+    y = 5x + 60
+    $$</li>
+<li>The model is <span class="arithmatex">\(y = 5x + 60\)</span>, which means each additional hour of study increases the score by 5 percentage points, with a base score of 60% for 0 hours of study.</li>
+<li>Prediction for 5 hours:
+    $$
+    y = 5(5) + 60 = 25 + 60 = 85
+    $$
+    With 5 hours of study, the predicted test score is 85%.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="key-takeaways">Key Takeaways</h3>
+<blockquote>
+<ul>
+<li>A linear equation in two variables (<span class="arithmatex">\(Ax + By = C\)</span>) represents a straight line when graphed on a Cartesian coordinate plane.</li>
+<li>Every point <span class="arithmatex">\((x, y)\)</span> on this line is a solution to the equation.</li>
+<li>The three common forms of linear equations (Standard, Slope-Intercept, and Point-Slope) each provide different insights into the properties of the line.</li>
+<li>The slope (<span class="arithmatex">\(m\)</span>) measures the steepness and direction of the line, calculated as <span class="arithmatex">\(\frac{\text{rise}}{\text{run}}\)</span> or <span class="arithmatex">\(\frac{y_2 - y_1}{x_2 - x_1}\)</span>.</li>
+<li>Parallel lines have the same slope, while perpendicular lines have slopes that are negative reciprocals of each other (<span class="arithmatex">\(m_1 \times m_2 = -1\)</span>).</li>
+<li>Linear equations can model real-world relationships, allowing us to make predictions based on the model.</li>
+<li>In machine learning, linear equations form the foundation for understanding relationships between features and making predictions.</li>
+</ul>
+</blockquote>
+<h2 id="chapter-14-plotting-ordered-pairs">Chapter 14: Plotting Ordered Pairs</h2>
+<h3 id="definitions_1">Definitions</h3>
+<ul>
+<li><strong>Absolute Value</strong>: The distance of a number from zero, used to determine movement along axes.</li>
+</ul>
+<h3 id="examples_1">Examples</h3>
+<ul>
+<li>
+<p><strong>Example 1: Plotting a Simple Ordered Pair</strong></p>
+<ul>
+<li>
+<p><strong>Problem Statement:</strong> Plot the point <span class="arithmatex">\((3, -2)\)</span> on the Cartesian plane.</p>
+</li>
+<li>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Start at the origin <span class="arithmatex">\((0,0)\)</span>.</li>
+<li>Move 3 units to the right (since <span class="arithmatex">\(x = 3\)</span>).</li>
+<li>Move 2 units down (since <span class="arithmatex">\(y = -2\)</span>).</li>
+<li>Mark the point <span class="arithmatex">\((3, -2)\)</span>.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 2: Identifying the Quadrant of a Point</strong></p>
+<ul>
+<li>
+<p><strong>Problem Statement:</strong> Determine the quadrant of the point <span class="arithmatex">\((-4, 5)\)</span>.</p>
+</li>
+<li>
+<p><strong>Solution:</strong></p>
+<ul>
+<li>The x-coordinate is negative and the y-coordinate is positive.</li>
+<li>According to quadrant rules, the point is in Quadrant II.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 3: Points on Axes</strong></p>
+<ul>
+<li>
+<p><strong>Problem Statement:</strong> Identify the location of <span class="arithmatex">\((0, -7)\)</span>.</p>
+</li>
+<li>
+<p><strong>Solution:</strong></p>
+<ul>
+<li>The x-coordinate is 0, meaning the point lies on the y-axis.</li>
+<li>The point is 7 units below the origin.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 4: Symmetry in Ordered Pairs</strong></p>
+<ul>
+<li>
+<p><strong>Problem Statement:</strong> Reflect the point <span class="arithmatex">\((2,3)\)</span> across the y-axis.</p>
+</li>
+<li>
+<p><strong>Solution:</strong></p>
+<ul>
+<li>The reflection across the y-axis negates the x-coordinate.</li>
+<li>The new point is <span class="arithmatex">\((-2,3)\)</span>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 5: Distance Between Two Points</strong></p>
+<ul>
+<li>
+<p><strong>Problem Statement:</strong> Find the distance between <span class="arithmatex">\((1,2)\)</span> and <span class="arithmatex">\((4,6)\)</span>.</p>
+</li>
+<li>
+<p><strong>Solution:</strong>
+    Using the distance formula:
+    $$
+    D = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+    $$
+    $$
+    D = \sqrt{(4-1)^2 + (6-2)^2}
+    $$
+    $$
+    D = \sqrt{3^2 + 4^2} = \sqrt{9+16} = \sqrt{25} = 5
+    $$</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 6: Real-World Application</strong></p>
+<ul>
+<li>
+<p><strong>Problem Statement:</strong> A drone starts at <span class="arithmatex">\((0,0)\)</span> and moves 5 units east and 3 units north. What is its final position?</p>
+</li>
+<li>
+<p><strong>Solution:</strong></p>
+<ul>
+<li>Move 5 units right (east) → <span class="arithmatex">\((5,0)\)</span></li>
+<li>Move 3 units up (north) → <span class="arithmatex">\((5,3)\)</span></li>
+<li>The final position is <span class="arithmatex">\((5,3)\)</span>.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Plotting Ordered Pairs" src="../graph/example_plotting_ordered_pairs.svg" /></p>
+</li>
+</ul>
+<h3 id="key-takeaways_1">Key Takeaways</h3>
+<blockquote>
+<ul>
+<li>The <strong>distance formula</strong> can be used to calculate the distance between two points.</li>
+<li><strong>Real-world applications</strong> of ordered pairs include navigation, computer graphics, and data visualization.</li>
+</ul>
+</blockquote>
+<h2 id="chapter-15-graphing-linear-equations">Chapter 15: Graphing Linear Equations</h2>
+<h3 id="examples_2">Examples</h3>
+<ul>
+<li>
+<p><strong>Example 1: Plotting Points to Graph a Line</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Graph the equation <span class="arithmatex">\( y = 2x + 1 \)</span> by plotting points.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Choose values for <span class="arithmatex">\( x \)</span>:<ul>
+<li>Let <span class="arithmatex">\( x = 0 \)</span>: <span class="arithmatex">\( y = 2(0) + 1 = 1 \)</span> → Point <span class="arithmatex">\( (0, 1) \)</span></li>
+<li>Let <span class="arithmatex">\( x = 1 \)</span>: <span class="arithmatex">\( y = 2(1) + 1 = 3 \)</span> → Point <span class="arithmatex">\( (1, 3) \)</span></li>
+<li>Let <span class="arithmatex">\( x = -1 \)</span>: <span class="arithmatex">\( y = 2(-1) + 1 = -1 \)</span> → Point <span class="arithmatex">\( (-1, -1) \)</span></li>
+</ul>
+</li>
+<li>Plot the points <span class="arithmatex">\( (0, 1) \)</span>, <span class="arithmatex">\( (1, 3) \)</span>, and <span class="arithmatex">\( (-1, -1) \)</span> on the coordinate plane.</li>
+<li>Draw a straight line through the points.</li>
+</ol>
+</li>
+</ul>
+<p><img alt="Plotting Points" src="../graph/ex1_plotting_points.svg" /></p>
+</li>
+<li>
+<p><strong>Example 2: Using Slope-Intercept Form</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Graph the equation <span class="arithmatex">\( y = -\frac{1}{2}x + 3 \)</span> using the slope-intercept form.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Identify the y-intercept <span class="arithmatex">\( b = 3 \)</span> → Point <span class="arithmatex">\( (0, 3) \)</span>.</li>
+<li>Identify the slope <span class="arithmatex">\( m = -\frac{1}{2} \)</span>.</li>
+<li>From <span class="arithmatex">\( (0, 3) \)</span>, move 2 units to the right (run) and 1 unit down (rise) to find another point <span class="arithmatex">\( (2, 2) \)</span>.</li>
+<li>Draw a line through <span class="arithmatex">\( (0, 3) \)</span> and <span class="arithmatex">\( (2, 2) \)</span>.</li>
+</ol>
+</li>
+</ul>
+<p><img alt="example 2 using slope intercept form" src="../graph/ex2_slope_intercept_graph.svg" /></p>
+</li>
+<li>
+<p><strong>Example 3: Finding X and Y Intercepts</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Graph the equation <span class="arithmatex">\( 3x + 2y = 6 \)</span> using intercepts.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Find the y-intercept by setting <span class="arithmatex">\( x = 0 \)</span>:
+    $$
+    3(0) + 2y = 6 \implies y = 3 \quad \text{→ Point } (0, 3)
+    $$</li>
+<li>Find the x-intercept by setting <span class="arithmatex">\( y = 0 \)</span>:
+    $$
+    3x + 2(0) = 6 \implies x = 2 \quad \text{→ Point } (2, 0)
+    $$</li>
+<li>Plot the points <span class="arithmatex">\( (0, 3) \)</span> and <span class="arithmatex">\( (2, 0) \)</span> and draw the line.</li>
+</ol>
+</li>
+</ul>
+<p><img alt="intercepts_graph" src="../graph/ex3_using_intercepts.svg" /></p>
+</li>
+<li>
+<p><strong>Example 4: Real-World Application</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: A taxi service charges a base fare of $5 plus $2 per mile. Write the equation and graph the cost as a function of miles traveled.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Let <span class="arithmatex">\( x \)</span> = miles traveled, <span class="arithmatex">\( y \)</span> = total cost.</li>
+<li>The equation is <span class="arithmatex">\( y = 2x + 5 \)</span>.</li>
+<li>Graph the line using the y-intercept <span class="arithmatex">\( (0, 5) \)</span> and slope <span class="arithmatex">\( m = 2 \)</span>.</li>
+</ol>
+</li>
+</ul>
+<p><img alt="taxi_cost_graph" src="../graph/ex4_taxi_cost_graph.svg" /></p>
+</li>
+<li>
+<p><strong>Example 5: Horizontal and Vertical Lines</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Graph the lines <span class="arithmatex">\( y = 4 \)</span> and <span class="arithmatex">\( x = -3 \)</span>.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li><span class="arithmatex">\( y = 4 \)</span> is a horizontal line passing through <span class="arithmatex">\( (0, 4) \)</span>.</li>
+<li><span class="arithmatex">\( x = -3 \)</span> is a vertical line passing through <span class="arithmatex">\( (-3, 0) \)</span>.</li>
+</ol>
+</li>
+</ul>
+<p><img alt="horizontal_vertical_graph" src="../graph/ex5_horizontal_vertical_graph.svg" /></p>
+</li>
+</ul>
+<h3 id="key-takeaways_2">Key Takeaways</h3>
+<blockquote>
+<ul>
+<li>The graph of a linear equation is a straight line.</li>
+<li>The slope-intercept form <span class="arithmatex">\( y = mx + b \)</span> is the most efficient way to graph a line.</li>
+<li>The slope <span class="arithmatex">\( m \)</span> determines the steepness and direction of the line.</li>
+<li>The y-intercept <span class="arithmatex">\( b \)</span> is the point where the line crosses the y-axis.</li>
+<li>Real-world applications of linear equations include cost analysis, distance-time relationships, and more.</li>
+<li>Graphing inequalities involves shading the region of the plane that satisfies the inequality.</li>
+</ul>
+</blockquote>
+<h2 id="chapter-16-slope-formula">Chapter 16: Slope Formula</h2>
+<h3 id="definitions_2">Definitions</h3>
+<ul>
+<li>
+<p><strong>Slope (<span class="arithmatex">\( m \)</span>)</strong>: A measure of the steepness and direction of a line. It is calculated as the ratio of the vertical change (rise) to the horizontal change (run) between two points on the line:</p>
+<div class="arithmatex">\[
+m = \frac{y_2 - y_1}{x_2 - x_1}
+\]</div>
+</li>
+</ul>
+<h2 id="2-forms-or-classifications">2. Forms or Classifications</h2>
+<h3 id="types-of-slope">Types of Slope</h3>
+<table>
+<thead>
+<tr>
+<th>Type of Slope</th>
+<th>Description</th>
+<th>Example Equation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Positive Slope</td>
+<td>Line rises from left to right.</td>
+<td><span class="arithmatex">\( y = 2x + 1 \)</span></td>
+</tr>
+<tr>
+<td>Negative Slope</td>
+<td>Line falls from left to right.</td>
+<td><span class="arithmatex">\( y = -3x + 4 \)</span></td>
+</tr>
+<tr>
+<td>Zero Slope</td>
+<td>Horizontal line (no vertical change).</td>
+<td><span class="arithmatex">\( y = 5 \)</span></td>
+</tr>
+<tr>
+<td>Undefined Slope</td>
+<td>Vertical line (no horizontal change).</td>
+<td><span class="arithmatex">\( x = -2 \)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="examples_3">Examples</h3>
+<ul>
+<li>
+<p><strong>Example 1: Calculating Slope from Two Points</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Find the slope of the line passing through the points <span class="arithmatex">\( (1, 2) \)</span> and <span class="arithmatex">\( (3, 6) \)</span>.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Identify the coordinates:
+   [
+   (x_1, y_1) = (1, 2), \quad (x_2, y_2) = (3, 6)
+   ]</li>
+<li>Apply the slope formula:
+   [
+   m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{6 - 2}{3 - 1} = \frac{4}{2} = 2
+   ]
+   The slope is <span class="arithmatex">\( 2 \)</span>.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 2: Negative Slope</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Find the slope of the line passing through the points <span class="arithmatex">\( (-2, 4) \)</span> and <span class="arithmatex">\( (1, -2) \)</span>.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Identify the coordinates:
+   [
+   (x_1, y_1) = (-2, 4), \quad (x_2, y_2) = (1, -2)
+   ]</li>
+<li>Apply the slope formula:
+   [
+   m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{-2 - 4}{1 - (-2)} = \frac{-6}{3} = -2
+   ]
+   The slope is <span class="arithmatex">\( -2 \)</span>.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 3: Zero Slope</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Find the slope of the line passing through the points <span class="arithmatex">\( (3, 5) \)</span> and <span class="arithmatex">\( (7, 5) \)</span>.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Identify the coordinates:
+   [
+   (x_1, y_1) = (3, 5), \quad (x_2, y_2) = (7, 5)
+   ]</li>
+<li>Apply the slope formula:
+   [
+   m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{5 - 5}{7 - 3} = \frac{0}{4} = 0
+   ]
+   The slope is <span class="arithmatex">\( 0 \)</span>, indicating a horizontal line.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 4: Undefined Slope</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Find the slope of the line passing through the points <span class="arithmatex">\( (4, 1) \)</span> and <span class="arithmatex">\( (4, 7) \)</span>.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Identify the coordinates:
+   [
+   (x_1, y_1) = (4, 1), \quad (x_2, y_2) = (4, 7)
+   ]</li>
+<li>Apply the slope formula:
+   [
+   m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{7 - 1}{4 - 4} = \frac{6}{0}
+   ]
+   Division by zero is undefined, so the slope is undefined, indicating a vertical line.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 5: Real-World Application</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: A car travels 100 miles in 2 hours and 200 miles in 4 hours. Calculate the slope (speed) of the car's journey.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Let <span class="arithmatex">\( x \)</span> = time (hours), <span class="arithmatex">\( y \)</span> = distance (miles).</li>
+<li>Identify the points:
+   [
+   (x_1, y_1) = (2, 100), \quad (x_2, y_2) = (4, 200)
+   ]</li>
+<li>Apply the slope formula:
+   [
+   m = \frac{200 - 100}{4 - 2} = \frac{100}{2} = 50
+   ]
+   The slope is <span class="arithmatex">\( 50 \)</span> mph.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="key-takeaways_3">Key Takeaways</h3>
+<blockquote>
+<ul>
+<li>The slope formula <span class="arithmatex">\( m = \frac{y_2 - y_1}{x_2 - x_1} \)</span> calculates the steepness and direction of a line.</li>
+<li>Positive slope indicates an upward trend, while negative slope indicates a downward trend.</li>
+<li>Zero slope corresponds to a horizontal line, and undefined slope corresponds to a vertical line.</li>
+<li>Slope is widely used in real-world applications, such as calculating speed, rates of change, and gradients.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="chapter-17-equations-of-a-line">Chapter 17: Equations of a Line</h2>
+<h3 id="definitions_3">Definitions</h3>
+<ul>
+<li><strong>Slope-Intercept Form</strong>: <span class="arithmatex">\( y = mx + b \)</span>, where <span class="arithmatex">\( m \)</span> is the slope and <span class="arithmatex">\( b \)</span> is the y-intercept.</li>
+<li><strong>Point-Slope Form</strong>: <span class="arithmatex">\( y - y_1 = m(x - x_1) \)</span>, where <span class="arithmatex">\( m \)</span> is the slope and <span class="arithmatex">\( (x_1, y_1) \)</span> is a point on the line.</li>
+<li><strong>Standard Form</strong>: <span class="arithmatex">\( Ax + By = C \)</span>, where <span class="arithmatex">\( A \)</span>, <span class="arithmatex">\( B \)</span>, and <span class="arithmatex">\( C \)</span> are integers.</li>
+<li><strong>Horizontal Line</strong>: <span class="arithmatex">\( y = b \)</span>, where <span class="arithmatex">\( b \)</span> is a constant.</li>
+<li><strong>Vertical Line</strong>: <span class="arithmatex">\( x = a \)</span>, where <span class="arithmatex">\( a \)</span> is a constant.</li>
+</ul>
+<h3 id="examples_4">Examples</h3>
+<ul>
+<li>
+<p><strong>Example 1: Writing an Equation in Slope-Intercept Form</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Write the equation of a line with slope <span class="arithmatex">\( 3 \)</span> and y-intercept <span class="arithmatex">\( -2 \)</span>.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Use the slope-intercept form:
+    $$
+    y = mx + b
+    $$</li>
+<li>Substitute <span class="arithmatex">\( m = 3 \)</span> and <span class="arithmatex">\( b = -2 \)</span>:
+    $$
+    y = 3x - 2
+    $$</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 2: Writing an Equation in Point-Slope Form</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Write the equation of a line with slope <span class="arithmatex">\( -1 \)</span> passing through the point <span class="arithmatex">\( (2, 4) \)</span>.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Use the point-slope form:
+    $$
+    y - y_1 = m(x - x_1)
+    $$</li>
+<li>Substitute <span class="arithmatex">\( m = -1 \)</span>, <span class="arithmatex">\( x_1 = 2 \)</span>, and <span class="arithmatex">\( y_1 = 4 \)</span>:
+    $$
+    y - 4 = -1(x - 2)
+    $$</li>
+<li>Simplify:
+    $$
+    y - 4 = -x + 2 \implies y = -x + 6
+    $$</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 3: Converting to Standard Form</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Convert <span class="arithmatex">\( y = \frac{2}{3}x - 5 \)</span> to standard form.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Start with the slope-intercept form:
+    $$
+    y = \frac{2}{3}x - 5
+    $$</li>
+<li>Multiply all terms by 3 to eliminate the fraction:
+    $$
+    3y = 2x - 15
+    $$</li>
+<li>Rearrange to standard form <span class="arithmatex">\( Ax + By = C \)</span>:
+    $$
+    -2x + 3y = -15
+    $$</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 4: Writing an Equation from Two Points</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Write the equation of the line passing through <span class="arithmatex">\( (1, 3) \)</span> and <span class="arithmatex">\( (4, 9) \)</span>.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Calculate the slope:
+    $$
+    m = \frac{9 - 3}{4 - 1} = \frac{6}{3} = 2
+    $$</li>
+<li>Use the point-slope form with <span class="arithmatex">\( (1, 3) \)</span>:
+    $$
+    y - 3 = 2(x - 1)
+    $$</li>
+<li>Simplify:
+    $$
+    y - 3 = 2x - 2 \implies y = 2x + 1
+    $$</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Example 5: Real-World Application</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: A company's revenue increases by $500 for every additional unit sold. If the revenue is $2000 when 10 units are sold, write the equation of the revenue line.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Let <span class="arithmatex">\( x \)</span> = units sold, <span class="arithmatex">\( y \)</span> = revenue.</li>
+<li>The slope <span class="arithmatex">\( m = 500 \)</span>.</li>
+<li>Use the point <span class="arithmatex">\( (10, 2000) \)</span> in point-slope form:
+    $$
+    y - 2000 = 500(x - 10)
+    $$</li>
+<li>Simplify:
+    $$
+    y - 2000 = 500x - 5000 \implies y = 500x - 3000
+    $$</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="key-takeaways-section">Key Takeaways Section</h3>
+<blockquote>
+<ul>
+<li>The slope-intercept form <span class="arithmatex">\( y = mx + b \)</span> is the most common way to express a linear equation.</li>
+<li>The point-slope form <span class="arithmatex">\( y - y_1 = m(x - x_1) \)</span> is useful when a point and slope are known.</li>
+<li>Standard form <span class="arithmatex">\( Ax + By = C \)</span> is often used in systems of equations.</li>
+<li>Horizontal and vertical lines have unique equations <span class="arithmatex">\( y = b \)</span> and <span class="arithmatex">\( x = a \)</span>, respectively.</li>
+<li>Linear equations are widely used in modeling real-world scenarios, such as revenue and cost analysis.</li>
+</ul>
+</blockquote>
+<h2 id="chapter-18-parallel-perpendicular-lines">Chapter 18: Parallel &amp; Perpendicular Lines</h2>
+<h3 id="definitions_4">Definitions</h3>
+<ul>
+<li><strong>Parallel Lines</strong>: Two lines are parallel if they have the <strong>same slope</strong> and will never intersect.</li>
+<li><strong>Perpendicular Lines</strong>: Two lines are perpendicular if the product of their slopes is <strong>-1</strong> (i.e., their slopes are <strong>negative reciprocals</strong> of each other).</li>
+<li><strong>Slope (<span class="arithmatex">\( m \)</span>)</strong>: The measure of the steepness of a line, calculated as <span class="arithmatex">\( m = \frac{y_2 - y_1}{x_2 - x_1} \)</span>.</li>
+<li><strong>Negative Reciprocal</strong>: If the slope of one line is <span class="arithmatex">\( m \)</span>, the slope of a perpendicular line is <span class="arithmatex">\( -\frac{1}{m} \)</span>.</li>
+</ul>
+<hr />
+<h3 id="forms-or-classifications">Forms or Classifications</h3>
+<h4 id="relationships-between-lines">Relationships Between Lines</h4>
+<table>
+<thead>
+<tr>
+<th>Relationship</th>
+<th>Condition on Slopes</th>
+<th>Example Equations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parallel</td>
+<td><span class="arithmatex">\( m_1 = m_2 \)</span></td>
+<td><span class="arithmatex">\( y = 2x + 3 \)</span> and <span class="arithmatex">\( y = 2x - 1 \)</span></td>
+</tr>
+<tr>
+<td>Perpendicular</td>
+<td><span class="arithmatex">\( m_1 \cdot m_2 = -1 \)</span></td>
+<td><span class="arithmatex">\( y = 2x + 3 \)</span> and <span class="arithmatex">\( y = -\frac{1}{2}x + 4 \)</span></td>
+</tr>
+<tr>
+<td>Neither</td>
+<td>Slopes are neither equal nor negative reciprocals</td>
+<td><span class="arithmatex">\( y = 2x + 3 \)</span> and <span class="arithmatex">\( y = 3x - 1 \)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="examples_5">Examples</h3>
+<ul>
+<li>
+<p><strong>Example 1: Identifying Parallel Lines</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Determine if the lines <span class="arithmatex">\( y = 3x + 2 \)</span> and <span class="arithmatex">\( y = 3x - 5 \)</span> are parallel.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Compare the slopes of both lines:<ul>
+<li>Slope of first line: <span class="arithmatex">\( m_1 = 3 \)</span>.</li>
+<li>Slope of second line: <span class="arithmatex">\( m_2 = 3 \)</span>.</li>
+</ul>
+</li>
+<li>Since <span class="arithmatex">\( m_1 = m_2 \)</span>, the lines are <strong>parallel</strong>.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p><strong>Example 2: Identifying Perpendicular Lines</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Determine if the lines <span class="arithmatex">\( y = 4x + 1 \)</span> and <span class="arithmatex">\( y = -\frac{1}{4}x + 3 \)</span> are perpendicular.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Compare the slopes of both lines:<ul>
+<li>Slope of first line: <span class="arithmatex">\( m_1 = 4 \)</span>.</li>
+<li>Slope of second line: <span class="arithmatex">\( m_2 = -\frac{1}{4} \)</span>.</li>
+</ul>
+</li>
+<li>Check if the product of the slopes is <span class="arithmatex">\(-1\)</span>:
+   [
+   m_1 \cdot m_2 = 4 \cdot \left(-\frac{1}{4}\right) = -1
+   ]</li>
+<li>Since the product is <span class="arithmatex">\(-1\)</span>, the lines are <strong>perpendicular</strong>.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p><strong>Example 3: Writing the Equation of a Parallel Line</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Write the equation of a line parallel to <span class="arithmatex">\( y = -2x + 3 \)</span> that passes through the point <span class="arithmatex">\( (1, 4) \)</span>.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>The slope of the given line is <span class="arithmatex">\( m = -2 \)</span>. A parallel line will have the same slope.</li>
+<li>Use the point-slope form with the point <span class="arithmatex">\( (1, 4) \)</span>:
+   [
+   y - y_1 = m(x - x_1) \implies y - 4 = -2(x - 1)
+   ]</li>
+<li>Simplify:
+   [
+   y - 4 = -2x + 2 \implies y = -2x + 6
+   ]</li>
+<li>The equation of the parallel line is <span class="arithmatex">\( y = -2x + 6 \)</span>.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p><strong>Example 4: Writing the Equation of a Perpendicular Line</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Write the equation of a line perpendicular to <span class="arithmatex">\( y = \frac{3}{4}x - 2 \)</span> that passes through the point <span class="arithmatex">\( (0, 5) \)</span>.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>The slope of the given line is <span class="arithmatex">\( m_1 = \frac{3}{4} \)</span>. The slope of a perpendicular line is the negative reciprocal:
+   [
+   m_2 = -\frac{4}{3}
+   ]</li>
+<li>Use the point-slope form with the point <span class="arithmatex">\( (0, 5) \)</span>:
+   [
+   y - y_1 = m(x - x_1) \implies y - 5 = -\frac{4}{3}(x - 0)
+   ]</li>
+<li>Simplify:
+   [
+   y - 5 = -\frac{4}{3}x \implies y = -\frac{4}{3}x + 5
+   ]</li>
+<li>The equation of the perpendicular line is <span class="arithmatex">\( y = -\frac{4}{3}x + 5 \)</span>.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p><strong>Example 5: Real-World Application</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Two roads intersect at a right angle. The first road follows the equation <span class="arithmatex">\( y = 2x + 1 \)</span>. Find the equation of the second road if it passes through the point <span class="arithmatex">\( (3, 4) \)</span>.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>The slope of the first road is <span class="arithmatex">\( m_1 = 2 \)</span>. The slope of the second road (perpendicular) is:
+   [
+   m_2 = -\frac{1}{2}
+   ]</li>
+<li>Use the point-slope form with the point <span class="arithmatex">\( (3, 4) \)</span>:
+   [
+   y - 4 = -\frac{1}{2}(x - 3)
+   ]</li>
+<li>Simplify:
+   [
+   y - 4 = -\frac{1}{2}x + \frac{3}{2} \implies y = -\frac{1}{2}x + \frac{11}{2}
+   ]</li>
+<li>The equation of the second road is <span class="arithmatex">\( y = -\frac{1}{2}x + \frac{11}{2} \)</span>.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="key-takeaways_4">Key Takeaways</h3>
+<blockquote>
+<ul>
+<li><strong>Parallel lines</strong> have the same slope and never intersect.</li>
+<li><strong>Perpendicular lines</strong> have slopes that are negative reciprocals of each other and intersect at a right angle.</li>
+<li>The slope-intercept form <span class="arithmatex">\( y = mx + b \)</span> is useful for identifying parallel and perpendicular lines.</li>
+<li>Real-world applications include designing roads, buildings, and other structures where angles and orientations are important.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="chapter-19-graphing-inequalities">Chapter 19: Graphing Inequalities</h2>
+<h3 id="definitions_5">Definitions</h3>
+<ul>
+<li><strong>Linear Inequality</strong>: An inequality that can be written in the form <span class="arithmatex">\( Ax + By &lt; C \)</span>, <span class="arithmatex">\( Ax + By &gt; C \)</span>, <span class="arithmatex">\( Ax + By \leq C \)</span>, or <span class="arithmatex">\( Ax + By \geq C \)</span>.</li>
+<li><strong>Boundary Line</strong>: The line corresponding to the equation <span class="arithmatex">\( Ax + By = C \)</span>, which divides the coordinate plane into two regions.</li>
+<li><strong>Shaded Region</strong>: The area of the plane that represents all solutions to the inequality.</li>
+<li><strong>Test Point</strong>: A point used to determine which side of the boundary line satisfies the inequality.</li>
+</ul>
+<hr />
+<h3 id="forms-or-classifications_1">Forms or Classifications</h3>
+<h4 id="types-of-inequalities">Types of Inequalities</h4>
+<table>
+<thead>
+<tr>
+<th>Inequality Symbol</th>
+<th>Boundary Line Type</th>
+<th>Shaded Region</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( &lt; \)</span> or <span class="arithmatex">\( &gt; \)</span></td>
+<td>Dashed line (not included)</td>
+<td>Above or below the boundary line</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \leq \)</span> or <span class="arithmatex">\( \geq \)</span></td>
+<td>Solid line (included)</td>
+<td>Above or below the boundary line</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="examples_6">Examples</h3>
+<ul>
+<li>
+<p><strong>Example 1: Graphing <span class="arithmatex">\( y &gt; 2x + 1 \)</span></strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Graph the inequality <span class="arithmatex">\( y &gt; 2x + 1 \)</span>.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Graph the boundary line <span class="arithmatex">\( y = 2x + 1 \)</span> as a <strong>dashed line</strong> (since the inequality is strict).</li>
+<li>Choose a test point not on the line, such as <span class="arithmatex">\( (0, 0) \)</span>.</li>
+<li>Substitute <span class="arithmatex">\( (0, 0) \)</span> into the inequality:
+   [
+   0 &gt; 2(0) + 1 \implies 0 &gt; 1 \quad \text{(False)}
+   ]</li>
+<li>Shade the region <strong>above</strong> the boundary line, as the test point does not satisfy the inequality.</li>
+</ol>
+</li>
+</ul>
+<p><img alt="inequality_graph_1" src="../graph/ex1_inequality_graph_1.svg" /></p>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p><strong>Example 2: Graphing <span class="arithmatex">\( y \leq -3x + 2 \)</span></strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Graph the inequality <span class="arithmatex">\( y \leq -3x + 2 \)</span>.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Graph the boundary line <span class="arithmatex">\( y = -3x + 2 \)</span> as a <strong>solid line</strong> (since the inequality includes equality).</li>
+<li>Choose a test point not on the line, such as <span class="arithmatex">\( (0, 0) \)</span>.</li>
+<li>Substitute <span class="arithmatex">\( (0, 0) \)</span> into the inequality:
+   [
+   0 \leq -3(0) + 2 \implies 0 \leq 2 \quad \text{(True)}
+   ]</li>
+<li>Shade the region <strong>below</strong> the boundary line, as the test point satisfies the inequality.</li>
+</ol>
+</li>
+</ul>
+<p><img alt="inequality_graph_2" src="../graph/ex2_inequality_graph_2.svg" /></p>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p><strong>Example 3: Graphing <span class="arithmatex">\( 2x + 3y \geq 6 \)</span></strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: Graph the inequality <span class="arithmatex">\( 2x + 3y \geq 6 \)</span>.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Rewrite the inequality in slope-intercept form:
+   [
+   3y \geq -2x + 6 \implies y \geq -\frac{2}{3}x + 2
+   ]</li>
+<li>Graph the boundary line <span class="arithmatex">\( y = -\frac{2}{3}x + 2 \)</span> as a <strong>solid line</strong>.</li>
+<li>Choose a test point not on the line, such as <span class="arithmatex">\( (0, 0) \)</span>.</li>
+<li>Substitute <span class="arithmatex">\( (0, 0) \)</span> into the inequality:
+   [
+   0 \geq -\frac{2}{3}(0) + 2 \implies 0 \geq 2 \quad \text{(False)}
+   ]</li>
+<li>Shade the region <strong>above</strong> the boundary line.</li>
+</ol>
+</li>
+</ul>
+<p><img alt="inequality_graph_3" src="../graph/ex3_inequality_graph_3.svg" /></p>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p><strong>Example 4: Real-World Application</strong></p>
+<ul>
+<li>
+<p><strong>Problem</strong>: A company produces two products, <span class="arithmatex">\( x \)</span> and <span class="arithmatex">\( y \)</span>. The production constraint is <span class="arithmatex">\( 4x + 5y \leq 20 \)</span>. Graph the feasible region.</p>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ol>
+<li>Rewrite the inequality in slope-intercept form:
+   [
+   5y \leq -4x + 20 \implies y \leq -\frac{4}{5}x + 4
+   ]</li>
+<li>Graph the boundary line <span class="arithmatex">\( y = -\frac{4}{5}x + 4 \)</span> as a <strong>solid line</strong>.</li>
+<li>Choose a test point not on the line, such as <span class="arithmatex">\( (0, 0) \)</span>.</li>
+<li>Substitute <span class="arithmatex">\( (0, 0) \)</span> into the inequality:
+   [
+   0 \leq -\frac{4}{5}(0) + 4 \implies 0 \leq 4 \quad \text{(True)}
+   ]</li>
+<li>Shade the region <strong>below</strong> the boundary line.</li>
+</ol>
+</li>
+</ul>
+<p><img alt="feasible_region" src="../graph/ex4_feasible_region.svg" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="key-takeaways_5">Key Takeaways</h2>
+<blockquote>
+<ul>
+<li>Linear inequalities are graphed by first drawing the boundary line and then shading the appropriate region.</li>
+<li>Use a <strong>dashed line</strong> for strict inequalities (<span class="arithmatex">\( &lt; \)</span> or <span class="arithmatex">\( &gt; \)</span>) and a <strong>solid line</strong> for inclusive inequalities (<span class="arithmatex">\( \leq \)</span> or <span class="arithmatex">\( \geq \)</span>).</li>
+<li>A <strong>test point</strong> helps determine which side of the boundary line to shade.</li>
+<li>Graphing inequalities is essential in optimization problems, such as linear programming.</li>
+</ul>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

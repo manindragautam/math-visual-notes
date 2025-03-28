@@ -1,0 +1,232 @@
+/* Custom MkDocs Material Theme Stylesheet for Math Notes
+ * Features:
+ * - Visually appealing with bold colors and strong contrasts
+ * - Brain-friendly typography and spacing
+ * - Dynamic visuals for better engagement
+ * - Preserves original navigation and TOC styling
+ */
+
+/* Content area styling - avoiding nav and TOC */
+.md-content {
+    --content-bg: #fcfcfc;
+    --text-color: #333;
+    --accent-color: #2196f3;
+    --accent-hover: #0b7ad4;
+    --heading-color: #01579b;
+    --blockquote-bg: #e3f2fd;
+    --code-bg: #e8f5e9;
+    --table-header-bg: #1976d2;
+    --table-header-color: white;
+    --table-border: #bbdefb;
+    --table-alternate: #f5f5f5;
+    --definition-bg: #fff8e1;
+    --theorem-bg: #e8eaf6;
+    --proof-bg: #f3e5f5;
+    --example-bg: #e0f2f1;
+
+    background-color: var(--content-bg);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+/* Typography improvements for math content */
+.md-content {
+    font-size: 1.05rem;
+    font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial,
+        sans-serif;
+}
+
+/* Headings with strong visual hierarchy */
+.md-content h1 {
+    color: var(--heading-color);
+    font-size: 2.2rem;
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+.md-content h2 {
+    color: var(--heading-color);
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.3rem;
+    margin-top: 1.8rem;
+}
+
+.md-content h3 {
+    color: var(--heading-color);
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.md-content h4 {
+    color: var(--heading-color);
+    font-size: 1.3rem;
+    margin-top: 1.3rem;
+}
+
+/* Bold emphasis with stronger visual impact */
+.md-content strong {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+/* Blockquotes for key points or definitions */
+.md-content blockquote {
+    background-color: var(--blockquote-bg);
+    border-left: 5px solid var(--accent-color);
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Code blocks for formulas or algorithms */
+.md-content pre {
+    background-color: var(--code-bg);
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.md-content code {
+    background-color: var(--code-bg);
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: "Fira Mono", "Roboto Mono", monospace;
+}
+
+/* Tables with better visibility */
+.md-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.md-content th {
+    background-color: var(--table-header-bg);
+    color: var(--table-header-color);
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.md-content td {
+    padding: 0.8rem;
+    border: 1px solid var(--table-border);
+}
+
+.md-content tr:nth-child(even) {
+    background-color: var(--table-alternate);
+}
+
+/* Links with dynamic hover effects */
+.md-content a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.md-content a:hover {
+    color: var(--accent-hover);
+    border-bottom: 1px solid var(--accent-hover);
+}
+
+/* Lists with better spacing and visual indicators */
+.md-content ul,
+.md-content ol {
+    padding-left: 1.8rem;
+    margin: 1rem 0;
+}
+
+.md-content li {
+    margin-bottom: 0.5rem;
+}
+
+.md-content ul li::marker {
+    color: var(--accent-color);
+}
+
+.md-content ol li::marker {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Math-specific custom blocks using admonitions */
+.md-content .admonition.definition {
+    background-color: var(--definition-bg);
+    border-left: 5px solid #ffc107;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.md-content .admonition.theorem {
+    background-color: var(--theorem-bg);
+    border-left: 5px solid #3f51b5;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.md-content .admonition.proof {
+    background-color: var(--proof-bg);
+    border-left: 5px solid #9c27b0;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.md-content .admonition.example {
+    background-color: var(--example-bg);
+    border-left: 5px solid #009688;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* MathJax specific styling */
+.md-content .MathJax {
+    font-size: 110% !important;
+}
+
+/* Better spacing around math displays */
+.md-content p {
+    margin: 1rem 0;
+}
+
+/* Focus effect when clicking on formula blocks */
+.md-content .MathJax:focus,
+.md-content .MathJax:hover {
+    outline: 2px solid var(--accent-color);
+    border-radius: 4px;
+    transition: outline 0.2s ease;
+}
+
+/* Dark mode support (optional) */
+[data-md-color-scheme="slate"] .md-content {
+    --content-bg: #1a1a1a;
+    --text-color: #eee;
+    --heading-color: #81d4fa;
+    --accent-color: #29b6f6;
+    --accent-hover: #4fc3f7;
+    --blockquote-bg: #263238;
+    --code-bg: #1b5e20;
+    --table-header-bg: #01579b;
+    --table-header-color: white;
+    --table-border: #0d47a1;
+    --table-alternate: #263238;
+    --definition-bg: #33291a;
+    --theorem-bg: #1a237e;
+    --proof-bg: #4a148c;
+    --example-bg: #004d40;
+}
