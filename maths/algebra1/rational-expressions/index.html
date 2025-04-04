@@ -26,6 +26,9 @@
     
       <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
       
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
       
 
 
@@ -57,7 +60,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -107,6 +117,32 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -1151,6 +1187,28 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quadratic-equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quadratic Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1604,12 +1662,12 @@
 <li><strong>Domain</strong>: All real numbers except excluded values</li>
 </ul>
 <h3 id="examples">Examples</h3>
-<ol>
+<ul>
 <li>
 <p><strong>Example 1</strong>: Find excluded values for (x+3)/(x-2)</p>
 <ul>
 <li>Denominator zero when: $$ x - 2 = 0 $$<br />
-  $$ x = 2 $$</li>
+    $$ x = 2 $$</li>
 <li>Excluded value: $$ x \neq 2 $$</li>
 </ul>
 </li>
@@ -1628,7 +1686,7 @@
 <li>Simplify: $$ \frac{x+2}{x} $$ (where $$ x \neq 0, 2 $$)</li>
 </ul>
 </li>
-</ol>
+</ul>
 <h3 id="key-takeaways">Key Takeaways</h3>
 <blockquote>
 <ul>
@@ -1647,7 +1705,7 @@
 <li>State excluded values</li>
 </ol>
 <h3 id="examples_1">Examples</h3>
-<ol>
+<ul>
 <li>
 <p><strong>Example 1</strong>: Multiply (x+2)/(x-3) × (x²-9)/(2x+4)</p>
 <ul>
@@ -1663,7 +1721,7 @@
 <li>Simplify: $$ \frac{1}{2x(x-2)} $$ ($$ x \neq 0, 2, -2 $$)</li>
 </ul>
 </li>
-</ol>
+</ul>
 <h3 id="key-takeaways_1">Key Takeaways</h3>
 <blockquote>
 <ul>
@@ -1681,12 +1739,12 @@
 <li>Take highest power of each factor</li>
 </ol>
 <h3 id="examples_2">Examples</h3>
-<ol>
+<ul>
 <li>
 <p><strong>Example 1</strong>: Find LCD of 1/(x²-4) and 3/(x²+x-6)</p>
 <ul>
 <li>Factor: $$ x^2-4 = (x+2)(x-2) $$<br />
-  $$ x^2+x-6 = (x+3)(x-2) $$</li>
+    $$ x^2+x-6 = (x+3)(x-2) $$</li>
 <li>LCD: $$ (x+2)(x-2)(x+3) $$</li>
 </ul>
 </li>
@@ -1694,11 +1752,11 @@
 <p><strong>Example 2</strong>: Find LCD of 2/(x³-x) and 5/(x²+2x+1)</p>
 <ul>
 <li>Factor: $$ x^3-x = x(x-1)(x+1) $$<br />
-  $$ x^2+2x+1 = (x+1)^2 $$</li>
+    $$ x^2+2x+1 = (x+1)^2 $$</li>
 <li>LCD: $$ x(x-1)(x+1)^2 $$</li>
 </ul>
 </li>
-</ol>
+</ul>
 <h3 id="key-takeaways_2">Key Takeaways</h3>
 <blockquote>
 <ul>
@@ -1717,7 +1775,7 @@
 <li>Simplify</li>
 </ol>
 <h3 id="examples_3">Examples</h3>
-<ol>
+<ul>
 <li>
 <p><strong>Example 1</strong>: Add 1/(x²-4) + 3/(x²+x-6)</p>
 <ul>
@@ -1734,7 +1792,7 @@
 <li>Subtract: $$ \frac{2-x}{x(x+1)} $$</li>
 </ul>
 </li>
-</ol>
+</ul>
 <h3 id="key-takeaways_3">Key Takeaways</h3>
 <blockquote>
 <ul>
@@ -1757,17 +1815,17 @@
 <li>Multiply numerator and denominator by LCD</li>
 </ol>
 <h3 id="examples_4">Examples</h3>
-<ol>
+<ul>
 <li>
 <p><strong>Example 1</strong>: Simplify (1/x + 1)/(1/x - 1)</p>
 <ul>
 <li>
 <p>Method 1:<br />
-  $$ \frac{(1+x)/x}{(1-x)/x} = \frac{1+x}{1-x} $$</p>
+    $$ \frac{(1+x)/x}{(1-x)/x} = \frac{1+x}{1-x} $$</p>
 </li>
 <li>
 <p>Method 2 (LCD=x):<br />
-  $$ \frac{(1+x)}{(1-x)} $$</p>
+    $$ \frac{(1+x)}{(1-x)} $$</p>
 </li>
 </ul>
 </li>
@@ -1778,7 +1836,7 @@
 <li>Multiply: $$ \frac{2+3(x+1)}{(x+1)-1} = \frac{3x+5}{x} $$</li>
 </ul>
 </li>
-</ol>
+</ul>
 <h3 id="key-takeaways_4">Key Takeaways</h3>
 <blockquote>
 <ul>
@@ -1797,7 +1855,7 @@
 <li>Check for extraneous solutions</li>
 </ol>
 <h3 id="examples_5">Examples</h3>
-<ol>
+<ul>
 <li>
 <p><strong>Example 1</strong>: Solve 2/(x-1) + 3/(x+1) = 5/(x²-1)</p>
 <ul>
@@ -1816,7 +1874,7 @@
 <li>Check: Valid</li>
 </ul>
 </li>
-</ol>
+</ul>
 <h3 id="key-takeaways_5">Key Takeaways</h3>
 <blockquote>
 <ul>
@@ -1833,7 +1891,7 @@
 <li>Time = 1/rate</li>
 </ul>
 <h3 id="examples_6">Examples</h3>
-<ol>
+<ul>
 <li>
 <p><strong>Example 1</strong>: If Pipe A fills tank in 4 hours, Pipe B in 6 hours, how long together?</p>
 <ul>
@@ -1848,7 +1906,7 @@
 <li>Solve: $$ b=75 $$ mph</li>
 </ul>
 </li>
-</ol>
+</ul>
 <h3 id="key-takeaways_6">Key Takeaways</h3>
 <blockquote>
 <ul>
@@ -1862,7 +1920,7 @@
 <h3 id="definition">Definition</h3>
 <p>$$ y = kx $$ where k is constant</p>
 <h3 id="examples_7">Examples</h3>
-<ol>
+<ul>
 <li>
 <p><strong>Example 1</strong>: If y varies directly with x and y=15 when x=3, find y when x=7</p>
 <ul>
@@ -1879,7 +1937,7 @@
 <li>Solve: $$ d=60(5)=300 $$ miles</li>
 </ul>
 </li>
-</ol>
+</ul>
 <h3 id="key-takeaways_7">Key Takeaways</h3>
 <blockquote>
 <ul>
@@ -1893,7 +1951,7 @@
 <h3 id="definition_1">Definition</h3>
 <p><span class="arithmatex">\( y = k/x \)</span> or <span class="arithmatex">\( xy = k \)</span></p>
 <h3 id="examples_8">Examples</h3>
-<ol>
+<ul>
 <li>
 <p><strong>Example 1</strong>: If y varies inversely with x and y=4 when x=6, find y when x=3</p>
 <ul>
@@ -1910,7 +1968,7 @@
 <li>Solve: $$ t=40/10=4 $$ hours</li>
 </ul>
 </li>
-</ol>
+</ul>
 <h3 id="key-takeaways_8">Key Takeaways</h3>
 <blockquote>
 <ul>
