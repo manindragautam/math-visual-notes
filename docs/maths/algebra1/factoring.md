@@ -14,28 +14,28 @@
 
 ### Examples
 
-1. **Example 1**: Find GCF of 6x³ and 12x²
+-   **Example 1**: Find GCF of 6x³ and 12x²
 
-    - Coefficients: GCF(6,12) = 6
-    - Variables: x² (lower exponent)
-    - Solution: $$ 6x^2 $$
+    -   Coefficients: GCF(6,12) = 6
+    -   Variables: x² (lower exponent)
+    -   Solution: $$ 6x^2 $$
 
-2. **Example 2**: Find GCF of 15y⁴ and 25y²
+-   **Example 2**: Find GCF of 15y⁴ and 25y²
 
-    - Coefficients: GCF(15,25) = 5
-    - Variables: y²
-    - Solution: $$ 5y^2 $$
+    -   Coefficients: GCF(15,25) = 5
+    -   Variables: y²
+    -   Solution: $$ 5y^2 $$
 
-3. **Example 3**: Find GCF of 8a²b³ and 12a⁴b
+-   **Example 3**: Find GCF of 8a²b³ and 12a⁴b
 
-    - Coefficients: GCF(8,12) = 4
-    - Variables: a²b (lowest exponents)
-    - Solution: $$ 4a^2b $$
+    -   Coefficients: GCF(8,12) = 4
+    -   Variables: a²b (lowest exponents)
+    -   Solution: $$ 4a^2b $$
 
-4. **Example 4**: Find GCF of 18x³y²z, 24x²y⁴, 30x⁵z²
-    - Coefficients: GCF(18,24,30) = 6
-    - Variables: x² (only common variable is x, lowest exponent 2)
-    - Solution: $$ 6x^2 $$
+-   **Example 4**: Find GCF of 18x³y²z, 24x²y⁴, 30x⁵z²
+    -   Coefficients: GCF(18,24,30) = 6
+    -   Variables: x² (only common variable is x, lowest exponent 2)
+    -   Solution: $$ 6x^2 $$
 
 ### Key Takeaways
 
@@ -55,24 +55,24 @@
 
 ### Examples
 
-1. **Example 1**: Factor 6x² + 9x
+-   **Example 1**: Factor 6x² + 9x
 
-    - GCF = 3x
-    - $$ 6x^2 ÷ 3x = 2x $$
-    - $$ 9x ÷ 3x = 3 $$
-    - Solution: $$ 3x(2x + 3) $$
+    -   GCF = 3x
+    -   $$ 6x^2 ÷ 3x = 2x $$
+    -   $$ 9x ÷ 3x = 3 $$
+    -   Solution: $$ 3x(2x + 3) $$
 
-2. **Example 2**: Factor 8y³ - 12y² + 20y
+-   **Example 2**: Factor 8y³ - 12y² + 20y
 
-    - GCF = 4y
-    - $$ 8y³ ÷ 4y = 2y² $$
-    - $$ -12y² ÷ 4y = -3y $$
-    - $$ 20y ÷ 4y = 5 $$
-    - Solution: $$ 4y(2y^2 - 3y + 5) $$
+    -   GCF = 4y
+    -   $$ 8y³ ÷ 4y = 2y² $$
+    -   $$ -12y² ÷ 4y = -3y $$
+    -   $$ 20y ÷ 4y = 5 $$
+    -   Solution: $$ 4y(2y^2 - 3y + 5) $$
 
-3. **Example 3**: Factor 5a²b + 10ab² - 15ab
-    - GCF = 5ab
-    - Solution: $$ 5ab(a + 2b - 3) $$
+-   **Example 3**: Factor 5a²b + 10ab² - 15ab
+    -   GCF = 5ab
+    -   Solution: $$ 5ab(a + 2b - 3) $$
 
 ### Verification
 
@@ -97,16 +97,16 @@ $$4y(2y^2 - 3y + 5) = 8y³ - 12y² + 20y $$
 
 ### Examples
 
-1. **Example 1**: Factor x³ - 2x² + 5x - 10
+-   **Example 1**: Factor x³ - 2x² + 5x - 10
 
-    - Group: $$ (x³ - 2x²) + (5x - 10) $$
-    - Factor pairs: $$ x²(x - 2) + 5(x - 2) $$
-    - Common binomial: $$ (x - 2)(x² + 5) $$
+    -   Group: $$ (x³ - 2x²) + (5x - 10) $$
+    -   Factor pairs: $$ x²(x - 2) + 5(x - 2) $$
+    -   Common binomial: $$ (x - 2)(x² + 5) $$
 
-2. **Example 2**: Factor 2xy + 3x + 2y + 3
-    - Group: $$ (2xy + 3x) + (2y + 3) $$
-    - Factor pairs: $$ x(2y + 3) + 1(2y + 3) $$
-    - Solution: $$ (2y + 3)(x + 1) $$
+-   **Example 2**: Factor 2xy + 3x + 2y + 3
+    -   Group: $$ (2xy + 3x) + (2y + 3) $$
+    -   Factor pairs: $$ x(2y + 3) + 1(2y + 3) $$
+    -   Solution: $$ (2y + 3)(x + 1) $$
 
 ### Key Takeaways
 
@@ -127,14 +127,14 @@ Find two numbers that:
 
 ### Examples
 
-1. **Example 1**: Factor x² + 7x + 10
+-   **Example 1**: Factor x² + 7x + 10
 
-    - Numbers: 2 and 5 (2×5=10, 2+5=7)
-    - Solution: $$ (x + 2)(x + 5) $$
+    -   Numbers: 2 and 5 (2×5=10, 2+5=7)
+    -   Solution: $$ (x + 2)(x + 5) $$
 
-2. **Example 2**: Factor x² - 5x - 14
-    - Numbers: 2 and -7 (2×-7=-14, 2-7=-5)
-    - Solution: $$ (x + 2)(x - 7) $$
+-   **Example 2**: Factor x² - 5x - 14
+    -   Numbers: 2 and -7 (2×-7=-14, 2-7=-5)
+    -   Solution: $$ (x + 2)(x - 7) $$
 
 ### Sign Rules
 
@@ -164,13 +164,13 @@ Find two numbers that:
 
 ### Examples
 
-1. **Example 1**: Factor 2x² + 7x + 3
-    - ac = 6 (2×3)
-    - Factors: 1 and 6
-    - Rewrite: $$ 2x² + x + 6x + 3 $$
-    - Group: $$ (2x² + x) + (6x + 3) $$
-    - Factor: $$ x(2x + 1) + 3(2x + 1) $$
-    - Solution: $$ (2x + 1)(x + 3) $$
+-   **Example 1**: Factor 2x² + 7x + 3
+    -   ac = 6 (2×3)
+    -   Factors: 1 and 6
+    -   Rewrite: $$ 2x² + x + 6x + 3 $$
+    -   Group: $$ (2x² + x) + (6x + 3) $$
+    -   Factor: $$ x(2x + 1) + 3(2x + 1) $$
+    -   Solution: $$ (2x + 1)(x + 3) $$
 
 ### Key Takeaways
 
@@ -191,16 +191,16 @@ Find two numbers that:
 
 ### Examples
 
-1. **Example 1**: Factor x² - 9
+-   **Example 1**: Factor x² - 9
 
-    - $$ (x + 3)(x - 3) $$
+    -   $$ (x + 3)(x - 3) $$
 
-2. **Example 2**: Factor 4x² - 25y²
+-   **Example 2**: Factor 4x² - 25y²
 
-    - $$ (2x + 5y)(2x - 5y) $$
+    -   $$ (2x + 5y)(2x - 5y) $$
 
-3. **Example 3**: Factor x² + 6x + 9
-    - $$ (x + 3)² $$
+-   **Example 3**: Factor x² + 6x + 9
+    -   $$ (x + 3)² $$
 
 ### Key Takeaways
 
@@ -225,15 +225,15 @@ If AB = 0, then A=0 or B=0
 
 ### Examples
 
-1. **Example 1**: Solve x² - 5x + 6 = 0
+-   **Example 1**: Solve x² - 5x + 6 = 0
 
-    - Factor: $$ (x - 2)(x - 3) = 0 $$
-    - Solutions: $$ x = 2$$ or $$ x = 3 $$
+    -   Factor: $$ (x - 2)(x - 3) = 0 $$
+    -   Solutions: $$ x = 2$$ or $$ x = 3 $$
 
-2. **Example 2**: Solve 2x² + 7x = -3
-    - Rewrite: $$ 2x² + 7x + 3 = 0 $$
-    - Factor: $$ (2x + 1)(x + 3) = 0 $$
-    - Solutions: $$ x = -1/2$$ or $$ x = -3 $$
+-   **Example 2**: Solve 2x² + 7x = -3
+    -   Rewrite: $$ 2x² + 7x + 3 = 0 $$
+    -   Factor: $$ (2x + 1)(x + 3) = 0 $$
+    -   Solutions: $$ x = -1/2$$ or $$ x = -3 $$
 
 ### Key Takeaways
 

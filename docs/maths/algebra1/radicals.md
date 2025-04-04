@@ -1,93 +1,289 @@
 # **Radicals**
 
--   **Chapter 52: Square Roots**
-    A square root of a number (n) is a number that, when multiplied by itself, equals (n). For example, a square root of 9 is 3 because (3 \\times 3 \= 9), and another square root of 9 is \-3 because ((-3) \\times (-3) \= 9). Every positive number has two square roots, one positive and one negative. The radical symbol, (\\sqrt{}), is used to denote the principal square root, which is the non-negative square root. So, (\\sqrt{9} \= 3). If we want to refer to both square roots, we use the (\\pm) symbol, as in (\\pm \\sqrt{9} \= \\pm 3). The number under the radical symbol is called the radicand.
-    Understanding perfect squares is helpful when working with square roots. A perfect square is a number that can be obtained by squaring an integer (e.g., 1, 4, 9, 16, 25, ...). The square root of a perfect square is an integer. For example, (\\sqrt{16} \= 4\) and (\\sqrt{100} \= 10). If a number is not a perfect square, its square root will be an irrational number (a number that cannot be expressed as a simple fraction and has a non-repeating, non-terminating decimal expansion), such as (\\sqrt{2} \\approx 1.414) or (\\sqrt{3} \\approx 1.732).
-    When we encounter an expression like (\\sqrt{x^2}), we need to be careful. If (x) is positive, then (\\sqrt{x^2} \= x). However, if (x) is negative, then (\\sqrt{x^2} \= |x| \= \-x) (since the principal square root must be non-negative). For example, if (x \= \-3), then (\\sqrt{(-3)^2} \= \\sqrt{9} \= 3), which is (-(-3)).
+## Chapter 52: Square Roots
 
-| Number | Square Root |
-| :----- | :---------- |
-| 1      | 1           |
-| 4      | 2           |
-| 9      | 3           |
-| 16     | 4           |
-| 25     | 5           |
-| 36     | 6           |
-| 49     | 7           |
-| 64     | 8           |
-| 81     | 9           |
-| 100    | 10          |
-| 121    | 11          |
-| 144    | 12          |
+### Definitions
 
-This table lists some common perfect squares and their principal square roots. Knowing these can be helpful in simplifying radicals.
+-   **Square Root**: A number that when multiplied by itself equals the radicand
+-   **Principal Square Root**: Non-negative root (√n)
+-   **Perfect Square**: Integer that is the square of another integer
 
--   **Chapter 53: The Distance Formula (Continued)**
-    The distance formula is a fundamental tool in coordinate geometry that allows for the calculation of the distance between two points in a Cartesian plane. Its derivation is elegantly rooted in the well-established Pythagorean theorem. Consider two points, ((x_1, y_1)) and ((x_2, y_2)), on a coordinate plane. These two points, along with a third point formed by their x and y coordinates (either ((x_2, y_1)) or ((x_1, y_2))), create a right-angled triangle. The hypotenuse of this triangle is the straight line segment connecting the two original points, and its length represents the distance we wish to find. The other two sides, the legs of the right triangle, are formed by horizontal and vertical line segments. The length of the horizontal leg is determined by the absolute difference in the x-coordinates of the two points, expressed as (|x_2 \- x_1|). Similarly, the length of the vertical leg is given by the absolute difference in their y-coordinates, (|y_2 \- y_1|) \[snippet_id: 53\].
-    Applying the Pythagorean theorem, which states that in a right-angled triangle, the square of the length of the hypotenuse (c) is equal to the sum of the squares of the lengths of the other two sides (a and b), i.e., (c^2 \= a^2 \+ b^2), we can substitute the lengths of the legs we identified. Let (d) represent the distance between the two points (the length of the hypotenuse). Then, according to the Pythagorean theorem in this context, we have:
-    \[d^2 \= |x_2 \- x_1|^2 \+ |y_2 \- y_1|^2\]
-    Since squaring any real number, whether positive or negative, results in a non-negative value, we can remove the absolute value signs without changing the result. This is because ((x_2 \- x_1)^2) will always be equal to (|x_2 \- x_1|^2), and the same holds true for the y-coordinates. Therefore, the equation simplifies to:
-    \[d^2 \= (x_2 \- x_1)^2 \+ (y_2 \- y_1)^2\]
-    To find the distance (d), we take the principal square root of both sides of the equation, yielding the distance formula:
-    \[d \= \\sqrt{(x_2 \- x_1)^2 \+ (y_2 \- y_1)^2}\]
-    This formula provides a direct method to calculate the distance between any two points given their coordinates. The process involves subtracting the x-coordinates, squaring the result, subtracting the y-coordinates, squaring that result, adding these two squared values, and finally taking the square root of the sum. Visualizing these two points and the right triangle formed by them on a coordinate plane can provide a more intuitive understanding of why this formula works \[snippet_id: 53\].
-    The examples provided illustrate the straightforward application of this formula. By substituting the coordinates of the given points into the distance formula, one can readily compute the distance between them. These examples cover various scenarios, including points with positive and negative coordinates, as well as cases where the line segment connecting the points is either horizontal or vertical. In the case of a horizontal line (Example 4), the y-coordinates are the same, resulting in ((y_2 \- y_1)^2 \= 0), and the distance is simply the absolute difference in the x-coordinates. Similarly, for a vertical line (Example 5), the x-coordinates are the same, making ((x_2 \- x_1)^2 \= 0), and the distance is the absolute difference in the y-coordinates. These special cases align with our understanding of distances on a coordinate plane.
--   **Chapter 54: Simplifying Radicals**
-    Simplifying radicals is a crucial skill in algebra that involves rewriting a radical expression in its most basic form, where the number under the radical sign, known as the radicand, does not contain any perfect square factors other than 1\. This process makes radicals easier to interpret and manipulate in further calculations. The fundamental property used for simplifying square roots is (\\sqrt{ab} \= \\sqrt{a} \\times \\sqrt{b}) \[snippet*id: 54\].
-    The general procedure for simplifying a square root involves several steps. First, identify the largest perfect square that is a factor of the radicand. A perfect square is an integer that can be obtained by squaring another integer (e.g., 4, 9, 16, 25, etc.). Once this largest perfect square factor is found, the radicand can be expressed as the product of this perfect square and the remaining factor. Next, apply the property (\\sqrt{ab} \= \\sqrt{a} \\times \\sqrt{b}) to separate the radical into the product of the square root of the perfect square and the square root of the remaining factor. Finally, take the square root of the perfect square, which will be an integer or a simpler radical. The resulting expression, where the radicand of the remaining radical has no other perfect square factors, is the simplified form. While finding the largest perfect square factor directly is efficient, an alternative approach involves using prime factorization. By breaking down the radicand into its prime factors, any prime factor that appears an even number of times indicates a perfect square factor. These pairs of prime factors can be taken out from under the radical sign as a single factor \[snippet_id: 54\].
-    The examples provided clearly demonstrate this process. For instance, to simplify (\\sqrt{32}), we recognize that 16 is the largest perfect square factor of 32 ((32 \= 16 \\times 2)). Thus, (\\sqrt{32} \= \\sqrt{16 \\times 2} \= \\sqrt{16} \\times \\sqrt{2} \= 4\\sqrt{2}). Similarly, for (\\sqrt{75}), the largest perfect square factor is 25 ((75 \= 25 \\times 3)), leading to (\\sqrt{75} \= \\sqrt{25 \\times 3} \= \\sqrt{25} \\times \\sqrt{3} \= 5\\sqrt{3}). The example of (\\sqrt{48}) highlights the importance of finding the \_largest* perfect square factor. While 4 is a factor of 48, using 16 (the largest perfect square factor) directly leads to the simplified form (4\\sqrt{3}), avoiding an extra step of simplification. For (\\sqrt{180}), the largest perfect square factor is 36, resulting in (6\\sqrt{5}). Finally, the example with a variable, (\\sqrt{x^3}), shows how to handle exponents by separating out perfect square powers ((\\sqrt{x^3} \= \\sqrt{x^2 \\times x} \= x\\sqrt{x}) for (x \\geq 0)).
--   **Chapter 55: Adding Radicals**
-    Adding or subtracting radicals requires that they are "like radicals." Like radicals are defined as radicals that possess the same radicand (the number or expression under the radical sign) and the same index (the type of root, which is 2 for square root, 3 for cube root, and so on). In the context of square roots, this simply means that the numbers under the (\\sqrt{}) symbol must be identical. When adding or subtracting like radicals, the process is analogous to combining like terms with variables. The coefficients (the numbers preceding the radical) are added or subtracted, while the radical part remains unchanged. For example, (3\\sqrt{2} \+ 5\\sqrt{2}) can be thought of as 3 groups of (\\sqrt{2}) plus 5 groups of (\\sqrt{2}), resulting in a total of 8 groups of (\\sqrt{2}), or (8\\sqrt{2}) \[snippet_id: 55\]. It is important to explicitly note that radicals with different radicands cannot be directly added or subtracted; for instance, (\\sqrt{2} \+ \\sqrt{3}) does not equal (\\sqrt{5}). This is a common mistake among beginners.
-    If the radicals in an expression are not initially like radicals, it may be possible to simplify them first to see if they can be transformed into like radicals. This often involves using the simplification techniques discussed earlier to extract any perfect square factors from the radicands. Once simplified, the radicals can be checked again to see if they now have the same radicand.
-    The provided examples illustrate this process effectively. In Example 1, (3\\sqrt{5} \+ 7\\sqrt{5}) are already like radicals, so their coefficients are simply added: ((3 \+ 7)\\sqrt{5} \= 10\\sqrt{5}). Similarly, in Example 2, (9\\sqrt{7} \- 4\\sqrt{7}) are like radicals, and their coefficients are subtracted: ((9 \- 4)\\sqrt{7} \= 5\\sqrt{7}). Example 3, (\\sqrt{12} \+ \\sqrt{27}), demonstrates the need for initial simplification. (\\sqrt{12}) simplifies to (2\\sqrt{3}), and (\\sqrt{27}) simplifies to (3\\sqrt{3}). Now that they are like radicals, they can be added: (2\\sqrt{3} \+ 3\\sqrt{3} \= 5\\sqrt{3}). Example 4, (\\sqrt{50} \- \\sqrt{18}), also requires simplification first: (\\sqrt{50} \= 5\\sqrt{2}) and (\\sqrt{18} \= 3\\sqrt{2}). Subtracting these like radicals gives (5\\sqrt{2} \- 3\\sqrt{2} \= 2\\sqrt{2}). Finally, Example 5, (2\\sqrt{8} \+ 3\\sqrt{3}), shows a case where simplification does not lead to like radicals. (2\\sqrt{8}) simplifies to (4\\sqrt{2}), but (3\\sqrt{3}) remains as is. Since (\\sqrt{2}) and (\\sqrt{3}) are different, the expression (4\\sqrt{2} \+ 3\\sqrt{3}) cannot be simplified further.
--   **Chapter 56: Rationalizing the Denominator**
-    Rationalizing the denominator is a standard algebraic technique used to eliminate any radical expressions from the denominator of a fraction. While not strictly necessary for the mathematical value of the fraction in all contexts, it is a convention that often simplifies further calculations and provides a more standard form for expressions. Historically, it also made manual calculation easier before the advent of calculators. The process depends on the form of the denominator \[snippet_id: 56\].
-    In the first case, where the denominator contains a single square root term, such as (\\sqrt{b}), the rationalization is achieved by multiplying both the numerator and the denominator of the fraction by (\\sqrt{b}). This works because the product of a square root by itself results in the original number (i.e., (\\sqrt{b} \\times \\sqrt{b} \= b)), which is rational (contains no radicals). For example, to rationalize (\\frac{5}{\\sqrt{3}}), we multiply both numerator and denominator by (\\sqrt{3}), resulting in (\\frac{5 \\times \\sqrt{3}}{\\sqrt{3} \\times \\sqrt{3}} \= \\frac{5\\sqrt{3}}{3}). Similarly, for (\\frac{\\sqrt{2}}{3\\sqrt{5}}), we multiply by (\\frac{\\sqrt{5}}{\\sqrt{5}}) to get (\\frac{\\sqrt{2} \\times \\sqrt{5}}{3\\sqrt{5} \\times \\sqrt{5}} \= \\frac{\\sqrt{10}}{3 \\times 5} \= \\frac{\\sqrt{10}}{15}).
-    The second case involves denominators that are sums or differences containing square roots, such as (a \+ \\sqrt{b}) or (\\sqrt{a} \- \\sqrt{b}). In these situations, we utilize the concept of conjugates. The conjugate of a binomial of the form (x \+ y) is (x \- y), and their product results in a difference of squares: ((x \+ y)(x \- y) \= x^2 \- y^2). When the binomial involves a square root, this difference of squares eliminates the radical. For instance, the conjugate of (a \+ \\sqrt{b}) is (a \- \\sqrt{b}), and their product is (a^2 \- (\\sqrt{b})^2 \= a^2 \- b). Similarly, the conjugate of (\\sqrt{a} \- \\sqrt{b}) is (\\sqrt{a} \+ \\sqrt{b}), and their product is ((\\sqrt{a})^2 \- (\\sqrt{b})^2 \= a \- b). To rationalize a denominator of this form, we multiply both the numerator and the denominator of the fraction by the conjugate of the denominator.
-    Consider the example (\\frac{2}{1 \+ \\sqrt{3}}). The conjugate of the denominator (1 \+ \\sqrt{3}) is (1 \- \\sqrt{3}). Multiplying the numerator and denominator by the conjugate gives (\\frac{2 \\times (1 \- \\sqrt{3})}{(1 \+ \\sqrt{3})(1 \- \\sqrt{3})} \= \\frac{2 \- 2\\sqrt{3}}{1^2 \- (\\sqrt{3})^2} \= \\frac{2 \- 2\\sqrt{3}}{1 \- 3} \= \\frac{2 \- 2\\sqrt{3}}{-2}). This can be further simplified by dividing each term in the numerator by \-2, yielding (-1 \+ \\sqrt{3}) or (\\sqrt{3} \- 1). Another example is (\\frac{\\sqrt{5}}{\\sqrt{5} \- 2}). The conjugate of (\\sqrt{5} \- 2\) is (\\sqrt{5} \+ 2). Multiplying gives (\\frac{\\sqrt{5} \\times (\\sqrt{5} \+ 2)}{(\\sqrt{5} \- 2)(\\sqrt{5} \+ 2)} \= \\frac{5 \+ 2\\sqrt{5}}{(\\sqrt{5})^2 \- 2^2} \= \\frac{5 \+ 2\\sqrt{5}}{5 \- 4} \= \\frac{5 \+ 2\\sqrt{5}}{1} \= 5 \+ 2\\sqrt{5}). Finally, for a more general case like (\\frac{1}{\\sqrt{x} \+ \\sqrt{y}}), the conjugate of the denominator is (\\sqrt{x} \- \\sqrt{y}), and multiplying gives (\\frac{1 \\times (\\sqrt{x} \- \\sqrt{y})}{(\\sqrt{x} \+ \\sqrt{y})(\\sqrt{x} \- \\sqrt{y})} \= \\frac{\\sqrt{x} \- \\sqrt{y}}{(\\sqrt{x})^2 \- (\\sqrt{y})^2} \= \\frac{\\sqrt{x} \- \\sqrt{y}}{x \- y}).
--   **Chapter 57: Further Operations with Radicals**
-    Beyond addition, subtraction, and simplification, other fundamental operations with radicals include multiplication, division, and raising them to powers. These operations follow specific rules that are closely related to the properties of exponents \[snippet_id: 57\].
-    When multiplying radicals with the same index (such as square roots), we use the property (\\sqrt{a} \\times \\sqrt{b} \= \\sqrt{ab}). If the radicals have coefficients, we multiply the coefficients together and the radicands together. For instance, (2\\sqrt{3} \\times 5\\sqrt{7}) is calculated by multiplying the coefficients (2 and 5\) to get 10 and the radicands (3 and 7\) to get 21, resulting in (10\\sqrt{21}). Another example is (\\sqrt{6} \\times \\sqrt{8}), which equals (\\sqrt{6 \\times 8} \= \\sqrt{48}). This result can then be simplified further as (\\sqrt{16 \\times 3} \= 4\\sqrt{3}). When multiplying a radical by an expression containing radicals, the distributive property may be applied, as seen in (\\sqrt{x}(\\sqrt{x} \+ \\sqrt{y}) \= \\sqrt{x} \\times \\sqrt{x} \+ \\sqrt{x} \\times \\sqrt{y} \= \\sqrt{x^2} \+ \\sqrt{xy} \= |x| \+ \\sqrt{xy}), which simplifies to (x \+ \\sqrt{xy}) if we assume (x \\geq 0). This connection to exponent rules is evident when we consider that (\\sqrt{a} \= a^{1/2}) and (\\sqrt{b} \= b^{1/2}), so (\\sqrt{a} \\times \\sqrt{b} \= a^{1/2} \\times b^{1/2} \= (ab)^{1/2} \= \\sqrt{ab}).
-    For dividing radicals with the same index, we use the property (\\frac{\\sqrt{a}}{\\sqrt{b}} \= \\sqrt{\\frac{a}{b}}). For example, (\\frac{\\sqrt{15}}{\\sqrt{3}} \= \\sqrt{\\frac{15}{3}} \= \\sqrt{5}). If there are coefficients involved, we divide the coefficients and the radicands separately. Consider (\\frac{10\\sqrt{6}}{2\\sqrt{3}}). Dividing the coefficients gives (10 \\div 2 \= 5), and dividing the radicands gives (\\sqrt{6} \\div \\sqrt{3} \= \\sqrt{\\frac{6}{3}} \= \\sqrt{2}). Combining these results, we get (5\\sqrt{2}). This division rule also aligns with exponent properties: (\\frac{\\sqrt{a}}{\\sqrt{b}} \= \\frac{a^{1/2}}{b^{1/2}} \= (\\frac{a}{b})^{1/2} \= \\sqrt{\\frac{a}{b}}).
-    Raising a radical to a power involves using the property ((\\sqrt{a})^n \= \\sqrt{a^n}). A simple case is squaring a square root, such as ((\\sqrt{7})^2 \= \\sqrt{7^2} \= \\sqrt{49} \= 7), where the square operation effectively cancels out the square root. For a higher power, like cubing a square root, we have ((\\sqrt{2})^3 \= \\sqrt{2^3} \= \\sqrt{8}), which can be simplified to (2\\sqrt{2}). When a radical with a coefficient is raised to a power, both the coefficient and the radical are raised to that power. For example, ((3\\sqrt{5})^2 \= 3^2 \\times (\\sqrt{5})^2 \= 9 \\times 5 \= 45).
--   **Chapter 58: Solving Radical Equations**
-    A radical equation is an equation where the variable appears under a radical sign. The primary strategy for solving these equations is to isolate the radical term and then eliminate the radical by raising both sides of the equation to the power corresponding to the index of the root (e.g., squaring for square roots). However, a crucial step in solving radical equations is to always check the solutions obtained in the original equation, as this process of raising both sides to a power can sometimes introduce extraneous solutions, which are solutions that satisfy the transformed equation but not the original one \[snippet_id: 58\]. The reason extraneous solutions may arise is that the squaring operation can make two unequal quantities equal (e.g., ((-a)^2 \= a^2)).
-    The general steps for solving a radical equation involving a square root are as follows: First, if necessary, isolate the radical term on one side of the equation. This means that the radical should be the only term on that side. Second, square both sides of the equation to eliminate the square root. This will result in an equation without radicals, which is usually linear or quadratic. Third, solve the resulting equation using standard algebraic techniques. Finally, and most importantly, substitute each potential solution back into the original radical equation to verify its validity. Discard any solutions that do not satisfy the original equation.
-    The examples provided illustrate these steps. In Example 1, (\\sqrt{x} \= 5), the radical is already isolated. Squaring both sides gives (x \= 25). Checking this solution in the original equation confirms that (\\sqrt{25} \= 5), so it is a valid solution. In Example 2, (\\sqrt{2x \- 1} \= 3), squaring both sides yields (2x \- 1 \= 9), leading to (x \= 5). Checking confirms (\\sqrt{2(5) \- 1} \= \\sqrt{9} \= 3), so (x \= 5\) is the solution. Example 3, (\\sqrt{x \+ 2} \+ 3 \= 7), requires isolating the radical first: (\\sqrt{x \+ 2} \= 4). Squaring both sides gives (x \+ 2 \= 16), so (x \= 14). Checking confirms (\\sqrt{14 \+ 2} \+ 3 \= \\sqrt{16} \+ 3 \= 4 \+ 3 \= 7), making (x \= 14\) a valid solution.
-    Example 4, (\\sqrt{3x \+ 7} \= x \+ 1), demonstrates the possibility of extraneous solutions. Squaring both sides leads to a quadratic equation (3x \+ 7 \= x^2 \+ 2x \+ 1), which simplifies to (x^2 \- x \- 6 \= 0). Factoring gives ((x \- 3)(x \+ 2\) \= 0), with potential solutions (x \= 3\) and (x \= \-2). Checking (x \= 3\) in the original equation gives (\\sqrt{3(3) \+ 7} \= 4\) and (3 \+ 1 \= 4), so it is a valid solution. However, checking (x \= \-2) gives (\\sqrt{3(-2) \+ 7} \= 1\) and (-2 \+ 1 \= \-1), which are not equal, so (x \= \-2) is an extraneous solution. Finally, Example 5, (\\sqrt{x \+ 1} \= \\sqrt{3x \- 5}), involves radicals on both sides. Squaring both sides gives (x \+ 1 \= 3x \- 5), leading to (x \= 3). Checking confirms (\\sqrt{3 \+ 1} \= 2\) and (\\sqrt{3(3) \- 5} \= 2), so (x \= 3\) is the valid solution.
--   **Chapter 59: Fractional Exponents**
-    Fractional exponents offer an alternative notation for representing radicals, providing a powerful way to connect the concepts of roots and powers. An expression with a fractional exponent can be directly translated into radical form, and vice versa. The fundamental definition is (a^{1/n} \= \\sqrt\[n\]{a}), where (n) is a positive integer greater than 1\. This signifies that raising a base (a) to the power of (1/n) is equivalent to taking the (n)th root of (a). For instance, (x^{1/2}) is the square root of (x) ((\\sqrt{x})), (y^{1/3}) is the cube root of (y) ((\\sqrt{y})), and (8^{1/3}) is the cube root of 8, which equals 2 because (2 \\times 2 \\times 2 \= 8\) \[snippet_id: 59\].
-    The more general form of a fractional exponent is (a^{m/n}), where (m) is an integer and (n) is a positive integer greater than 1\. This can be interpreted in two equivalent ways: as the (n)th root of (a) raised to the power of (m), i.e., ((\\sqrt\[n\]{a})^m), or as the (n)th root of (a) raised to the power of (m), i.e., (\\sqrt\[n\]{a^m}). The numerator (m) of the fractional exponent indicates the power to which the base (a) is raised, while the denominator (n) indicates the index of the root to be taken. This unified representation allows the rules of exponents to be applied to expressions involving radicals, often simplifying calculations and providing a deeper understanding of their properties.
-    The examples illustrate the conversion between these forms and the application of exponent rules. Rewriting (x^{3/2}) in radical form, using (a^{m/n} \= \\sqrt\[n\]{a^m}), gives (\\sqrt{x^3}), commonly written as (\\sqrt{x^3}). This is also equivalent to ((\\sqrt{x})^3). Evaluating (8^{2/3}) involves taking the cube root of 8 (which is 2\) and then squaring the result: ((\\sqrt{8})^2 \= 2^2 \= 4). Alternatively, it can be calculated as the cube root of (8^2) (which is 64), and (\\sqrt{64} \= 4). Converting (\\sqrt{y^5}) to fractional exponent form involves recognizing the index of the root as the denominator and the power of the variable as the numerator, resulting in (y^{5/4}). Simplifying (16^{3/4}) can be done by taking the fourth root of 16 (which is 2\) and then cubing the result: ((\\sqrt{16})^3 \= 2^3 \= 8). Finally, simplifying (x^{1/2} \\times x^{3/2}) using the product rule of exponents ((a^m \\times a^n \= a^{m+n})) gives (x^{1/2 \+ 3/2} \= x^{4/2} \= x^2). In radical form, this is (\\sqrt{x} \\times \\sqrt{x^3} \= \\sqrt{x \\times x^3} \= \\sqrt{x^4} \= x^2) (assuming (x \\geq 0)).
+### Examples
 
-**Section 11: Quadratic Equations**
+-   **Example 1**: Find both square roots of 25
 
--   **Chapter 60: Square Root Property**
-    The square root property is a direct and efficient method for solving quadratic equations that are in a specific form: (x^2 \= k), where (k) is a constant. This property stems from the fundamental relationship between squaring and taking the square root. If (k) is a positive number, then there are precisely two real numbers that, when squared, equal (k). These are the principal square root of (k) (denoted as (\\sqrt{k})) and its negative counterpart (-(\\sqrt{k})). Therefore, the equation (x^2 \= k) has two solutions when (k \> 0), which can be concisely written as (x \= \\pm \\sqrt{k}). If (k \= 0), then the only real number that satisfies the equation (x^2 \= 0\) is (x \= 0), resulting in one real solution. If (k) is a negative number, there are no real solutions, as no real number squared can result in a negative value. In this case, the solutions would be complex numbers involving the imaginary unit (i) ((i^2 \= \-1)), which are typically covered in more advanced algebra courses \[snippet_id: 60\]. The square root property is particularly useful when the quadratic equation lacks a linear term (i.e., the term with (x) to the power of 1).
-    The application of the square root property extends to equations of the form ((ax \+ b)^2 \= k). In such cases, we can treat the entire expression ((ax \+ b)) as a single entity. By taking the square root of both sides of the equation, we get (ax \+ b \= \\pm \\sqrt{k}). From this point, we can solve the resulting linear equations for (x). This method avoids the need to expand the squared term and potentially factor or use other more complex methods. The square root property offers a quick and straightforward way to find the solutions in these specific scenarios.
-    The examples provided illustrate the application of this property. For the equation (x^2 \= 16), using the square root property directly gives (x \= \\pm \\sqrt{16} \= \\pm 4), so the solutions are (x \= 4\) and (x \= \-4). For (y^2 \= 7), the solutions are (y \= \\pm \\sqrt{7}). To solve (3z^2 \= 27), we first isolate the (z^2) term by dividing by 3, resulting in (z^2 \= 9). Then, applying the square root property gives (z \= \\pm \\sqrt{9} \= \\pm 3). For the equation ((x \- 2)^2 \= 25), taking the square root of both sides yields (x \- 2 \= \\pm 5). This leads to two separate linear equations: (x \- 2 \= 5), which gives (x \= 7), and (x \- 2 \= \-5), which gives (x \= \-3). Finally, for ((2w \+ 1)^2 \= 10), taking the square root of both sides gives (2w \+ 1 \= \\pm \\sqrt{10}). Solving for (w) involves subtracting 1 from both sides and then dividing by 2, resulting in (w \= \\frac{-1 \\pm \\sqrt{10}}{2}).
--   **Chapter 61: Completing the Square**
-    Completing the square is a versatile technique used to solve quadratic equations by transforming them into a perfect square trinomial, which can then be easily solved using the square root property. This method is particularly valuable when the quadratic equation cannot be readily factored using simple techniques. Furthermore, the process of completing the square is fundamental to deriving the quadratic formula and is also used to rewrite quadratic expressions in vertex form, which is essential for graphing parabolas \[snippet_id: 61\]. The core idea is to manipulate the quadratic expression (ax^2 \+ bx \+ c) so that it takes the form (a(x \+ h)^2 \+ k).
-    The steps involved in solving a quadratic equation (ax^2 \+ bx \+ c \= 0\) by completing the square are as follows: First, if the coefficient of the (x^2) term (i.e., (a)) is not equal to 1, divide every term in the equation by (a) to make the leading coefficient 1\. Second, move the constant term (the term without (x)) to the right side of the equation. Third, take half of the coefficient of the (x) term, square this value, and add it to both sides of the equation. This seemingly arbitrary step is what "completes the square" on the left side, transforming it into a perfect square trinomial. A perfect square trinomial is a trinomial that can be factored into the square of a binomial. Fourth, rewrite the perfect square trinomial on the left side as a binomial squared in the form ((x \+ h)^2). Fifth, simplify the constant terms on the right side of the equation to obtain a single constant value, say (k). Finally, the equation is now in the form ((x \+ h)^2 \= k), and the square root property can be applied to solve for (x).
-    Consider the example (x^2 \+ 6x \- 7 \= 0). The coefficient of (x^2) is already 1\. Moving the constant term to the right gives (x^2 \+ 6x \= 7). Half of the coefficient of (x) (which is 6\) is 3, and (3^2 \= 9). Adding 9 to both sides gives (x^2 \+ 6x \+ 9 \= 7 \+ 9), which simplifies to ((x \+ 3)^2 \= 16). Using the square root property, (x \+ 3 \= \\pm \\sqrt{16} \= \\pm 4). This leads to two solutions: (x \+ 3 \= 4 \\Rightarrow x \= 1\) and (x \+ 3 \= \-4 \\Rightarrow x \= \-7).
-    Another example, (2x^2 \- 8x \+ 5 \= 0), requires an initial step of dividing by the leading coefficient. Dividing by 2 gives (x^2 \- 4x \+ \\frac{5}{2} \= 0). Moving the constant term yields (x^2 \- 4x \= \-\\frac{5}{2}). Half of the coefficient of (x) (-4) is \-2, and ((-2)^2 \= 4). Adding 4 to both sides gives (x^2 \- 4x \+ 4 \= \-\\frac{5}{2} \+ 4), which simplifies to ((x \- 2)^2 \= \\frac{3}{2}). Applying the square root property, (x \- 2 \= \\pm \\sqrt{\\frac{3}{2}} \= \\pm \\frac{\\sqrt{6}}{2}) (after rationalizing the denominator). Thus, the solutions are (x \= 2 \\pm \\frac{\\sqrt{6}}{2} \= \\frac{4 \\pm \\sqrt{6}}{2}).
--   **Chapter 62: The Quadratic Formula**
-    The quadratic formula is a universally applicable method for finding the solutions, also known as roots, of any quadratic equation that is expressed in the standard form (ax^2 \+ bx \+ c \= 0), where (a), (b), and (c) are constant coefficients and (a) is not equal to zero. This formula is derived by applying the method of completing the square to the general form of the quadratic equation. The power of the quadratic formula lies in its ability to solve any quadratic equation, regardless of whether it can be easily factored or if its solutions are rational, irrational, or even complex \[snippet_id: 62\]. The formula itself is given by:
-    \[x \= \\frac{-b \\pm \\sqrt{b^2 \- 4ac}}{2a}\]
-    To utilize the quadratic formula, one simply needs to identify the values of the coefficients (a), (b), and (c) from the given quadratic equation and substitute these values directly into the formula. The presence of the (\\pm) symbol indicates that there are generally two solutions to a quadratic equation, one obtained by using the plus sign and the other by using the minus sign.
-    A critical component of the quadratic formula is the expression under the radical sign, (b^2 \- 4ac), which is known as the discriminant. The discriminant provides valuable information about the nature and number of solutions to the quadratic equation without actually solving it. If the discriminant is positive ((b^2 \- 4ac \> 0)), the equation has two distinct real solutions. If the discriminant is equal to zero ((b^2 \- 4ac \= 0)), the equation has exactly one real solution, which is sometimes referred to as a repeated root. If the discriminant is negative ((b^2 \- 4ac \< 0)), the equation has no real solutions; instead, it has two complex conjugate solutions, which involve the imaginary unit (i \= \\sqrt{-1}). Furthermore, the value of the discriminant has a graphical interpretation: it indicates the number of x-intercepts of the graph of the corresponding quadratic function (y \= ax^2 \+ bx \+ c). A positive discriminant corresponds to two x-intercepts, a zero discriminant to one x-intercept (where the vertex of the parabola touches the x-axis), and a negative discriminant to no real x-intercepts (the parabola does not intersect the x-axis).
-    The examples illustrate the application of the quadratic formula in different scenarios. For the equation (2x^2 \- 5x \+ 3 \= 0), we have (a \= 2), (b \= \-5), and (c \= 3). Substituting these values into the formula gives:
-    \[x \= \\frac{-(-5) \\pm \\sqrt{(-5)^2 \- 4(2)(3)}}{2(2)} \= \\frac{5 \\pm \\sqrt{25 \- 24}}{4} \= \\frac{5 \\pm \\sqrt{1}}{4} \= \\frac{5 \\pm 1}{4}\]
-    This yields two solutions: (x_1 \= \\frac{5 \+ 1}{4} \= \\frac{6}{4} \= \\frac{3}{2}) and (x_2 \= \\frac{5 \- 1}{4} \= \\frac{4}{4} \= 1).
-    For the equation (x^2 \+ 4x \+ 4 \= 0), we have (a \= 1), (b \= 4), and (c \= 4). Substituting these values gives:
-    \[x \= \\frac{-4 \\pm \\sqrt{4^2 \- 4(1)(4)}}{2(1)} \= \\frac{-4 \\pm \\sqrt{16 \- 16}}{2} \= \\frac{-4 \\pm \\sqrt{0}}{2} \= \\frac{-4}{2} \= \-2\]
-    In this case, the discriminant is zero, resulting in one repeated real solution: (x \= \-2).
-    Finally, for the equation (x^2 \+ x \+ 1 \= 0), we have (a \= 1), (b \= 1), and (c \= 1). Substituting these values gives:
-    \[x \= \\frac{-1 \\pm \\sqrt{1^2 \- 4(1)(1)}}{2(1)} \= \\frac{-1 \\pm \\sqrt{1 \- 4}}{2} \= \\frac{-1 \\pm \\sqrt{-3}}{2}\]
-    Here, the discriminant is negative, indicating that there are no real solutions. The solutions are complex numbers: (x \= \\frac{-1 \+ i\\sqrt{3}}{2}) and (x \= \\frac{-1 \- i\\sqrt{3}}{2}).
+    -   $$ 5 × 5 = 25 , -5 × -5 = 25 $$
+    -   Solutions: $$ \pm \sqrt{25} = \pm 5 $$
 
-**Conclusions**
+-   **Example 2**: Evaluate √(-3)²
 
-The exploration of radicals and quadratic equations reveals fundamental concepts in algebra with wide-ranging applications. Understanding the distance formula allows for the calculation of distances in a coordinate plane, a cornerstone of geometry and its applications. The ability to simplify, add, subtract, multiply, and divide radicals, as well as to rationalize denominators, provides essential tools for manipulating and working with expressions involving roots. Solving radical equations introduces the important concept of extraneous solutions and the necessity of verifying results. Fractional exponents offer a powerful connection between radicals and exponents, unifying these concepts and allowing for the application of exponent rules to radical expressions.
+    -   $$ \sqrt{(-3)^2} = \sqrt{9} = 3 $$
+    -   Note: $$ \sqrt{x^2} = |x| $$
 
-Quadratic equations, a step up in complexity from linear equations, are encountered frequently in mathematical modeling of real-world phenomena. The square root property offers a direct solution method for specific forms of quadratic equations. Completing the square not only provides another method for solving quadratic equations but also serves as a foundational technique for deriving the quadratic formula and for understanding the structure of quadratic expressions. The quadratic formula itself stands as a testament to the power of algebraic manipulation, providing a universal method for solving any quadratic equation. The discriminant, a key component of the quadratic formula, offers valuable insights into the nature and number of solutions. Mastering these concepts lays a crucial foundation for further study in algebra and related mathematical disciplines.
+-   **Example 3**: Identify perfect squares between 50-100
+
+    -   $$ 64 (8^2), 81 (9^2), 100 (10^2) $$
+
+-   **Example 4**: Estimate √50
+    -   Between $$ \sqrt{49} = 7 $$ and $$ \sqrt{64} = 8 $$
+    -   Approximation: $$ 7.07 $$
+
+### Key Takeaways
+
+> -   Every positive number has two square roots
+> -   √ symbol always gives non-negative root
+> -   Perfect squares have integer roots
+
+---
+
+## Chapter 53: The Distance Formula
+
+### Formula
+
+$$ d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2} $$
+
+### Examples
+
+-   **Example 1**: Distance between (1,2) and (4,6)
+
+    -   $$ d = \sqrt{(4-1)^2 + (6-2)^2} \implies d = \sqrt{9 + 16} = 5 $$
+
+-   **Example 2**: Distance between (-3,5) and (2,-1)
+
+    -   $$ d = \sqrt{(2-(-3))^2 + (-1-5)^2} \implies d = \sqrt{25 + 36} \approx 7.81 $$
+
+-   **Example 3**: Vertical distance (3,4) to (3,-2)
+
+    -   $$ d = \sqrt{0 + (-6)^2} = 6 $$
+
+-   **Example 4**: Horizontal distance (-1,5) to (7,5)
+    -   $$ d = \sqrt{8^2 + 0} = 8 $$
+
+### Key Takeaways
+
+> -   Derived from Pythagorean theorem
+> -   Works for any two points in plane
+> -   Absolute difference suffices for vertical/horizontal lines
+
+---
+
+## Chapter 54: Simplifying Radicals
+
+### Method
+
+1. Factor radicand into perfect squares
+2. Separate into product of roots
+3. Simplify perfect squares
+
+### Examples
+
+-   **Example 1**: Simplify √32
+
+    -   $$ \sqrt{16×2} = 4\sqrt{2} $$
+
+-   **Example 2**: Simplify √75
+
+    -   $$ \sqrt{25×3} = 5\sqrt{3} $$
+
+-   **Example 3**: Simplify √98
+
+    -   $$ \sqrt{49×2} = 7\sqrt{2} $$
+
+-   **Example 4**: Simplify √x³y²
+    -   $$ \sqrt{x^2y^2×x} = |x|y\sqrt{x} $$
+
+### Key Takeaways
+
+> -   Always look for largest perfect square factor
+> -   Variables follow same rules as numbers
+> -   Absolute value needed for even roots of variables
+
+---
+
+## Chapter 55: Adding Radicals
+
+### Rule
+
+Only like radicals (same radicand/index) can be combined
+
+### Examples
+
+-   **Example 1**: 3√5 + 7√5
+
+    -   $$ (3+7)\sqrt{5} = 10\sqrt{5} $$
+
+-   **Example 2**: √12 + √27
+
+    -   Simplify first: $$ 2\sqrt{3} + 3\sqrt{3} = 5\sqrt{3} $$
+
+-   **Example 3**: 5√8 - 2√2
+
+    -   Simplify: $$ 10\sqrt{2} - 2\sqrt{2} = 8\sqrt{2} $$
+
+-   **Example 4**: √18 + √50 - √8
+    -   Simplify: $$ 3\sqrt{2} + 5\sqrt{2} - 2\sqrt{2} = 6\sqrt{2} $$
+
+### Key Takeaways
+
+> -   Must simplify before combining
+> -   Coefficients add/subtract, radicands stay same
+> -   Unlike radicals cannot be combined
+
+---
+
+## Chapter 56: Rationalizing the Denominator
+
+### Methods
+
+1. **Single Root**: Multiply by same root
+2. **Binomial**: Multiply by conjugate
+
+### Examples
+
+-   **Example 1**: Rationalize 5/√3
+
+    -   $$ \frac{5}{√3} × \frac{√3}{√3} = \frac{5√3}{3} $$
+
+-   **Example 2**: Rationalize 1/(2+√5)
+
+    -   Multiply by conjugate: $$ \frac{2-√5}{(2+√5)(2-√5)} = \frac{2-√5}{-1} $$
+
+-   **Example 3**: Rationalize √2/(3√6)
+
+    -   $$ \frac{√2}{3√6} × \frac{√6}{√6} = \frac{√12}{18} = \frac{2√3}{18} $$
+
+-   **Example 4**: Rationalize 3/(√x-2)
+    -   $$ \frac{3}{√x-2} × \frac{√x+2}{√x+2} = \frac{3(√x+2)}{x-4} $$
+
+### Key Takeaways
+
+> -   Eliminates radicals from denominator
+> -   Conjugates create difference of squares
+> -   Simplifies further calculations
+
+---
+
+## Chapter 57: Operations with Radicals
+
+### Rules
+
+-   Multiply coefficients and radicands separately
+-   Divide coefficients and radicands separately
+
+### Examples
+
+-   **Example 1**: 2√3 × 5√7
+
+    -   $$ 10√21 $$
+
+-   **Example 2**: (3√2)²
+
+    -   $$ 9×2 = 18 $$
+
+-   **Example 3**: √8 × √6
+
+    -   $$ √48 = 4√3 $$
+
+-   **Example 4**: 10√6 ÷ 2√3
+    -   $$ 5√2 $$
+
+### Key Takeaways
+
+> -   Follow exponent rules for operations
+> -   Simplify before multiplying/dividing when possible
+> -   Radicals with same index can be combined
+
+---
+
+## Chapter 58: Solving Radical Equations
+
+### Method
+
+1. Isolate radical
+2. Square both sides
+3. Solve resulting equation
+4. Check for extraneous solutions
+
+### Examples
+
+-   **Example 1**: √x = 7
+
+    -   $$ x = 49 $$ (valid)
+
+-   **Example 2**: √(2x+3) = 5
+
+    -   $$ 2x+3 = 25 $$
+   $$ x = 11 $$ (valid)
+
+-   **Example 3**: Solve √(x+1) = x-1
+
+    **Solution Steps**:
+
+    1. Square both sides:
+       $$ (\sqrt{x+1})^2 = (x-1)^2 $$
+    $$ x + 1 = x^2 - 2x + 1 $$
+
+    2. Bring all terms to one side:
+       $$ 0 = x^2 - 3x $$
+    $$ x(x - 3) = 0 $$
+
+    3. Potential solutions:
+       $$ x = 0 \quad \text{or} \quad x = 3 $$
+
+    4. **Check solutions**:
+
+    -   For x=0:
+        $$ \sqrt{0+1} = 0-1 $$
+        $$ 1 = -1 \quad \text{(False)} $$
+        → Extraneous solution
+    -   For x=3:
+        $$ \sqrt{3+1} = 3-1 $$
+        $$ 2 = 2 \quad \text{(True)} $$
+
+    **Conclusion**: Only x=3 is valid. x=0 is extraneous because it doesn't satisfy the original equation.
+
+    **Why it happens**: Squaring both sides can create false solutions because both positive and negative roots become possible. Always verify solutions in the original equation.
+
+-   **Example 4**: √(3x-5) = √(x+7)
+    -   $$ 3x-5 = x+7 $$
+   $$ x=6 $$ (valid)
+
+### Key Takeaways
+
+> -   Always check solutions in original equation
+> -   Squaring can introduce extraneous solutions
+> -   Isolate radicals before squaring
+
+---
+
+## Chapter 59: Fractional Exponents
+
+### Conversion Rules
+
+$$
+a^{1/n} = \sqrt[n]{a} \newline
+a^{m/n} = (\sqrt[n]{a})^m
+$$
+
+### Examples
+
+-   **Example 1**: Convert 8^(1/3)
+
+    -   $$ \sqrt[3]{8} = 2 $$
+
+-   **Example 2**: Rewrite √x with exponents
+
+    -   $$ x^{1/2} $$
+
+-   **Example 3**: Simplify 16^(3/4)
+
+    -   $$ (\sqrt[4]{16})^3 = 2^3 = 8 $$
+
+-   **Example 4**: Evaluate (27/8)^(-2/3)
+    -   $$ (\sqrt[3]{27/8})^{-2} = (3/2)^{-2} = 4/9 $$
+
+### Key Takeaways
+
+> -   Denominator = root index
+> -   Numerator = power
+> -   Negative exponents indicate reciprocals

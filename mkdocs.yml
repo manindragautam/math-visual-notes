@@ -1,6 +1,15 @@
 site_name: ManiMorphs
 theme:
   name: "material"
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
   favicon: img/favicon.ico
   logo: img/logo.png
   font:
@@ -45,3 +54,4 @@ nav:
       - Factoring: maths/algebra1/factoring.md
       - Rational Expressions: maths/algebra1/rational-expressions.md
       - Radicals: maths/algebra1/radicals.md
+      - Quadratic Equations: maths/algebra1/quadratic-equations.md

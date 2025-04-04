@@ -10,21 +10,21 @@
 
 ### Examples
 
-1. **Example 1**: Find excluded values for (x+3)/(x-2)
+-   **Example 1**: Find excluded values for (x+3)/(x-2)
 
-    - Denominator zero when: $$ x - 2 = 0 $$  
-      $$ x = 2 $$
-    - Excluded value: $$ x \neq 2 $$
+    -   Denominator zero when: $$ x - 2 = 0 $$  
+        $$ x = 2 $$
+    -   Excluded value: $$ x \neq 2 $$
 
-2. **Example 2**: Find domain of (x²-1)/(x²+3x+2)
+-   **Example 2**: Find domain of (x²-1)/(x²+3x+2)
 
-    - Factor denominator: $$ x^2 + 3x + 2 = (x+1)(x+2) $$
-    - Denominator zero when: $$ x = -1 $$ or $$ x = -2 $$
-    - Domain: $$ x \neq -1, -2 $$
+    -   Factor denominator: $$ x^2 + 3x + 2 = (x+1)(x+2) $$
+    -   Denominator zero when: $$ x = -1 $$ or $$ x = -2 $$
+    -   Domain: $$ x \neq -1, -2 $$
 
-3. **Example 3**: Simplify (x²-4)/(x²-2x)
-    - Factor: $$ \frac{(x+2)(x-2)}{x(x-2)} $$
-    - Simplify: $$ \frac{x+2}{x} $$ (where $$ x \neq 0, 2 $$)
+-   **Example 3**: Simplify (x²-4)/(x²-2x)
+    -   Factor: $$ \frac{(x+2)(x-2)}{x(x-2)} $$
+    -   Simplify: $$ \frac{x+2}{x} $$ (where $$ x \neq 0, 2 $$)
 
 ### Key Takeaways
 
@@ -45,15 +45,15 @@
 
 ### Examples
 
-1. **Example 1**: Multiply (x+2)/(x-3) × (x²-9)/(2x+4)
+-   **Example 1**: Multiply (x+2)/(x-3) × (x²-9)/(2x+4)
 
-    - Factor: $$ \frac{x+2}{x-3} × \frac{(x+3)(x-3)}{2(x+2)} $$
-    - Multiply: $$ \frac{(x+2)(x+3)(x-3)}{2(x-3)(x+2)} $$
-    - Cancel: $$ \frac{x+3}{2} $$ ($$ x \neq 3, -2 $$)
+    -   Factor: $$ \frac{x+2}{x-3} × \frac{(x+3)(x-3)}{2(x+2)} $$
+    -   Multiply: $$ \frac{(x+2)(x+3)(x-3)}{2(x-3)(x+2)} $$
+    -   Cancel: $$ \frac{x+3}{2} $$ ($$ x \neq 3, -2 $$)
 
-2. **Example 2**: Multiply (3x)/(x²-4) × (x+2)/(6x²)
-    - Factor: $$ \frac{3x}{(x+2)(x-2)} × \frac{x+2}{6x^2} $$
-    - Simplify: $$ \frac{1}{2x(x-2)} $$ ($$ x \neq 0, 2, -2 $$)
+-   **Example 2**: Multiply (3x)/(x²-4) × (x+2)/(6x²)
+    -   Factor: $$ \frac{3x}{(x+2)(x-2)} × \frac{x+2}{6x^2} $$
+    -   Simplify: $$ \frac{1}{2x(x-2)} $$ ($$ x \neq 0, 2, -2 $$)
 
 ### Key Takeaways
 
@@ -73,16 +73,16 @@
 
 ### Examples
 
-1. **Example 1**: Find LCD of 1/(x²-4) and 3/(x²+x-6)
+-   **Example 1**: Find LCD of 1/(x²-4) and 3/(x²+x-6)
 
-    - Factor: $$ x^2-4 = (x+2)(x-2) $$  
-      $$ x^2+x-6 = (x+3)(x-2) $$
-    - LCD: $$ (x+2)(x-2)(x+3) $$
+    -   Factor: $$ x^2-4 = (x+2)(x-2) $$  
+        $$ x^2+x-6 = (x+3)(x-2) $$
+    -   LCD: $$ (x+2)(x-2)(x+3) $$
 
-2. **Example 2**: Find LCD of 2/(x³-x) and 5/(x²+2x+1)
-    - Factor: $$ x^3-x = x(x-1)(x+1) $$  
-      $$ x^2+2x+1 = (x+1)^2 $$
-    - LCD: $$ x(x-1)(x+1)^2 $$
+-   **Example 2**: Find LCD of 2/(x³-x) and 5/(x²+2x+1)
+    -   Factor: $$ x^3-x = x(x-1)(x+1) $$  
+        $$ x^2+2x+1 = (x+1)^2 $$
+    -   LCD: $$ x(x-1)(x+1)^2 $$
 
 ### Key Takeaways
 
@@ -103,16 +103,16 @@
 
 ### Examples
 
-1. **Example 1**: Add 1/(x²-4) + 3/(x²+x-6)
+-   **Example 1**: Add 1/(x²-4) + 3/(x²+x-6)
 
-    - LCD: $$ (x+2)(x-2)(x+3) $$
-    - Rewrite: $$ \frac{x+3}{(x+2)(x-2)(x+3)} + \frac{3(x+2)}{(x+2)(x-2)(x+3)} $$
-    - Add: $$ \frac{4x+9}{(x+2)(x-2)(x+3)} $$
+    -   LCD: $$ (x+2)(x-2)(x+3) $$
+    -   Rewrite: $$ \frac{x+3}{(x+2)(x-2)(x+3)} + \frac{3(x+2)}{(x+2)(x-2)(x+3)} $$
+    -   Add: $$ \frac{4x+9}{(x+2)(x-2)(x+3)} $$
 
-2. **Example 2**: Subtract 2/x - 3/(x+1)
-    - LCD: $$ x(x+1) $$
-    - Rewrite: $$ \frac{2(x+1)}{x(x+1)} - \frac{3x}{x(x+1)} $$
-    - Subtract: $$ \frac{2-x}{x(x+1)} $$
+-   **Example 2**: Subtract 2/x - 3/(x+1)
+    -   LCD: $$ x(x+1) $$
+    -   Rewrite: $$ \frac{2(x+1)}{x(x+1)} - \frac{3x}{x(x+1)} $$
+    -   Subtract: $$ \frac{2-x}{x(x+1)} $$
 
 ### Key Takeaways
 
@@ -137,17 +137,17 @@
 
 ### Examples
 
-1. **Example 1**: Simplify (1/x + 1)/(1/x - 1)
+-   **Example 1**: Simplify (1/x + 1)/(1/x - 1)
 
-    - Method 1:  
-      $$ \frac{(1+x)/x}{(1-x)/x} = \frac{1+x}{1-x} $$
+    -   Method 1:  
+        $$ \frac{(1+x)/x}{(1-x)/x} = \frac{1+x}{1-x} $$
 
-    - Method 2 (LCD=x):  
-      $$ \frac{(1+x)}{(1-x)} $$
+    -   Method 2 (LCD=x):  
+        $$ \frac{(1+x)}{(1-x)} $$
 
-2. **Example 2**: Simplify (2/(x+1) + 3)/(1 - 1/(x+1))
-    - LCD: $$ x+1 $$
-    - Multiply: $$ \frac{2+3(x+1)}{(x+1)-1} = \frac{3x+5}{x} $$
+-   **Example 2**: Simplify (2/(x+1) + 3)/(1 - 1/(x+1))
+    -   LCD: $$ x+1 $$
+    -   Multiply: $$ \frac{2+3(x+1)}{(x+1)-1} = \frac{3x+5}{x} $$
 
 ### Key Takeaways
 
@@ -168,18 +168,18 @@
 
 ### Examples
 
-1. **Example 1**: Solve 2/(x-1) + 3/(x+1) = 5/(x²-1)
+-   **Example 1**: Solve 2/(x-1) + 3/(x+1) = 5/(x²-1)
 
-    - LCD: $$ (x-1)(x+1) $$
-    - Multiply: $$ 2(x+1) + 3(x-1) = 5 $$
-    - Solve: $$ 5x-1=5 $$ → $$ x=6/5 $$
-    - Check: Valid (no zero denominators)
+    -   LCD: $$ (x-1)(x+1) $$
+    -   Multiply: $$ 2(x+1) + 3(x-1) = 5 $$
+    -   Solve: $$ 5x-1=5 $$ → $$ x=6/5 $$
+    -   Check: Valid (no zero denominators)
 
-2. **Example 2**: Solve 1/x + 1/2 = 1/3
-    - LCD: $$ 6x $$
-    - Multiply: $$ 6 + 3x = 2x $$
-    - Solve: $$ x=-6 $$
-    - Check: Valid
+-   **Example 2**: Solve 1/x + 1/2 = 1/3
+    -   LCD: $$ 6x $$
+    -   Multiply: $$ 6 + 3x = 2x $$
+    -   Solve: $$ x=-6 $$
+    -   Check: Valid
 
 ### Key Takeaways
 
@@ -198,14 +198,14 @@
 
 ### Examples
 
-1. **Example 1**: If Pipe A fills tank in 4 hours, Pipe B in 6 hours, how long together?
+-   **Example 1**: If Pipe A fills tank in 4 hours, Pipe B in 6 hours, how long together?
 
-    - Rates: $$ 1/4 + 1/6 = 5/12 $$
-    - Time: $$ 12/5 $$ hours (2.4 hours)
+    -   Rates: $$ 1/4 + 1/6 = 5/12 $$
+    -   Time: $$ 12/5 $$ hours (2.4 hours)
 
-2. **Example 2**: Current flows 15 mph. Boat goes 30 miles upstream in same time as 45 miles downstream. Find boat speed.
-    - Equation: $$ \frac{30}{b-15} = \frac{45}{b+15} $$
-    - Solve: $$ b=75 $$ mph
+-   **Example 2**: Current flows 15 mph. Boat goes 30 miles upstream in same time as 45 miles downstream. Find boat speed.
+    -   Equation: $$ \frac{30}{b-15} = \frac{45}{b+15} $$
+    -   Solve: $$ b=75 $$ mph
 
 ### Key Takeaways
 
@@ -223,16 +223,16 @@ $$ y = kx $$ where k is constant
 
 ### Examples
 
-1. **Example 1**: If y varies directly with x and y=15 when x=3, find y when x=7
+-   **Example 1**: If y varies directly with x and y=15 when x=3, find y when x=7
 
-    - Find k: $$ 15 = k(3) $$ → $$ k=5 $$
-    - Equation: $$ y=5x $$
-    - Solve: $$ y=5(7)=35 $$
+    -   Find k: $$ 15 = k(3) $$ → $$ k=5 $$
+    -   Equation: $$ y=5x $$
+    -   Solve: $$ y=5(7)=35 $$
 
-2. **Example 2**: The distance traveled varies directly with time. In 2 hours, 120 miles are covered. How far in 5 hours?
-    - Equation: $$ d=kt $$
-    - Find k: $$ 120=k(2) $$ → $$ k=60 $$
-    - Solve: $$ d=60(5)=300 $$ miles
+-   **Example 2**: The distance traveled varies directly with time. In 2 hours, 120 miles are covered. How far in 5 hours?
+    -   Equation: $$ d=kt $$
+    -   Find k: $$ 120=k(2) $$ → $$ k=60 $$
+    -   Solve: $$ d=60(5)=300 $$ miles
 
 ### Key Takeaways
 
@@ -250,16 +250,16 @@ $$ y = kx $$ where k is constant
 
 ### Examples
 
-1. **Example 1**: If y varies inversely with x and y=4 when x=6, find y when x=3
+-   **Example 1**: If y varies inversely with x and y=4 when x=6, find y when x=3
 
-    - Find k: $$ 4=k/6 $$ → $$ k=24 $$
-    - Equation: $$ y=24/x $$
-    - Solve: $$ y=24/3=8 $$
+    -   Find k: $$ 4=k/6 $$ → $$ k=24 $$
+    -   Equation: $$ y=24/x $$
+    -   Solve: $$ y=24/3=8 $$
 
-2. **Example 2**: The time to complete a task varies inversely with workers. 5 workers take 8 hours. How long with 10 workers?
-    - Equation: $$ t=k/w $$
-    - Find k: $$ 8=k/5 $$ → $$ k=40 $$
-    - Solve: $$ t=40/10=4 $$ hours
+-   **Example 2**: The time to complete a task varies inversely with workers. 5 workers take 8 hours. How long with 10 workers?
+    -   Equation: $$ t=k/w $$
+    -   Find k: $$ 8=k/5 $$ → $$ k=40 $$
+    -   Solve: $$ t=40/10=4 $$ hours
 
 ### Key Takeaways
 
