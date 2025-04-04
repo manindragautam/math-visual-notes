@@ -58,4 +58,40 @@
 
 ## Chapter 45: Mean, Median, & Mode
 
-![Mean median mode](img/mean-median-mode.svg)
+### Concepts
+
+-   **Mean (Average):** The sum of all values divided by the number of values.  
+    $$ \text{Mean} = \frac{\sum\_{i=1}^n x_i}{n} $$
+-   **Median:** The middle value in an ordered dataset. For even-sized datasets, it’s the average of the two middle numbers.
+-   **Mode:** The most frequently occurring value(s). A dataset can be unimodal, bimodal, or have no mode.
+
+### Examples
+
+1. **Example 1 (Mean):**
+
+    - Problem: Find the mean of \( 5, 8, 11 \).
+    - Solution:  
+      $$ \frac{5 + 8 + 11}{3} = \frac{24}{3} = 8 $$
+
+2. **Example 2 (Median - Odd Count):**
+
+    - Problem: Find the median of \( 3, 7, 9 \).
+    - Solution:  
+      Ordered data: \( 3, \boxed{7}, 9 \) → Median = 7.
+
+3. **Example 3 (Median - Even Count):**
+
+    - Problem: Find the median of \( 2, 4, 6, 8 \).
+    - Solution:  
+      Ordered data: \( 2, \boxed{4}, \boxed{6}, 8 \) → Median = \( \frac{4 + 6}{2} = 5 \).
+
+4. **Example 4 (Mode):**
+    - Problem: Find the mode of \( 1, 2, 2, 3, 3, 4 \).
+    - Solution:  
+      Frequencies: \( 2 \) and \( 3 \) appear twice → Modes = 2 and 3 (bimodal).
+
+### Key Takeaways
+
+> -   Mean is sensitive to outliers; median is robust.
+> -   Mode identifies the most common value(s).
+> -   For even-sized datasets, median requires averaging two middle numbers.
