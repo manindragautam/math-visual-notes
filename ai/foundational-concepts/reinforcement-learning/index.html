@@ -1,0 +1,1470 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../unsupervised-learning/">
+      
+      
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>Reinforcement Learning - ManiMorphs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Sans 3";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reinforcement-learning-rl" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="ManiMorphs" class="md-header__button md-logo" aria-label="ManiMorphs" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ManiMorphs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Reinforcement Learning
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ManiMorphs" class="md-nav__button md-logo" aria-label="ManiMorphs" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
+
+    </a>
+    ManiMorphs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Maths
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pre-Algebra
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Pre-Algebra
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/whole-numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Whole Numbers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/integers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/foundational-number-concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Number Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/fractions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fractions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/ratios-rates-and-proportions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ratios, Rates & Proportions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/decimals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Decimals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/percentages-and-basic-statistics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Percentages & Basic Statistics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/measurement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Algebra 1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Algebra 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/linear-equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/linear-inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Inequalities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/graphing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Graphing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/linear-systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/exponents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exponents
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/factoring/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Factoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/rational-expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rational Expressions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/radicals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radicals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/quadratic-equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quadratic Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Artificial Intelligence
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Artificial Intelligence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Foundational Concepts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Foundational Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../what-is-artificial-intelligence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What is Artificial Intelligence?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../history-of-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History of AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction-to-machine-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Machine Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../supervised-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supervised Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unsupervised-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unsupervised Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Reinforcement Learning
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Reinforcement Learning
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explain-reinforcement-learning-with-a-simple-example-like-training-a-pet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explain Reinforcement Learning with a simple example (like training a pet).
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-key-components-of-a-reinforcement-learning-system-agent-environment-reward-action-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the key components of a Reinforcement Learning system (agent, environment, reward, action, state)?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-some-applications-of-reinforcement-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are some applications of Reinforcement Learning?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-reinforcement-learning-differ-from-supervised-and-unsupervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      How does Reinforcement Learning differ from Supervised and Unsupervised Learning?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explain-reinforcement-learning-with-a-simple-example-like-training-a-pet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explain Reinforcement Learning with a simple example (like training a pet).
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-key-components-of-a-reinforcement-learning-system-agent-environment-reward-action-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the key components of a Reinforcement Learning system (agent, environment, reward, action, state)?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-some-applications-of-reinforcement-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are some applications of Reinforcement Learning?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-reinforcement-learning-differ-from-supervised-and-unsupervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      How does Reinforcement Learning differ from Supervised and Unsupervised Learning?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="reinforcement-learning-rl"><strong>Reinforcement Learning (RL)</strong></h1>
+<h2 id="explain-reinforcement-learning-with-a-simple-example-like-training-a-pet">Explain Reinforcement Learning with a simple example (like training a pet).</h2>
+<p>Okay, let's use the example of training your dog to sit. This is a great way to understand Reinforcement Learning!</p>
+<p>Imagine you're trying to teach your dog, Buddy, to sit on command.</p>
+<ol>
+<li>
+<p><strong>Agent:</strong> Buddy, your dog (the learner).</p>
+</li>
+<li>
+<p><strong>Environment:</strong> Your living room (the space where the learning happens).</p>
+</li>
+<li>
+<p><strong>Actions:</strong> Buddy can perform various actions, like standing, lying down, walking around, or (hopefully) sitting.</p>
+</li>
+<li>
+<p><strong>Reward:</strong></p>
+<ul>
+<li>When Buddy performs the desired action (sitting) after you give the command "Sit!", you give him a <strong>treat and praise</strong> ("Good boy!"). This is a <strong>positive reward</strong>.</li>
+<li>If Buddy does something else, like lying down or just looking at you, he doesn't get a treat or praise immediately. This lack of reward acts as a form of <strong>negative feedback</strong> (not a punishment, but an indication that the action wasn't what you wanted).</li>
+</ul>
+</li>
+<li>
+<p><strong>Goal:</strong> Your goal is for Buddy to learn to associate the command "Sit!" with the action of sitting and to perform that action reliably to receive the reward.</p>
+</li>
+</ol>
+<p><strong>How Buddy Learns (Reinforcement Learning):</strong></p>
+<ul>
+<li>
+<p><strong>Initial Exploration:</strong> When you first say "Sit!", Buddy might do a bunch of random things. He might sniff the floor, wag his tail, or even try to play.</p>
+</li>
+<li>
+<p><strong>Trial and Error:</strong> Through these initial attempts, Buddy is essentially trying out different "actions" in his "environment" (your living room).</p>
+</li>
+<li>
+<p><strong>Receiving Feedback (Rewards):</strong> The crucial part is when he <em>accidentally</em> sits, even for a second. You immediately give him a treat and praise ("Good boy!"). This positive reward signals to Buddy that this particular action (sitting after the command) led to something good.</p>
+</li>
+<li>
+<p><strong>Learning the Association (Policy):</strong> Over many repetitions of you saying "Sit!" and rewarding him <em>only</em> when he sits (even initially just a slight lowering of his rear), Buddy starts to learn the <strong>association</strong> between the command and the action that gets him the reward. He develops a "policy" – a strategy – of performing the "sit" action when he hears the "Sit!" command because he knows it leads to a tasty treat and your approval.</p>
+</li>
+<li>
+<p><strong>Maximizing Reward:</strong> Buddy's "motivation" is to maximize the rewards (treats and praise). He learns which actions in response to your command lead to these positive outcomes.</p>
+</li>
+</ul>
+<p><strong>It's different from Supervised Learning because:</strong></p>
+<ul>
+<li>You're not showing Buddy the "correct sit" and labeling it repeatedly. Instead, you're rewarding the desired behavior when it occurs.</li>
+<li>The learning happens through interaction and the consequences of Buddy's actions.</li>
+</ul>
+<p><strong>It's different from Unsupervised Learning because:</strong></p>
+<ul>
+<li>You have a clear goal (Buddy sitting on command) and you're providing feedback (rewards) directly related to that goal. Buddy isn't just exploring patterns in the environment without a specific target.</li>
+</ul>
+<p>So, training your pet with treats and praise for desired behaviors is a real-world example of how Reinforcement Learning works: the "agent" (your pet) learns the optimal "actions" to take in an "environment" (your home) to maximize "rewards" (treats and praise) based on the "feedback" it receives.</p>
+<hr />
+<h2 id="what-are-the-key-components-of-a-reinforcement-learning-system-agent-environment-reward-action-state">What are the key components of a Reinforcement Learning system (agent, environment, reward, action, state)?</h2>
+<p>Let's break down each component with our trusty "teaching Buddy to sit" example and then generalize to a more abstract understanding:</p>
+<p><strong>1. Agent:</strong></p>
+<ul>
+<li><strong>What it is:</strong> The <strong>learner</strong> or the <strong>decision-maker</strong>. It's the entity that interacts with the environment and learns the optimal behavior.</li>
+<li><strong>In the Buddy example:</strong> Buddy, your dog, is the agent. He's the one taking actions (sitting, standing, etc.) to try and get a reward.</li>
+<li><strong>General Definition:</strong> The agent perceives its environment, takes actions, and learns a policy to maximize its cumulative reward.</li>
+</ul>
+<p><strong>2. Environment:</strong></p>
+<ul>
+<li><strong>What it is:</strong> The <strong>world</strong> with which the agent interacts. It provides the agent with observations (state) and responds to the agent's actions.</li>
+<li><strong>In the Buddy example:</strong> Your living room and you (as the giver of commands and rewards) constitute the environment. It's where Buddy takes actions and receives feedback.</li>
+<li><strong>General Definition:</strong> The environment can be deterministic (the same action in the same state always leads to the same next state) or stochastic (the next state can be unpredictable even with the same action in the same state).</li>
+</ul>
+<p><strong>3. Reward:</strong></p>
+<ul>
+<li><strong>What it is:</strong> A <strong>scalar feedback signal</strong> that the agent receives from the environment after taking an action. It indicates how "good" or "bad" the action was in a particular state, with respect to the agent's goal.</li>
+<li><strong>In the Buddy example:</strong> The treat and praise ("Good boy!") are the positive reward. The absence of a treat or a gentle "no" (if you use it) can be considered a negative reward or a lack of positive reward.</li>
+<li><strong>General Definition:</strong> The reward function defines the goal of the RL agent. The agent learns to take actions that maximize the total reward it expects to receive over time. Rewards can be immediate or delayed.</li>
+</ul>
+<p><strong>4. Action:</strong></p>
+<ul>
+<li><strong>What it is:</strong> The <strong>choices</strong> that the agent can make and execute within the environment. The set of all possible actions available to the agent is called the action space.</li>
+<li><strong>In the Buddy example:</strong> Buddy's possible actions include sitting, standing, lying down, barking, wagging his tail, etc. When you say "Sit!", you're hoping his action will be the specific "sit" action.</li>
+<li><strong>General Definition:</strong> Actions cause the agent to transition from one state to another in the environment.</li>
+</ul>
+<p><strong>5. State:</strong></p>
+<ul>
+<li><strong>What it is:</strong> A <strong>description of the current situation</strong> of the environment as perceived by the agent. It contains information that the agent can use to decide its next action.</li>
+<li><strong>In the Buddy example:</strong> The state could include things like the sound of your command ("Sit!"), Buddy's current posture (standing, lying down), his location in the room, and maybe even his internal "desire" for a treat.</li>
+<li><strong>General Definition:</strong> The state should ideally contain all the relevant information needed for the agent to make an optimal decision. In some cases, the agent might only have a partial view of the environment (partial observability).</li>
+</ul>
+<p><strong>In summary, a Reinforcement Learning system works like this:</strong></p>
+<ol>
+<li>The <strong>agent</strong> observes the current <strong>state</strong> of the <strong>environment</strong>.</li>
+<li>Based on its current <strong>policy</strong> (learned strategy), the agent chooses an <strong>action</strong>.</li>
+<li>The <strong>environment</strong> responds to the agent's action by transitioning to a new <strong>state</strong> and providing a <strong>reward</strong> to the agent.</li>
+<li>The agent uses this <strong>reward</strong> to update its <strong>policy</strong>, learning which actions are beneficial in which states to maximize future rewards.</li>
+</ol>
+<p>This cycle of observation, action, and reward continues as the agent learns to navigate the environment and achieve its goal. The interplay of these five components is fundamental to how Reinforcement Learning algorithms operate.</p>
+<hr />
+<h2 id="what-are-some-applications-of-reinforcement-learning">What are some applications of Reinforcement Learning?</h2>
+<p>Reinforcement Learning (RL) is being applied to a fascinating and growing range of real-world problems where an agent needs to learn optimal behavior through trial and error. Here are some key applications:</p>
+<p><strong>1. Robotics and Automation:</strong></p>
+<ul>
+<li><strong>Robot Control:</strong> Training robots to perform complex tasks like grasping objects, navigating environments, assembly line work, and even performing surgery. RL allows robots to learn adaptable and efficient movements without explicit programming for every scenario.</li>
+<li><strong>Autonomous Vehicles:</strong> Developing self-driving cars that can make decisions in real-time, such as lane keeping, obstacle avoidance, and traffic navigation, by learning from simulated and real-world driving experiences.</li>
+</ul>
+<p><strong>2. Game Playing:</strong></p>
+<ul>
+<li><strong>Board Games:</strong> RL has achieved remarkable success in mastering complex board games like Go (AlphaGo, AlphaGo Zero), Chess, and Atari games, often surpassing human expert level.</li>
+<li><strong>Video Games:</strong> Training AI agents to play video games intelligently, for tasks like controlling characters, developing strategies, and even creating non-player characters (NPCs) with more realistic behavior.</li>
+</ul>
+<p><strong>3. Resource Management:</strong></p>
+<ul>
+<li><strong>Energy Optimization:</strong> Controlling heating, ventilation, and air conditioning (HVAC) systems in buildings to minimize energy consumption while maintaining comfort. RL agents can learn optimal strategies based on occupancy, weather patterns, and energy prices.</li>
+<li><strong>Network Optimization:</strong> Managing network resources, optimizing data routing, and improving the quality of service in communication networks.</li>
+<li><strong>Traffic Light Control:</strong> Developing intelligent traffic light systems that adapt to real-time traffic flow to reduce congestion and improve travel times.</li>
+</ul>
+<p><strong>4. Finance and Trading:</strong></p>
+<ul>
+<li><strong>Algorithmic Trading:</strong> Developing automated trading strategies that can learn to make profitable decisions in complex and dynamic financial markets.</li>
+<li><strong>Portfolio Optimization:</strong> Optimizing the allocation of assets in a portfolio to maximize returns while managing risk.</li>
+</ul>
+<p><strong>5. Healthcare:</strong></p>
+<ul>
+<li><strong>Personalized Treatment:</strong> Designing individualized treatment plans for patients with chronic diseases by learning from their medical history and responses to different interventions.</li>
+<li><strong>Drug Discovery:</strong> Assisting in the process of identifying potential drug candidates and optimizing drug synthesis.</li>
+<li><strong>Robotic Surgery Assistants:</strong> Developing robots that can assist surgeons with complex procedures, enhancing precision and minimizing invasiveness.</li>
+</ul>
+<p><strong>6. Recommender Systems:</strong></p>
+<ul>
+<li><strong>Personalized Recommendations:</strong> While often using collaborative filtering, RL can be used to create more dynamic and interactive recommendation systems that learn user preferences over time through feedback and interactions.</li>
+</ul>
+<p><strong>7. Natural Language Processing (NLP):</strong></p>
+<ul>
+<li><strong>Dialogue Systems:</strong> Building more natural and engaging chatbots and virtual assistants that can learn to have more coherent and goal-oriented conversations.</li>
+<li><strong>Text Summarization:</strong> Training agents to generate concise and informative summaries of long texts.</li>
+</ul>
+<p><strong>8. Industrial Automation:</strong></p>
+<ul>
+<li><strong>Process Optimization:</strong> Optimizing industrial processes, improving efficiency, reducing waste, and enhancing the quality of manufactured goods.</li>
+<li><strong>Predictive Maintenance:</strong> Learning patterns in sensor data to predict potential equipment failures and schedule maintenance proactively.</li>
+</ul>
+<p>These are just some of the many exciting applications of Reinforcement Learning. As the field continues to advance, we can expect to see even more innovative and impactful uses of this powerful learning paradigm in various aspects of our lives and industries.</p>
+<hr />
+<h2 id="how-does-reinforcement-learning-differ-from-supervised-and-unsupervised-learning">How does Reinforcement Learning differ from Supervised and Unsupervised Learning?</h2>
+<p>Let's clearly delineate how <strong>Reinforcement Learning (RL)</strong> stands apart from both:</p>
+<p><strong>Supervised Learning vs. Reinforcement Learning:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Supervised Learning</th>
+<th>Reinforcement Learning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Training Data</strong></td>
+<td>Labeled data (input-output pairs)</td>
+<td>No labeled data; learns from environment interaction</td>
+</tr>
+<tr>
+<td><strong>Feedback</strong></td>
+<td>Direct correct answers (labels) provided during training</td>
+<td>Evaluative feedback (rewards/penalties) after actions</td>
+</tr>
+<tr>
+<td><strong>Goal</strong></td>
+<td>Learn a mapping to predict future outputs</td>
+<td>Learn an optimal policy to maximize cumulative reward over time</td>
+</tr>
+<tr>
+<td><strong>Learning Process</strong></td>
+<td>Learning from static, labeled examples</td>
+<td>Learning through trial-and-error and dynamic interaction</td>
+</tr>
+<tr>
+<td><strong>Decision Making</strong></td>
+<td>Makes predictions based on learned mapping</td>
+<td>Makes sequences of decisions to achieve a long-term goal</td>
+</tr>
+<tr>
+<td><strong>Analogy (Baby)</strong></td>
+<td>Being told "That's a ball" repeatedly</td>
+<td>Learning not to touch a hot stove by feeling pain</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Unsupervised Learning vs. Reinforcement Learning:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Unsupervised Learning</th>
+<th>Reinforcement Learning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Training Data</strong></td>
+<td>Unlabeled data (input data only)</td>
+<td>No explicit training dataset; learns from environment</td>
+</tr>
+<tr>
+<td><strong>Feedback</strong></td>
+<td>No explicit feedback during learning</td>
+<td>Evaluative feedback (rewards/penalties) after actions</td>
+</tr>
+<tr>
+<td><strong>Goal</strong></td>
+<td>Discover hidden patterns and structures in data</td>
+<td>Learn an optimal policy to maximize cumulative reward over time</td>
+</tr>
+<tr>
+<td><strong>Learning Process</strong></td>
+<td>Finding inherent groupings or relationships</td>
+<td>Learning through interaction and consequences of actions</td>
+</tr>
+<tr>
+<td><strong>Decision Making</strong></td>
+<td>Identifies patterns or reduces dimensionality</td>
+<td>Makes sequences of decisions to achieve a specific goal</td>
+</tr>
+<tr>
+<td><strong>Analogy (Baby)</strong></td>
+<td>Grouping toys based on similar features themselves</td>
+<td>Learning to reach for a toy by trying different movements</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Here's a concise summary of the key differences:</strong></p>
+<ul>
+<li><strong>Data:</strong> Supervised learning needs labeled data, unsupervised learning needs unlabeled data, and reinforcement learning doesn't strictly need a pre-existing dataset but learns through its interactions with an environment.</li>
+<li><strong>Feedback:</strong> Supervised learning gets direct corrections, unsupervised learning gets no direct feedback during learning, and reinforcement learning gets evaluative feedback (rewards/penalties) based on its actions.</li>
+<li><strong>Goal:</strong> Supervised learning aims to predict, unsupervised learning aims to discover patterns, and reinforcement learning aims to find an optimal strategy to achieve a goal.</li>
+<li><strong>Learning:</strong> Supervised and unsupervised learning often deal with static datasets, while reinforcement learning involves an active agent interacting with a dynamic environment over time.</li>
+</ul>
+<p>Think of it this way:</p>
+<ul>
+<li><strong>Supervised:</strong> Learning <em>what</em> is what (classification) or <em>how much/many</em> (regression) based on examples with correct answers.</li>
+<li><strong>Unsupervised:</strong> Learning the <em>structure</em> of the data – finding natural groups or reducing complexity without knowing the "answers."</li>
+<li><strong>Reinforcement:</strong> Learning <em>how to act</em> to achieve a goal through trial-and-error and rewards/penalties.</li>
+</ul>
+<p>While these are distinct paradigms, they can sometimes be combined or used in sequence to solve complex problems. For instance, unsupervised learning might be used to pre-process data for a supervised task, or reinforcement learning agents might use supervised learning to learn value functions.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

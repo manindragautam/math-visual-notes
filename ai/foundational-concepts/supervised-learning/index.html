@@ -1,0 +1,1407 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../introduction-to-machine-learning/">
+      
+      
+        <link rel="next" href="../unsupervised-learning/">
+      
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>Supervised Learning - ManiMorphs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Sans 3";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#supervised-learning" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="ManiMorphs" class="md-header__button md-logo" aria-label="ManiMorphs" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ManiMorphs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Supervised Learning
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ManiMorphs" class="md-nav__button md-logo" aria-label="ManiMorphs" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
+
+    </a>
+    ManiMorphs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Maths
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pre-Algebra
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Pre-Algebra
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/whole-numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Whole Numbers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/integers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/foundational-number-concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Number Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/fractions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fractions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/ratios-rates-and-proportions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ratios, Rates & Proportions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/decimals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Decimals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/percentages-and-basic-statistics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Percentages & Basic Statistics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/measurement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Algebra 1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Algebra 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/linear-equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/linear-inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Inequalities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/graphing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Graphing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/linear-systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/exponents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exponents
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/factoring/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Factoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/rational-expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rational Expressions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/radicals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radicals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/quadratic-equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quadratic Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Artificial Intelligence
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Artificial Intelligence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Foundational Concepts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Foundational Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../what-is-artificial-intelligence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What is Artificial Intelligence?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../history-of-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History of AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction-to-machine-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Machine Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Supervised Learning
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Supervised Learning
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explain-supervised-learning-with-a-simple-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explain Supervised Learning with a simple example.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-difference-between-classification-and-regression-in-supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the difference between classification and regression in Supervised Learning?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-some-common-algorithms-used-in-supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are some common algorithms used in Supervised Learning?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-training-data-and-why-is-it-important-in-supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is 'training data' and why is it important in Supervised Learning?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unsupervised-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unsupervised Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reinforcement-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reinforcement Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explain-supervised-learning-with-a-simple-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explain Supervised Learning with a simple example.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-difference-between-classification-and-regression-in-supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is the difference between classification and regression in Supervised Learning?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-some-common-algorithms-used-in-supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are some common algorithms used in Supervised Learning?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-training-data-and-why-is-it-important-in-supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is 'training data' and why is it important in Supervised Learning?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="supervised-learning"><strong>Supervised Learning</strong></h1>
+<h2 id="explain-supervised-learning-with-a-simple-example">Explain Supervised Learning with a simple example.</h2>
+<p>Okay, imagine you have a big box of different kinds of fruits: apples, bananas, and oranges. You want to teach a computer to recognize these fruits just by looking at them. This is what <strong>Supervised Learning</strong> is like!</p>
+<p>Here's how it works with our fruit example:</p>
+<ol>
+<li>
+<p><strong>You are the "Supervisor" or "Teacher":</strong> You already know the names of all the fruits.</p>
+</li>
+<li>
+<p><strong>You provide "Labeled Examples" (the training data):</strong> You take out one fruit at a time and show it to the computer. For each fruit, you tell the computer <strong>what it is</strong>:</p>
+<ul>
+<li>You show a red, round fruit and say, "This is an <strong>Apple</strong>."</li>
+<li>You show a yellow, curved fruit and say, "This is a <strong>Banana</strong>."</li>
+<li>You show an orange, round fruit and say, "This is an <strong>Orange</strong>."</li>
+<li>You repeat this process many, many times with different kinds of apples (red, green, small, big), different bananas (ripe, slightly green), and different oranges (small, large, navel).</li>
+</ul>
+</li>
+<li>
+<p><strong>The Computer "Learns" the Patterns:</strong> The computer looks at all these examples and tries to find patterns and features that are unique to each type of fruit.</p>
+<ul>
+<li>It might learn that apples are often round and can be red or green.</li>
+<li>It might learn that bananas are usually long and curved and are yellow when ripe.</li>
+<li>It might learn that oranges are round and have a distinct orange color and a bumpy skin.</li>
+</ul>
+</li>
+<li>
+<p><strong>You "Test" the Computer with New, Unseen Data:</strong> After showing the computer lots of labeled examples, you bring out a new fruit that the computer has never seen before. Let's say it's a green apple.</p>
+</li>
+<li>
+<p><strong>The Computer "Predicts" the Label:</strong> Based on what it has learned from all the previous examples, the computer will try to guess what the new fruit is. It might look at its round shape and greenish color and say, "I think this is an <strong>Apple</strong>!"</p>
+</li>
+<li>
+<p><strong>You Check if it's Correct (Supervise):</strong> You then tell the computer if it was right or wrong. If it said "Apple" and it was indeed an apple, that's a success! If it guessed "Orange," you would say, "No, this is actually an <strong>Apple</strong>." This feedback helps the computer to refine its understanding and learn better in the future.</p>
+</li>
+</ol>
+<p><strong>So, the key idea of Supervised Learning is:</strong></p>
+<ul>
+<li>You have a teacher (you) who provides the correct answers (labels) for the data (fruits).</li>
+<li>The computer learns a rule or a model that can map the input data (the appearance of the fruit) to the correct output (the name of the fruit).</li>
+<li>The goal is for the computer to be able to accurately predict the labels for new, unseen data.</li>
+</ul>
+<p>Think of it like studying with flashcards where one side has a picture and the other side has the answer. By seeing many examples with the correct answers, you learn to recognize the picture even when you see a new flashcard. The computer does something similar with data in Supervised Learning.</p>
+<hr />
+<h2 id="what-is-the-difference-between-classification-and-regression-in-supervised-learning">What is the difference between classification and regression in Supervised Learning?</h2>
+<p>Alright, let's break down the difference between <strong>Classification</strong> and <strong>Regression</strong> in Supervised Learning with a clear and simple analogy. Remember our fruit-recognizing computer? We used it for classification. Now, let's introduce a new task!</p>
+<p>Imagine you have a plant, and you're carefully measuring its height every day. You also note down how much sunlight it gets and how much water you give it. You want to teach a computer to <strong>predict how tall your plant will be after a certain number of days</strong> based on the sunlight and water it receives.</p>
+<p>Here's the key difference:</p>
+<p><strong>Classification: Sorting into Categories (Like Naming the Fruit)</strong></p>
+<ul>
+<li><strong>The Goal:</strong> The computer's job is to assign the input data (the fruit's appearance) into <strong>distinct categories</strong> or <strong>classes</strong> (Apple, Banana, Orange).</li>
+<li><strong>The Output:</strong> The answer the computer gives is a <strong>label</strong> or a <strong>category</strong>. It's a choice from a limited set of options.</li>
+<li><strong>Think of it as answering a multiple-choice question:</strong> Is this fruit A) Apple, B) Banana, or C) Orange?</li>
+</ul>
+<p><strong>Regression: Predicting a Continuous Value (Like Predicting Plant Height)</strong></p>
+<ul>
+<li><strong>The Goal:</strong> The computer's job is to <strong>predict a continuous numerical value</strong> based on the input data (sunlight and water amount).</li>
+<li><strong>The Output:</strong> The answer the computer gives is a <strong>number</strong> within a range. It's not just picking from a few options; it's estimating a specific value.</li>
+<li><strong>Think of it as answering a "fill in the blank" question with a number:</strong> Based on the sunlight and water, the plant will be <strong>__</strong> centimeters tall in 5 days.</li>
+</ul>
+<p><strong>Here's a table summarizing the key differences:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Classification</th>
+<th>Regression</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Goal</strong></td>
+<td>Assign data to predefined categories/classes</td>
+<td>Predict a continuous numerical value</td>
+</tr>
+<tr>
+<td><strong>Output</strong></td>
+<td>Discrete label (e.g., "Cat", "Dog", "Spam")</td>
+<td>Continuous number (e.g., price, temperature, height)</td>
+</tr>
+<tr>
+<td><strong>Think of...</strong></td>
+<td>Sorting items into boxes with specific labels</td>
+<td>Estimating a measurement on a scale</td>
+</tr>
+<tr>
+<td><strong>Examples</strong></td>
+<td>- Identifying animal in an image</td>
+<td>- Predicting the price of a house</td>
+</tr>
+<tr>
+<td></td>
+<td>- Classifying email as spam or not</td>
+<td>- Forecasting tomorrow's temperature</td>
+</tr>
+<tr>
+<td></td>
+<td>- Recognizing handwritten digits (0-9)</td>
+<td>- Estimating a student's test score</td>
+</tr>
+</tbody>
+</table>
+<p><strong>In essence:</strong></p>
+<ul>
+<li><strong>Classification answers "What category does this belong to?"</strong></li>
+<li><strong>Regression answers "How much?" or "How many?"</strong></li>
+</ul>
+<p>Both are powerful tools in Supervised Learning, but they are used for fundamentally different types of prediction tasks. You choose the type of algorithm based on whether you want to categorize things or predict a numerical value.</p>
+<hr />
+<h2 id="what-are-some-common-algorithms-used-in-supervised-learning">What are some common algorithms used in Supervised Learning?</h2>
+<p>Here are some common algorithms used in Supervised Learning, categorized by whether they are typically used for <strong>Classification</strong> or <strong>Regression</strong> tasks:</p>
+<p><strong>For Classification (Predicting Categories):</strong></p>
+<ul>
+<li><strong>Logistic Regression:</strong> Although the name includes "Regression," it's primarily used for binary classification problems (two categories, like spam/not spam, yes/no). It models the probability of an instance belonging to a particular class. It can also be extended for multi-class classification.</li>
+<li><strong>Support Vector Machines (SVM):</strong> This powerful algorithm finds the best line or hyperplane that separates different classes in the data with the largest possible margin. It's effective in high-dimensional spaces and can handle non-linear boundaries using kernel functions.</li>
+<li><strong>Decision Trees:</strong> These algorithms create a tree-like structure of decisions to classify data based on features. They are easy to understand and visualize.</li>
+<li><strong>Random Forest:</strong> This is an ensemble method that builds multiple decision trees and combines their predictions to get a more accurate and stable classification. It helps to reduce overfitting.</li>
+<li><strong>K-Nearest Neighbors (KNN):</strong> This simple algorithm classifies a new data point based on the majority class among its 'k' nearest neighbors in the training data.</li>
+<li><strong>Naive Bayes:</strong> This algorithm applies Bayes' theorem with the "naive" assumption of independence between features. It's often used for text classification tasks like spam filtering due to its simplicity and efficiency, even if the independence assumption doesn't perfectly hold.</li>
+<li><strong>Gradient Boosting Algorithms (e.g., XGBoost, LightGBM, CatBoost):</strong> These are ensemble methods that build trees sequentially, with each new tree trying to correct the errors made by the previous ones. They often achieve high accuracy in classification tasks.</li>
+<li><strong>Neural Networks (especially for complex tasks):</strong> Deep learning models with multiple layers can learn intricate patterns and are very effective for complex classification problems like image recognition and natural language understanding.</li>
+</ul>
+<p><strong>For Regression (Predicting Continuous Values):</strong></p>
+<ul>
+<li><strong>Linear Regression:</strong> This is one of the simplest and most common regression algorithms. It models the relationship between a dependent variable and one or more independent variables by fitting a linear equation to the observed data.</li>
+<li><strong>Polynomial Regression:</strong> This is a variation of linear regression that can model non-linear relationships by fitting a polynomial equation to the data.</li>
+<li><strong>Decision Trees (for Regression):</strong> Decision trees can also be adapted for regression tasks where the output is a continuous value instead of a class label. The tree splits the data based on features, and the prediction at a leaf node is the average value of the target variable in that leaf.</li>
+<li><strong>Random Forest (for Regression):</strong> Similar to its classification counterpart, Random Forest for regression builds multiple decision trees and averages their predictions to improve accuracy and reduce overfitting.</li>
+<li><strong>Support Vector Regression (SVR):</strong> An adaptation of SVM for regression tasks. It tries to find a function that approximates the continuous target variable with a certain margin of error.</li>
+<li><strong>K-Nearest Neighbors (KNN) (for Regression):</strong> KNN can also be used for regression by predicting the value of a new data point as the average (or median) of the target values of its 'k' nearest neighbors.</li>
+<li><strong>Gradient Boosting Algorithms (e.g., XGBoost, LightGBM, CatBoost):</strong> These powerful ensemble methods are also highly effective for regression problems, often achieving state-of-the-art results.</li>
+<li><strong>Neural Networks (especially for complex tasks):</strong> Neural networks, particularly deep learning models, can learn complex non-linear relationships and are used for a wide range of regression tasks, such as predicting stock prices or energy consumption.</li>
+</ul>
+<p>It's important to note that some algorithms, like Decision Trees, Random Forests, KNN, and Neural Networks, can be used for both classification and regression depending on how they are implemented and the nature of the output variable. The choice of algorithm depends on the specific problem, the characteristics of the data, and the desired performance metrics.</p>
+<hr />
+<h2 id="what-is-training-data-and-why-is-it-important-in-supervised-learning">What is 'training data' and why is it important in Supervised Learning?</h2>
+<p><strong>Training Data</strong> is the <strong>dataset</strong> that we feed into a machine learning algorithm to teach it how to perform a specific task, such as classification or regression. This dataset consists of two crucial components for each data point:</p>
+<ol>
+<li>
+<p><strong>Input Features (or just "Features"):</strong> These are the characteristics or attributes of the data that the machine learning model will learn from. Think of them as the descriptive information about each instance.</p>
+<ul>
+<li><strong>Example (Image Recognition):</strong> The pixel values (color intensity at each point) of an image.</li>
+<li><strong>Example (Spam Detection):</strong> The words in an email, the sender's address, the presence of certain links, etc.</li>
+<li><strong>Example (House Price Prediction):</strong> The square footage of the house, the number of bedrooms, the location, the year it was built, etc.</li>
+</ul>
+</li>
+<li>
+<p><strong>Corresponding Output Labels (for Classification) or Target Values (for Regression):</strong> These are the correct answers or outcomes associated with each set of input features. This is the "supervision" aspect – we are telling the machine what the right answer is for each example it sees during training.</p>
+<ul>
+<li><strong>Example (Image Recognition):</strong> The label "cat" for an image containing a cat, or "dog" for an image containing a dog.</li>
+<li><strong>Example (Spam Detection):</strong> The label "spam" or "not spam" for each email.</li>
+<li><strong>Example (House Price Prediction):</strong> The actual selling price of the house.</li>
+</ul>
+</li>
+</ol>
+<p><strong>So, Training Data = (Set of Input Features, Corresponding Output Labels/Target Values) for multiple data points.</strong></p>
+<p><strong>Why is Training Data so important in Supervised Learning for Machines?</strong></p>
+<ol>
+<li>
+<p><strong>Enables Learning the Underlying Function:</strong> The primary goal of a supervised learning algorithm is to learn the <strong>mapping function</strong> or the relationship between the input features and the output labels/target values present in the training data. By analyzing numerous labeled examples, the algorithm adjusts its internal parameters to best approximate this function.</p>
+</li>
+<li>
+<p><strong>Guides Model Parameter Adjustment:</strong> During the training process, the algorithm makes predictions based on the input features and compares these predictions to the actual output labels/target values in the training data. It then uses this discrepancy (the error) to adjust its internal parameters (weights, biases, decision boundaries, etc.) to minimize future errors. The training data provides the <strong>ground truth</strong> that guides this parameter tuning.</p>
+</li>
+<li>
+<p><strong>Facilitates Generalization to Unseen Data:</strong> A well-representative training dataset allows the machine learning model to learn general patterns and relationships that are applicable to new, unseen data. If the training data covers a wide range of possible inputs and their corresponding outputs, the model is more likely to make accurate predictions on data it hasn't encountered before.</p>
+</li>
+<li>
+<p><strong>Determines Model Performance and Accuracy:</strong> The quality and quantity of the training data directly impact the performance and accuracy of the trained model.</p>
+<ul>
+<li><strong>Quantity:</strong> More relevant and diverse training data generally leads to better learning and improved generalization.</li>
+<li><strong>Quality:</strong> Accurate, consistent, and representative labels/target values are crucial. Noisy or biased training data can lead to a poorly performing or unfair model.</li>
+</ul>
+</li>
+</ol>
+<p><strong>In essence, training data is the fuel and the instruction manual for a supervised learning algorithm.</strong> It provides the machine with the examples and the correct answers needed to learn the task and make intelligent predictions or classifications on new, similar data. Without sufficient and high-quality training data, the machine learning model will be unable to learn effectively and will likely perform poorly on real-world applications.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

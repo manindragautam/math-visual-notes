@@ -1,0 +1,1344 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../../maths/algebra1/quadratic-equations/">
+      
+      
+        <link rel="next" href="../history-of-ai/">
+      
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>What is Artificial Intelligence? - ManiMorphs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Sans 3";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-is-artificial-intelligence" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="ManiMorphs" class="md-header__button md-logo" aria-label="ManiMorphs" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ManiMorphs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              What is Artificial Intelligence?
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ManiMorphs" class="md-nav__button md-logo" aria-label="ManiMorphs" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
+
+    </a>
+    ManiMorphs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Maths
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pre-Algebra
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Pre-Algebra
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/whole-numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Whole Numbers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/integers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/foundational-number-concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Number Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/fractions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fractions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/ratios-rates-and-proportions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ratios, Rates & Proportions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/decimals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Decimals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/percentages-and-basic-statistics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Percentages & Basic Statistics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/measurement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Algebra 1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Algebra 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/linear-equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/linear-inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Inequalities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/graphing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Graphing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/linear-systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/exponents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exponents
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/factoring/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Factoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/rational-expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rational Expressions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/radicals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radicals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/quadratic-equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quadratic Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Artificial Intelligence
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Artificial Intelligence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Foundational Concepts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Foundational Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    What is Artificial Intelligence?
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    What is Artificial Intelligence?
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explain-what-artificial-intelligence-ai-is-in-simple-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explain what Artificial Intelligence (AI) is in simple terms?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-some-real-world-examples-of-ai-that-i-encounter-daily" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are some real-world examples of AI that I encounter daily?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-main-goals-of-ai-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the main goals of AI research?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-different-branches-or-subfields-within-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the different branches or subfields within AI?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../history-of-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History of AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction-to-machine-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Machine Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../supervised-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supervised Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unsupervised-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unsupervised Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reinforcement-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reinforcement Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explain-what-artificial-intelligence-ai-is-in-simple-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explain what Artificial Intelligence (AI) is in simple terms?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-some-real-world-examples-of-ai-that-i-encounter-daily" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are some real-world examples of AI that I encounter daily?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-main-goals-of-ai-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the main goals of AI research?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-different-branches-or-subfields-within-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the different branches or subfields within AI?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="what-is-artificial-intelligence"><strong>What is Artificial Intelligence?</strong></h1>
+<h2 id="explain-what-artificial-intelligence-ai-is-in-simple-terms">Explain what Artificial Intelligence (AI) is in simple terms?</h2>
+<p>Imagine teaching a computer to think and learn like a human. That's basically what <strong>Artificial Intelligence (AI)</strong> is all about.</p>
+<p>Think of it like this:</p>
+<ul>
+<li><strong>Normal computers</strong> follow strict instructions. If you tell them to add 2 + 2, they will always give you 4. They can't think for themselves or learn from mistakes.</li>
+<li><strong>AI</strong> aims to create computers or machines that can do things that usually require human intelligence, such as:<ul>
+<li><strong>Learning:</strong> Improving over time based on new information.</li>
+<li><strong>Problem-solving:</strong> Figuring out solutions to complex issues.</li>
+<li><strong>Decision-making:</strong> Choosing the best course of action based on data.</li>
+<li><strong>Understanding language:</strong> Processing and responding to what you say or write.</li>
+<li><strong>Recognizing patterns:</strong> Identifying trends and connections in data.</li>
+<li><strong>Seeing and understanding images:</strong> Identifying objects and scenes.</li>
+</ul>
+</li>
+</ul>
+<p><strong>So, instead of just following fixed rules, AI tries to make computers "smart" enough to handle new situations, learn from experience, and perform tasks that typically need a human brain.</strong></p>
+<p><strong>Think of some examples you might have encountered:</strong></p>
+<ul>
+<li><strong>Voice assistants</strong> like Siri or Alexa understand your voice and answer questions.</li>
+<li><strong>Recommendation systems</strong> on Netflix or Amazon suggest movies or products you might like based on your past activity.</li>
+<li><strong>Self-driving cars</strong> use AI to navigate roads and avoid obstacles.</li>
+<li><strong>Spam filters</strong> in your email learn to identify unwanted messages.</li>
+</ul>
+<p>These are all examples of AI in action, making computers more intelligent and capable of doing more complex things.</p>
+<p>In simple terms, <strong>AI is about making machines think and act more like humans.</strong></p>
+<hr />
+<h2 id="what-are-some-real-world-examples-of-ai-that-i-encounter-daily">What are some real-world examples of AI that I encounter daily?</h2>
+<p>You interact with Artificial Intelligence (AI) in many ways every single day, often without even realizing it. Here are some real-world examples you likely encounter:</p>
+<p><strong>On Your Smartphone:</strong></p>
+<ul>
+<li><strong>Virtual Assistants:</strong> If you use <strong>Siri (Apple), Google Assistant, Alexa (Amazon), Cortana (Microsoft), or Bixby (Samsung)</strong>, you're interacting with AI. They understand your voice commands, answer questions, set reminders, play music, make calls, and control smart home devices. For example, you can say, "Hey Google, what's the weather like today?" or "Siri, set a timer for 15 minutes."</li>
+<li><strong>Face Recognition:</strong> Many smartphones use <strong>facial recognition</strong> to unlock your device or authenticate for apps. AI algorithms analyze your unique facial features to verify your identity.</li>
+<li><strong>Autocorrect and Predictive Text:</strong> When you type messages or emails, AI-powered features like <strong>autocorrect</strong> and <strong>predictive text</strong> suggest words and correct spelling and grammar errors. For instance, if you misspell a word, your phone likely corrects it automatically.</li>
+<li><strong>Smart Photo Features:</strong> Your phone's camera app often uses AI to <strong>recognize scenes and objects</strong> in your photos, automatically adjust settings for better pictures, and even group photos based on faces or locations.</li>
+</ul>
+<p><strong>Online &amp; Social Media:</strong></p>
+<ul>
+<li><strong>Search Engines:</strong> <strong>Google, Bing, and other search engines</strong> use AI algorithms to understand your search queries and provide relevant results. They learn from vast amounts of data to refine and improve search results over time. For example, if you type a question, the search engine tries to understand the intent behind it and provide the most helpful answer.</li>
+<li><strong>Recommendation Systems:</strong> Platforms like <strong>Netflix, Amazon, Spotify, and YouTube</strong> use AI to analyze your viewing or purchase history and suggest content or products you might like. If you've watched a lot of action movies on Netflix, it will likely recommend similar films.</li>
+<li><strong>Social Media Feeds:</strong> Social media platforms like <strong>Facebook, Instagram, Twitter, and TikTok</strong> use AI algorithms to curate your news feed, showing you content they think you'll find engaging based on your past interactions. They also use AI for features like friend suggestions and identifying content you might be interested in.</li>
+<li><strong>Chatbots for Customer Service:</strong> Many websites and apps use <strong>AI-powered chatbots</strong> to provide instant customer support, answer frequently asked questions, and guide you through processes. You might see a chat window pop up on a website asking if you need help.</li>
+<li><strong>Spam Filters:</strong> Your email service uses AI to <strong>identify and filter out spam</strong> or unwanted emails, keeping your inbox cleaner.</li>
+</ul>
+<p><strong>Navigation &amp; Transportation:</strong></p>
+<ul>
+<li><strong>GPS Navigation Apps:</strong> Apps like <strong>Google Maps and Apple Maps</strong> use AI to analyze real-time traffic data, suggest the best routes, and provide estimated arrival times. They can also warn you about traffic jams, road closures, and accidents.</li>
+<li><strong>Ride-Sharing Apps:</strong> Apps like <strong>Uber and Ola</strong> use AI to match you with drivers, calculate fares, and optimize routes.</li>
+</ul>
+<p><strong>Smart Home Devices:</strong></p>
+<ul>
+<li><strong>Smart Speakers:</strong> Devices like <strong>Amazon Echo and Google Home</strong> use AI voice assistants (Alexa and Google Assistant) to control other smart home devices, play music, answer questions, and more.</li>
+<li><strong>Smart Thermostats:</strong> Devices like <strong>Nest</strong> learn your temperature preferences and automatically adjust your home's heating and cooling to save energy and maintain comfort.</li>
+<li><strong>Robot Vacuum Cleaners:</strong> Some robot vacuums use AI to map your home, avoid obstacles, and efficiently clean your floors.</li>
+</ul>
+<p><strong>Other Areas:</strong></p>
+<ul>
+<li><strong>Banking and Finance:</strong> AI is used for <strong>fraud detection</strong>, analyzing transaction patterns to identify suspicious activity and protect your accounts.</li>
+<li><strong>Healthcare:</strong> AI is being used in various ways, from <strong>analyzing medical images</strong> to <strong>assisting with diagnoses</strong> and <strong>personalizing treatment plans</strong>.</li>
+<li><strong>Online Shopping:</strong> Beyond recommendations, AI is used for <strong>dynamic pricing</strong>, adjusting prices based on demand and other factors.</li>
+</ul>
+<p>These are just some of the many ways AI is integrated into your daily life, making technology more convenient, personalized, and efficient. As AI continues to develop, you can expect to see it in even more aspects of your routine.</p>
+<hr />
+<h2 id="what-are-the-main-goals-of-ai-research">What are the main goals of AI research?</h2>
+<p>The main goals of Artificial Intelligence (AI) research are centered around understanding, replicating, and ultimately enhancing aspects of human intelligence in machines. These goals can be broadly categorized as follows:</p>
+<p><strong>Core Goals:</strong></p>
+<ul>
+<li><strong>Reasoning and Problem-Solving:</strong> To enable machines to perform logical deductions, solve complex problems, and navigate novel situations, similar to human cognitive abilities when tackling puzzles or making strategic decisions. For example, developing algorithms that can diagnose medical conditions based on symptoms and test results.</li>
+<li><strong>Knowledge Representation:</strong> To develop methods for computers to store and organize information in a way that allows for efficient retrieval, understanding, and use. This involves representing real-world facts, objects, categories, and relationships. For instance, creating a knowledge base about different animal species and their characteristics.</li>
+<li><strong>Planning and Decision-Making:</strong> To create intelligent agents that can set goals, develop strategies, and make optimal decisions to achieve those goals in various environments. This includes automated planning for tasks like logistics and decision-making in dynamic situations, such as self-driving cars navigating traffic.</li>
+<li><strong>Learning:</strong> To enable machines to improve their performance over time based on experience and data, without being explicitly programmed for every specific task. This involves various techniques like machine learning and deep learning, allowing systems to recognize patterns, make predictions, and adapt to new information. For example, a spam filter learning to identify unwanted emails based on user feedback.</li>
+<li><strong>Natural Language Processing (NLP):</strong> To allow computers to understand, interpret, generate, and communicate in human languages effectively. This includes tasks like speech recognition, language translation, sentiment analysis, and creating chatbots that can converse naturally.</li>
+<li><strong>Perception:</strong> To equip machines with the ability to sense and interpret their environment through various sensory inputs like vision, sound, and touch. This involves tasks such as image recognition, object detection, and understanding audio cues, crucial for applications like autonomous robots and computer vision systems.</li>
+<li><strong>General Intelligence (AGI):</strong> This is a long-term and ambitious goal to create AI systems with human-level cognitive abilities, capable of performing any intellectual task that a human can. While still largely theoretical, it drives much of the fundamental research in the field.</li>
+</ul>
+<p><strong>Overarching and Applied Goals:</strong></p>
+<ul>
+<li><strong>Automation of Tasks:</strong> To develop AI systems that can automate repetitive, tedious, or dangerous tasks across various industries, increasing efficiency and freeing up human workers for more complex and creative work. Examples include robots in manufacturing and AI-powered data entry systems.</li>
+<li><strong>Enhancing Human Capabilities:</strong> To create AI tools that augment human intelligence and decision-making, providing insights, analyzing large datasets, and supporting complex tasks in fields like healthcare, finance, and scientific research. For instance, AI assisting doctors in diagnosing diseases or financial analysts in predicting market trends.</li>
+<li><strong>Fostering Creativity and Innovation:</strong> To explore how AI can be used as a tool to assist artists, writers, designers, and other creative professionals in generating new ideas, exploring different styles, and pushing the boundaries of human imagination.</li>
+<li><strong>Improving Healthcare and Medicine:</strong> To leverage AI for medical image analysis, drug discovery, personalized treatment plans, patient monitoring, and the development of virtual health assistants, ultimately aiming to improve patient outcomes and healthcare efficiency.</li>
+<li><strong>Developing Robust and Safe AI:</strong> With the increasing integration of AI into critical aspects of life, a key goal is to ensure that AI systems are reliable, secure, trustworthy, and operate ethically, minimizing potential risks and unintended consequences. This includes research into AI safety, fairness, and transparency.</li>
+<li><strong>Creating Human-AI Collaboration:</strong> To design AI systems that can work effectively alongside humans, complementing each other's strengths and weaknesses to achieve common goals, rather than simply replacing human workers.</li>
+</ul>
+<p>These goals are interconnected and drive the diverse areas of research within AI, including machine learning, deep learning, robotics, computer vision, natural language processing, knowledge representation, and many others. The field is constantly evolving, with new goals and challenges emerging as AI technology advances.</p>
+<hr />
+<h2 id="what-are-the-different-branches-or-subfields-within-ai">What are the different branches or subfields within AI?</h2>
+<p>Artificial Intelligence (AI) is a vast and interdisciplinary field. It isn't just one single thing but rather an umbrella term encompassing many different branches and subfields that focus on specific techniques, applications, and goals. Here are some of the main branches and subfields within AI:</p>
+<p><strong>Core Subfields Focused on Enabling Intelligence:</strong></p>
+<ul>
+<li><strong>Machine Learning (ML):</strong> This is arguably the most prominent subfield of AI today. It focuses on developing algorithms that allow computers to learn from data without being explicitly programmed. Instead of writing specific rules, you feed the system data, and it learns patterns and makes predictions or decisions based on that data.<ul>
+<li><strong>Supervised Learning:</strong> The algorithm learns from labeled data, where the correct output is provided for the input. Examples include image classification (identifying if a picture contains a cat or a dog) and spam detection (classifying emails as spam or not spam).</li>
+<li><strong>Unsupervised Learning:</strong> The algorithm learns from unlabeled data, trying to find hidden patterns or structures. Examples include customer segmentation (grouping customers with similar purchasing behavior) and anomaly detection (identifying unusual data points).</li>
+<li><strong>Reinforcement Learning:</strong> An agent learns to behave in an environment by receiving rewards or penalties for its actions. This is often used in training robots, game playing AI (like AlphaGo), and autonomous systems.</li>
+</ul>
+</li>
+<li><strong>Deep Learning (DL):</strong> A subfield of machine learning that uses artificial neural networks with multiple layers (hence "deep") to analyze complex data. It has been highly successful in areas like image recognition, natural language processing, and speech recognition. Examples include facial recognition software and advanced language translation tools.</li>
+<li><strong>Natural Language Processing (NLP):</strong> This field focuses on enabling computers to understand, interpret, generate, and manipulate human language. It's behind technologies like voice assistants (Siri, Alexa), machine translation (Google Translate), sentiment analysis (understanding the emotion behind text), and chatbots.</li>
+<li><strong>Computer Vision:</strong> This branch deals with enabling computers to "see" and interpret visual information from the world, such as images and videos. Applications include facial recognition, object detection in self-driving cars, medical image analysis, and image search.</li>
+<li><strong>Robotics:</strong> This interdisciplinary field combines AI with engineering to design, build, operate, and apply robots. AI plays a crucial role in enabling robots to perceive their environment, plan movements, make decisions, and interact intelligently with humans. Examples include industrial robots, autonomous delivery drones, and robotic surgery assistants.</li>
+<li><strong>Knowledge Representation and Reasoning:</strong> This area focuses on how to represent knowledge in a way that computers can understand and use to reason, draw inferences, and solve problems. It involves creating knowledge bases, ontologies (structured representations of concepts and their relationships), and logical reasoning systems. Expert systems, which aim to mimic the decision-making abilities of human experts in specific domains, often rely on these techniques.</li>
+<li><strong>Planning and Decision Making:</strong> This subfield focuses on developing algorithms that allow AI agents to set goals, create plans to achieve those goals, and make optimal decisions in complex and dynamic environments. This is crucial for autonomous agents, scheduling systems, and resource allocation.</li>
+</ul>
+<p><strong>Other Important Subfields and Related Areas:</strong></p>
+<ul>
+<li><strong>Evolutionary Computation:</strong> This involves using biologically inspired algorithms like genetic algorithms and swarm intelligence to solve optimization problems and develop AI systems.</li>
+<li><strong>Fuzzy Logic:</strong> Unlike traditional binary logic (true or false), fuzzy logic deals with degrees of truth, allowing AI systems to handle uncertainty and vagueness in data, similar to human reasoning. It's used in control systems and decision-making processes where inputs might not be precise.</li>
+<li><strong>Cognitive Computing:</strong> This field aims to create AI systems that can simulate human thought processes, including learning, reasoning, and self-correction. It often involves integrating multiple AI subfields like NLP, machine learning, and knowledge representation to solve complex problems.</li>
+<li><strong>AI Ethics and Safety:</strong> As AI becomes more powerful and integrated into our lives, this increasingly important field addresses the ethical implications of AI development and deployment, focusing on issues like bias, fairness, transparency, accountability, and safety to prevent unintended harmful consequences.</li>
+<li><strong>Agent-Based Systems:</strong> This area focuses on designing and building autonomous agents that can perceive their environment, make decisions, and take actions to achieve their goals, often interacting with other agents. This is relevant in areas like multi-robot systems and simulating social behavior.</li>
+</ul>
+<p>It's important to note that these subfields are not always distinct and often overlap. For example, a sophisticated robot might use computer vision to perceive its surroundings, machine learning to learn new tasks, and NLP to interact with humans. The field of AI is constantly evolving, and new subfields and interdisciplinary areas continue to emerge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

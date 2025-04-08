@@ -1,0 +1,1506 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../history-of-ai/">
+      
+      
+        <link rel="next" href="../supervised-learning/">
+      
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>Introduction to Machine Learning - ManiMorphs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Sans 3";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction-to-machine-learning-ml" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="ManiMorphs" class="md-header__button md-logo" aria-label="ManiMorphs" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ManiMorphs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introduction to Machine Learning
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ManiMorphs" class="md-nav__button md-logo" aria-label="ManiMorphs" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
+
+    </a>
+    ManiMorphs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Maths
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Maths
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pre-Algebra
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Pre-Algebra
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/whole-numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Whole Numbers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/integers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/foundational-number-concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Number Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/fractions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fractions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/ratios-rates-and-proportions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ratios, Rates & Proportions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/decimals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Decimals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/percentages-and-basic-statistics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Percentages & Basic Statistics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/pre-algebra/measurement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Measurement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Algebra 1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Algebra 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/linear-equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/linear-inequalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Inequalities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/graphing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Graphing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/linear-systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/exponents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exponents
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/polynomials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/factoring/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Factoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/rational-expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rational Expressions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/radicals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radicals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../maths/algebra1/quadratic-equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quadratic Equations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Artificial Intelligence
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Artificial Intelligence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Foundational Concepts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Foundational Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../what-is-artificial-intelligence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What is Artificial Intelligence?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../history-of-ai/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History of AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Introduction to Machine Learning
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Machine Learning
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explain-machine-learning-ml-in-simple-terms-and-how-it-relates-to-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explain Machine Learning (ML) in simple terms and how it relates to AI.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-different-types-of-machine-learning-supervised-unsupervised-reinforcement-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the different types of Machine Learning? (Supervised, Unsupervised, Reinforcement Learning)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What are the different types of Machine Learning? (Supervised, Unsupervised, Reinforcement Learning)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#supervised-learning-the-art-of-guided-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supervised Learning: The Art of Guided Discovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unsupervised-learning-unearthing-hidden-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unsupervised Learning: Unearthing Hidden Structures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reinforcement-learning-learning-through-the-consequences-of-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reinforcement Learning: Learning Through the Consequences of Actions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#can-you-give-a-simple-analogy-to-understand-how-machines-learn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Can you give a simple analogy to understand how machines 'learn'?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-some-basic-applications-of-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are some basic applications of Machine Learning?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../supervised-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supervised Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unsupervised-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unsupervised Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reinforcement-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reinforcement Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#explain-machine-learning-ml-in-simple-terms-and-how-it-relates-to-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explain Machine Learning (ML) in simple terms and how it relates to AI.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-different-types-of-machine-learning-supervised-unsupervised-reinforcement-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the different types of Machine Learning? (Supervised, Unsupervised, Reinforcement Learning)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What are the different types of Machine Learning? (Supervised, Unsupervised, Reinforcement Learning)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#supervised-learning-the-art-of-guided-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supervised Learning: The Art of Guided Discovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unsupervised-learning-unearthing-hidden-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unsupervised Learning: Unearthing Hidden Structures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reinforcement-learning-learning-through-the-consequences-of-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reinforcement Learning: Learning Through the Consequences of Actions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#can-you-give-a-simple-analogy-to-understand-how-machines-learn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Can you give a simple analogy to understand how machines 'learn'?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-some-basic-applications-of-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are some basic applications of Machine Learning?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="introduction-to-machine-learning-ml"><strong>Introduction to Machine Learning (ML)</strong></h1>
+<h2 id="explain-machine-learning-ml-in-simple-terms-and-how-it-relates-to-ai">Explain Machine Learning (ML) in simple terms and how it relates to AI.</h2>
+<p>Okay, imagine you want to teach a dog a new trick, like fetching a ball. You don't write a detailed step-by-step instruction manual for the dog. Instead, you:</p>
+<ol>
+<li><strong>Show the dog what to do:</strong> You throw the ball and say "Fetch!"</li>
+<li><strong>Give feedback:</strong> When the dog brings the ball back, you reward it with a treat and praise. If it doesn't, you might gently guide it or try again.</li>
+<li><strong>Repeat:</strong> You do this over and over.</li>
+<li><strong>The dog learns:</strong> Eventually, the dog understands the connection between "Fetch!", the action of bringing the ball, and the reward. It learns to fetch.</li>
+</ol>
+<p><strong>Machine Learning (ML) is kind of like teaching a computer that way instead of giving it strict instructions for everything.</strong></p>
+<p><strong>Here's a simpler breakdown:</strong></p>
+<ul>
+<li><strong>Instead of telling a computer <em>exactly</em> how to solve a problem, you give it a lot of <em>data</em> related to the problem.</strong></li>
+<li><strong>You also give it an <em>algorithm</em> (a set of rules or a framework) that allows it to learn patterns and relationships within that data.</strong></li>
+<li><strong>The computer <em>learns</em> from the data by finding these patterns.</strong></li>
+<li><strong>Once it has learned, it can then use these patterns to make predictions, decisions, or classifications on new, unseen data.</strong></li>
+</ul>
+<p><strong>Think of some examples:</strong></p>
+<ul>
+<li><strong>Spam Filter:</strong> You don't tell the filter every single word that makes an email spam. Instead, you show it thousands of emails labeled as "spam" and "not spam." The ML algorithm learns to identify patterns (like certain words, sender addresses, email structure) that are likely associated with spam. Then, when a new email arrives, it uses those learned patterns to predict if it's spam or not.</li>
+<li><strong>Recommendation Systems (like Netflix or Amazon):</strong> You don't explicitly tell Netflix what movies you'll like. Instead, it looks at the movies you've watched and rated, and compares your behavior to millions of other users. The ML algorithm learns what kinds of movies people with similar tastes tend to enjoy and recommends those to you.</li>
+<li><strong>Image Recognition:</strong> You don't program a computer to identify every possible feature of a cat. Instead, you show it millions of pictures of cats (and non-cats), and the ML algorithm learns to recognize the visual patterns that define a cat.</li>
+</ul>
+<p><strong>How ML Relates to AI:</strong></p>
+<p><strong>Machine Learning is a <em>subset</em> or a <em>tool</em> within the broader field of Artificial Intelligence (AI).</strong></p>
+<p>Think of AI as the overall goal: to create machines that can perform tasks that typically require human intelligence. Machine Learning is one of the primary ways we try to achieve that goal.</p>
+<ul>
+<li><strong>AI is the big picture:</strong> It encompasses any technique that allows computers to mimic intelligent behavior (including rule-based systems, logical reasoning, etc.).</li>
+<li><strong>ML is a specific approach within AI:</strong> It focuses on enabling computers to learn from data without being explicitly programmed. It's about giving machines the ability to learn and improve on their own.</li>
+</ul>
+<p><strong>In short:</strong></p>
+<ul>
+<li><strong>AI is the dream of intelligent machines.</strong></li>
+<li><strong>Machine Learning is a key way we are trying to build those intelligent machines by teaching them from data.</strong></li>
+</ul>
+<p>So, while not all AI is machine learning, a significant portion of the exciting advancements and applications you see in AI today are powered by machine learning techniques.</p>
+<hr />
+<h2 id="what-are-the-different-types-of-machine-learning-supervised-unsupervised-reinforcement-learning">What are the different types of Machine Learning? (Supervised, Unsupervised, Reinforcement Learning)</h2>
+<p>Alright, let's talk about the core modalities of Machine Learning – the fundamental ways we coax intelligence from data. You've got the big three: Supervised, Unsupervised, and Reinforcement Learning. Each tackles different kinds of problems and leverages data in distinct ways.</p>
+<h3 id="supervised-learning-the-art-of-guided-discovery"><strong>Supervised Learning: The Art of Guided Discovery</strong></h3>
+<p>Imagine you're a detective trying to solve a case. You have a collection of past cases where you know all the details – the clues, the circumstances, and importantly, <em>who the culprit was</em>. Supervised Learning operates on a similar principle.</p>
+<ul>
+<li>
+<p><strong>The Core Idea:</strong> We provide the algorithm with a dataset where each data point is "labeled" with the correct answer or outcome. The goal is for the algorithm to learn the mapping between the input features and these labels. Think of it as learning by example, with a clear "right answer" provided for each training instance.</p>
+</li>
+<li>
+<p><strong>The Mechanism:</strong> The algorithm analyzes these labeled examples, trying to find patterns and relationships that connect the inputs to the outputs. It essentially builds a model that can predict the label for new, unseen data based on the patterns it has learned.</p>
+</li>
+<li>
+<p><strong>Key Applications:</strong></p>
+<ul>
+<li>
+<p><strong>Classification:</strong> Categorizing data into predefined classes. Examples include:</p>
+<ul>
+<li><strong>Image Recognition:</strong> Identifying whether an image contains a cat, a dog, or a bird. The labels are the animal names.</li>
+<li><strong>Medical Diagnosis:</strong> Determining if a tumor is benign or malignant based on patient data. The labels are "benign" or "malignant."</li>
+<li><strong>Fraud Detection:</strong> Classifying transactions as fraudulent or legitimate. The labels are "fraudulent" or "legitimate."</li>
+</ul>
+</li>
+<li>
+<p><strong>Regression:</strong> Predicting a continuous numerical value. Examples include:</p>
+<ul>
+<li><strong>Stock Price Prediction:</strong> Forecasting the future price of a stock based on historical data. The label is the numerical stock price.</li>
+<li><strong>Sales Forecasting:</strong> Predicting future sales figures based on past marketing spend and economic indicators. The label is the numerical sales volume.</li>
+<li><strong>House Price Prediction:</strong> Estimating the price of a house based on its features (size, location, etc.). The label is the numerical price.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Think of it as learning from a well-annotated textbook.</strong> Each chapter (data point) comes with explanations (labels), allowing you to understand the underlying principles and apply them to new problems.</p>
+</li>
+</ul>
+<h3 id="unsupervised-learning-unearthing-hidden-structures"><strong>Unsupervised Learning: Unearthing Hidden Structures</strong></h3>
+<p>Now, picture yourself as an archaeologist excavating an ancient site. You're uncovering artifacts without any prior knowledge of their purpose or organization. Your task is to find patterns and group similar items together to understand the civilization that left them behind. This is the essence of Unsupervised Learning.</p>
+<ul>
+<li>
+<p><strong>The Core Idea:</strong> We feed the algorithm with unlabeled data – information without any predefined categories or target values. The algorithm's task is to discover inherent structures, patterns, and relationships within this raw data.</p>
+</li>
+<li>
+<p><strong>The Mechanism:</strong> Without explicit guidance, the algorithm uses various techniques to identify similarities, differences, and groupings in the data. It aims to find hidden patterns that might not be immediately obvious to the human eye.</p>
+</li>
+<li>
+<p><strong>Key Applications:</strong></p>
+<ul>
+<li>
+<p><strong>Clustering:</strong> Grouping similar data points together. Examples include:</p>
+<ul>
+<li><strong>Customer Segmentation:</strong> Identifying distinct groups of customers based on their purchasing behavior.</li>
+<li><strong>Document Analysis:</strong> Grouping news articles with similar topics.</li>
+<li><strong>Anomaly Detection:</strong> Identifying unusual data points that deviate significantly from the norm (e.g., detecting fraudulent transactions or network intrusions).</li>
+</ul>
+</li>
+<li>
+<p><strong>Dimensionality Reduction:</strong> Reducing the number of variables in a dataset while preserving its essential information. This can help in visualization and simplifying complex data.</p>
+</li>
+<li>
+<p><strong>Association Rule Mining:</strong> Discovering relationships between different items in a dataset (e.g., "people who buy X also tend to buy Y," which is common in market basket analysis).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Think of it as data exploration without a map.</strong> You're navigating a complex terrain, trying to identify landmarks and understand the layout based on the features you observe.</p>
+</li>
+</ul>
+<h3 id="reinforcement-learning-learning-through-the-consequences-of-actions"><strong>Reinforcement Learning: Learning Through the Consequences of Actions</strong></h3>
+<p>Consider a game master teaching you a new game. They don't tell you the perfect strategy from the start. Instead, they allow you to play, and they provide feedback in the form of rewards (points, praise) or penalties (losing a turn). You learn the optimal way to play by trial and error, maximizing your rewards. This is the fundamental principle behind Reinforcement Learning.</p>
+<ul>
+<li>
+<p><strong>The Core Idea:</strong> An "agent" learns to interact with an "environment" by taking actions and receiving feedback in the form of rewards or penalties. The goal of the agent is to learn a policy – a strategy – that maximizes its cumulative reward over time.</p>
+</li>
+<li>
+<p><strong>The Mechanism:</strong> The agent explores the environment, tries different actions, and observes the consequences. It learns which actions lead to positive outcomes and which lead to negative ones. Over time, it refines its policy to make better decisions.</p>
+</li>
+<li>
+<p><strong>Key Applications:</strong></p>
+<ul>
+<li><strong>Game Playing:</strong> Training AI to master complex games like Go, chess, and video games.</li>
+<li><strong>Robotics:</strong> Developing control systems for robots to perform tasks in dynamic environments.</li>
+<li><strong>Autonomous Driving:</strong> Training vehicles to navigate roads and make driving decisions.</li>
+<li><strong>Recommendation Systems (Interactive):</strong> Optimizing recommendations based on real-time user interactions and feedback.</li>
+<li><strong>Resource Management:</strong> Optimizing the allocation of resources like energy or bandwidth.</li>
+</ul>
+</li>
+<li>
+<p><strong>Think of it as learning by doing and receiving feedback.</strong> You're constantly experimenting, learning from your successes and failures, and adapting your behavior to achieve the best possible outcome.</p>
+</li>
+</ul>
+<hr />
+<h2 id="can-you-give-a-simple-analogy-to-understand-how-machines-learn">Can you give a simple analogy to understand how machines 'learn'?</h2>
+<p>Okay, let's use the example of a human baby learning to recognize things, which is a beautiful illustration of how we evolve our understanding from childhood.</p>
+<p><strong>Traditional Programming (If We Were Born Like Computers):</strong></p>
+<p>Imagine if a baby's brain worked like a traditionally programmed computer. It would only know things if it was explicitly told, with very specific rules:</p>
+<ul>
+<li>"If it has a round shape, is orange, and feels smooth, it is a 'Ball'."</li>
+<li>"If it has four legs, fur, and barks, it is a 'Dog'."</li>
+<li>"If it has two eyes, a nose, and smiles, it is 'Mommy's Face'."</li>
+</ul>
+<p>The baby would only recognize those exact descriptions. A slightly oval orange toy wouldn't be a "Ball," and a small, fluffy dog that meows would be a complete mystery!</p>
+<p><strong>Machine Learning (How a Baby Actually Learns):</strong></p>
+<p>Now, let's see how a baby actually learns, which is much more like Machine Learning:</p>
+<ol>
+<li>
+<p><strong>Exposure to Lots of Examples (Data):</strong> The baby sees many different balls – big ones, small ones, red ones, blue ones, soft ones, bouncy ones. It hears the word "Ball" associated with all of them. It sees many different dogs – big dogs, small dogs, furry dogs, short-haired dogs, barking dogs, quiet dogs. It hears "Doggy!"</p>
+</li>
+<li>
+<p><strong>Receiving Feedback (Implicitly):</strong> When the baby points at a ball and babbles, the parent might smile and say, "Yes, that's a ball!" providing positive reinforcement. If the baby points at a cat and says "Doggy!", the parent might gently correct, "No, that's a kitty." This correction acts as a form of negative feedback, guiding the baby's understanding.</p>
+</li>
+<li>
+<p><strong>Finding Patterns (Learning):</strong> Over time, the baby's brain starts to identify common features among all the "balls" it sees (roundish shape, often used for playing). It recognizes the shared characteristics of all the "doggies" (fur, four legs, often a tail, a certain kind of sound). It learns these patterns without someone explicitly listing all the rules.</p>
+</li>
+<li>
+<p><strong>Generalization to New Situations (Recognizing New Things):</strong> Now, when the baby sees a brand new type of ball it has never encountered before – maybe a textured, purple one – because it has learned the general patterns of "ball-ness," it's very likely to recognize it as a ball. Similarly, it can usually identify a new breed of dog even if it looks a bit different from the dogs it has seen before. It can even start to distinguish between "Mommy's Face" and "Daddy's Face" by learning the subtle differences through repeated exposure and feedback.</p>
+</li>
+</ol>
+<p><strong>Connecting to Our Evolution:</strong></p>
+<p>This process isn't just how babies learn words and objects; it's a fundamental way our brains evolve and build understanding throughout childhood and even into adulthood:</p>
+<ul>
+<li><strong>Sensory Experiences as Data:</strong> From the moment we're born, our senses are constantly feeding us data about the world.</li>
+<li><strong>Trial and Error (Reinforcement):</strong> As we interact with our environment, we try things out. We learn what works (leads to positive outcomes like getting a toy or a smile) and what doesn't (leads to negative outcomes like falling down or a scolding). This shapes our behavior and understanding of cause and effect.</li>
+<li><strong>Categorization and Abstraction (Unsupervised):</strong> Our brains naturally look for patterns and group similar things together. As children, we learn to categorize animals, foods, emotions, and so on, without someone explicitly defining every single rule. We abstract common features to form concepts.</li>
+<li><strong>Learning from Others (Supervised):</strong> Parents, teachers, and caregivers explicitly label things for us ("That's hot!"), provide instructions ("Hold it like this"), and correct our mistakes, acting like the "labeled data" that helps us learn the rules and relationships in the world.</li>
+</ul>
+<p>So, just like a baby learns to navigate the world by seeing examples, getting feedback, and finding patterns, Machine Learning algorithms do something similar with data. Our development from childhood is a continuous process of learning from the vast amounts of information we encounter, constantly refining our understanding and ability to interact with the world – a very sophisticated form of "machine learning" happening within our own brains!</p>
+<hr />
+<h2 id="what-are-some-basic-applications-of-machine-learning">What are some basic applications of Machine Learning?</h2>
+<p>Okay, let's explore some basic, real-world applications of Machine Learning that you might encounter or hear about quite often. Think of these as the "everyday superpowers" that we're giving to computers through learning from data:</p>
+<p><strong>1. Filtering Your Inbox (Spam Detection):</strong></p>
+<ul>
+<li><strong>The Idea:</strong> You get tons of emails, and some are unwanted junk (spam). Machine Learning algorithms are trained on vast amounts of emails labeled as "spam" or "not spam." They learn patterns in the words, sender addresses, and email structure that are typical of spam.</li>
+<li><strong>How it Helps:</strong> Your email provider uses ML to automatically identify and filter out spam, keeping your inbox cleaner and safer. You don't have to manually sort through all that junk!</li>
+</ul>
+<p><strong>2. Recommending What to Watch or Buy:</strong></p>
+<ul>
+<li><strong>The Idea:</strong> When you use services like Netflix, Amazon, YouTube, or Spotify, they suggest movies, products, videos, or songs that you might like. This isn't random! ML algorithms analyze your past behavior (what you've watched, bought, listened to, rated) and compare it to the behavior of millions of other users with similar tastes.</li>
+<li><strong>How it Helps:</strong> It helps you discover new things you might enjoy without having to search endlessly. It makes your experience more personalized and engaging.</li>
+</ul>
+<p><strong>3. Voice Assistants Understanding You:</strong></p>
+<ul>
+<li><strong>The Idea:</strong> When you talk to Siri, Alexa, Google Assistant, or Bixby, they need to understand your spoken words and your intent. Machine Learning, especially in the area of Natural Language Processing (NLP) and speech recognition, is crucial here. These assistants are trained on huge amounts of human speech and text.</li>
+<li><strong>How it Helps:</strong> You can control your devices, ask questions, set reminders, and get information just by using your voice, making technology more accessible and convenient.</li>
+</ul>
+<p><strong>4. Recognizing Your Face:</strong></p>
+<ul>
+<li><strong>The Idea:</strong> Many smartphones and security systems can recognize faces. Machine Learning algorithms are trained on countless images of faces, learning to identify unique facial features and patterns.</li>
+<li><strong>How it Helps:</strong> It provides a quick and secure way to unlock your phone or access secure areas.</li>
+</ul>
+<p><strong>5. Predicting Traffic and Navigation:</strong></p>
+<ul>
+<li><strong>The Idea:</strong> Apps like Google Maps use Machine Learning to predict traffic conditions. They analyze historical traffic data, real-time sensor information, and even user reports to estimate how long your commute will take and suggest the best routes.</li>
+<li><strong>How it Helps:</strong> You can plan your journeys better, avoid traffic jams, and save time.</li>
+</ul>
+<p><strong>6. Suggesting What to Type (Smart Keyboards):</strong></p>
+<ul>
+<li><strong>The Idea:</strong> Your smartphone keyboard often suggests the next word you might want to type. This is powered by Machine Learning models trained on vast amounts of text data. They learn common word sequences and predict what's likely to come next.</li>
+<li><strong>How it Helps:</strong> It speeds up your typing and reduces errors.</li>
+</ul>
+<p><strong>7. Basic Medical Diagnosis Support:</strong></p>
+<ul>
+<li><strong>The Idea:</strong> While not replacing doctors, ML is being used to analyze medical images (like X-rays and MRIs) to help detect anomalies or patterns that might indicate a disease. Algorithms are trained on large datasets of medical images with known diagnoses.</li>
+<li><strong>How it Helps:</strong> It can assist doctors in making more accurate and faster diagnoses, potentially improving patient outcomes.</li>
+</ul>
+<p><strong>8. Personalized Advertising:</strong></p>
+<ul>
+<li><strong>The Idea:</strong> The ads you see online are often tailored to your interests. Machine Learning algorithms analyze your browsing history, search queries, and purchase behavior to show you ads for products or services you might be interested in.</li>
+<li><strong>How it Helps (for businesses):</strong> It allows companies to reach the right audience with their advertising. (For users, it can be helpful sometimes, but also feel a bit intrusive!)</li>
+</ul>
+<p>These are just some of the fundamental ways Machine Learning is already woven into our daily lives, often working silently in the background to make things more efficient, personalized, and convenient. As the technology continues to advance, we'll likely see even more basic and impactful applications emerge.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
