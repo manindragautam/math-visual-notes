@@ -55,3 +55,11 @@ nav:
       - Rational Expressions: maths/algebra1/rational-expressions.md
       - Radicals: maths/algebra1/radicals.md
       - Quadratic Equations: maths/algebra1/quadratic-equations.md
+  - Artificial Intelligence:
+    - Foundational Concepts:
+      - What is Artificial Intelligence?: ai/foundational-concepts/what-is-artificial-intelligence.md
+      - History of AI: ai/foundational-concepts/history-of-ai.md
+      - Introduction to Machine Learning: ai/foundational-concepts/introduction-to-machine-learning.md
+      - Supervised Learning: ai/foundational-concepts/supervised-learning.md
+      - Unsupervised Learning: ai/foundational-concepts/unsupervised-learning.md
+      - Reinforcement Learning: ai/foundational-concepts/reinforcement-learning.md

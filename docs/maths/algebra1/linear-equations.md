@@ -366,7 +366,7 @@
     -   Solution:
         $$
         \begin{cases}
-        x + y = 25 \\
+        x + y = 25 \newline
         x - y = 5
         \end{cases}
         $$
@@ -408,7 +408,7 @@
 
 -   **Example 4 (Number Problem)**:
 
-    -   Problem: A number is 5 more than twice another number. Their sum is 3- Find the numbers.
+    -   Problem: A number is 5 more than twice another number. Their sum is 35, Find the numbers.
     -   Solution:
         Let \( x \) = first number, \( 2x + 5 \) = second number.
         Sum:
