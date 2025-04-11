@@ -40,7 +40,7 @@ It's like letting the machine be a detective, trying to solve a mystery in the d
 
 ## What are some common tasks in Unsupervised Learning?
 
-You're right, let's keep the focus on the machine. Here are some common tasks that machines are trained to do using Unsupervised Learning:
+Here are some common tasks that machines are trained to do using Unsupervised Learning:
 
 1.  **Clustering:**
 

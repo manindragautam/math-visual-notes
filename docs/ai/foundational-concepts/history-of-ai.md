@@ -83,7 +83,7 @@ This timeline provides a broad overview of the history of AI. Each of these mile
 
 ## Who were some of the early pioneers in AI?
 
-You've asked a great question! The field of Artificial Intelligence owes its foundation to the brilliant minds of several early pioneers who, with foresight and groundbreaking work, laid the theoretical and practical groundwork for what AI is today. Here are some of the most influential early pioneers in AI:
+The field of Artificial Intelligence owes its foundation to the brilliant minds of several early pioneers who, with foresight and groundbreaking work, laid the theoretical and practical groundwork for what AI is today. Here are some of the most influential early pioneers in AI:
 
 -   **Alan Turing (1912-1954):** Often considered the **"father of AI" and theoretical computer science**.
 

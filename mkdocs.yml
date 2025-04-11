@@ -63,3 +63,9 @@ nav:
       - Supervised Learning: ai/foundational-concepts/supervised-learning.md
       - Unsupervised Learning: ai/foundational-concepts/unsupervised-learning.md
       - Reinforcement Learning: ai/foundational-concepts/reinforcement-learning.md
+    - Essential Mathematics:
+      - Linear Algebra Basics: ai/essential-math/linear-algebra-basics.md
+      - More Linear Algebra: ai/essential-math/more-linear-algebra.md
+      - Calculus Basics: ai/essential-math/calculus-basics.md
+      - Probability Basics: ai/essential-math/probability-basics.md
+      - Statistics Basics: ai/essential-math/statistics-basics.md
